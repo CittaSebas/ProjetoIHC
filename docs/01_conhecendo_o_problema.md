@@ -1,7 +1,7 @@
 # Entrega 1 — Conhecendo o projeto, o usuário e o problema
 
-**Data:** {{dd/mm/aaaa}}  
-**Status:** ⬜ não iniciada  
+**Data:** 13/08/2026  
+**Status:** ⬜ Iniciada  
 **Responsabilidade:** 1 solução consolidada por equipe
 
 ## Objetivo da atividade
@@ -59,23 +59,24 @@ Uma hipótese explicitada é melhor do que uma suposição escondida.
 
 | Nome completo | Matrícula | GitHub |
 |---|---:|---|
-| {{...}} | {{...}} | {{...}} |
+| Sebastian Citta | 24.123.068-9 | @CittaSebas |
+| Juan Manuel Citta | 24.123.022-6 | @JuanCitta |
 
 ## 0.2 Título atual do TCC
 
-{{...}}
+Geração Automática de Trilhas de Estudo para Programação Competitiva
 
 ## 0.3 Orientador(a)
 
-{{...}}
+Charles Henrique Porto Ferreira
 
 ## 0.4 Qual é o resultado principal atualmente previsto no TCC?
 
 Marque e descreva:
 
-- [ ] sistema/aplicação interativa;
+- [X] sistema/aplicação interativa;
 - [ ] algoritmo;
-- [ ] modelo de IA/ML/LLM;
+- [X] modelo de IA/ML/LLM;
 - [ ] biblioteca/API/framework;
 - [ ] análise de dataset;
 - [ ] estudo/benchmark/avaliação experimental;
@@ -83,15 +84,15 @@ Marque e descreva:
 - [ ] componente embarcado/IoT;
 - [ ] outro: {{...}}.
 
-**Descrição:** {{...}}
+**Descrição:** O objetivo do trabalho é o desenvolvimento de uma ferramenta para a geração de trilhas de estudos focada em Programação Competitiva. O usuário deve poder enviar uma pergunta e com base nas informações entregues uma LLM deve gerar um grafo baseado em livros didáticos para aprender a resolver dito problema. 
 
 ## 0.5 O TCC já previa desenvolvimento de interface com usuário?
 
-- [ ] Sim, a interface já faz parte do TCC.
+- [X] Sim, a interface já faz parte do TCC.
 - [ ] Parcialmente; existe alguma interação, mas ainda não está bem definida.
 - [ ] Não. O TCC é predominantemente técnico e não previa interface.
 
-**Explique o que está formalmente previsto no TCC:** {{...}}
+**Explique o que está formalmente previsto no TCC:** Está previsto a criação de uma interface WEB para o uso da ferramenta.
 
 > Esta resposta serve para separar o compromisso do TCC do projeto da disciplina. Mesmo quando a opção for **não**, a equipe irá definir uma interface para exercitar IHC.
 
@@ -101,11 +102,13 @@ Marque e descreva:
 
 ## 1.1 Explique o TCC em uma frase, sem citar linguagem de programação, framework ou banco de dados.
 
-{{...}}
+Desenvolvimento de uma ferramenta para a geração de trilhas de estudos focada em Programação Competitiva.
 
 ## 1.2 Qual situação, atividade ou problema do mundo real motivou o TCC?
 
 {{[F/H/?] ...}}
+[F] Placeholder Ver Fontes - Mas o menos: O inicio do aprendizado na Programação Competitiva é afetado pelo desconhecimento do aluno sobre diferentes tópicos aplicados em questões.
+
 
 ## 1.3 Qual é a **capacidade/contribuição central** produzida pelo TCC?
 
@@ -115,17 +118,19 @@ Complete, se ajudar:
 
 Exemplos: otimizar consultas; classificar imagens; detectar anomalias; comparar modelos; identificar padrões; prever demanda; analisar desempenho; gerar resumos; recomendar configurações.
 
-{{...}}
+Nosso TCC permite alunos de programação competitiva auxilia a exploração da programação competitiva ao gerar uma trilha de estudo pautada por bases de conhecimento consolidadas. 
 
 ## 1.4 O que se espera que esteja diferente **para pessoas, organizações ou processos** se essa contribuição for bem-sucedida?
 
 {{[F/H/?] ...}}
+[H] H01 - Espera-se que as trilhas de estudo geradas sejam comparáveis as trilhas apresentadas nos livros-fonte.
+[H] H02 - Espera-se que a recepção da ferramenta seja positiva por parte dos usuários.
 
 ## 1.5 O que é mérito técnico/científico do TCC e o que seria uma possível aplicação prática?
 
 | Mérito/contribuição técnica | Possível aplicação/valor em uso |
 |---|---|
-| {{...}} | {{...}} |
+| Geração automática de trilhas de aprendizado | Ferramenta que facilita o aprendizado não supervisionado por tutor e de amplo acesso através da Web |
 
 ---
 
@@ -135,7 +140,7 @@ Exemplos: otimizar consultas; classificar imagens; detectar anomalias; comparar 
 
 Se não houver interface prevista no TCC, escreva `NÃO SE APLICA AO ESCOPO ORIGINAL` e prossiga para 2.2.
 
-{{[F/H/?] ...}}
+[F] Estudantes de programação competitiva.
 
 ## 2.2 Quem poderia **usar, configurar, administrar, operar, interpretar ou tomar decisões** a partir da contribuição técnica?
 
@@ -143,19 +148,22 @@ Considere perfis profissionais e stakeholders, não apenas consumidores finais.
 
 | Perfil | Relação com a contribuição | O que faria | Status/evidência |
 |---|---|---|---|
-| {{DBA / analista / gestor / técnico / pesquisador / usuário final...}} | {{...}} | {{...}} | F / H / ? |
+| Aluno | Usuário | Utilizar a ferramenta para auxílio de aprendizagem | F |
+| Tutor | Usuário | Utilizar a ferramenta para auxílio de ensino | F |
+| Pesquisador | Objeto de estudo | Analisar processos da geração de trilha | H03 |
 
 ## 2.3 Existem pessoas afetadas que não usariam a interface diretamente?
 
 | Stakeholder | Como é afetado | Usa interface? | Status/evidência |
 |---|---|---|---|
-| {{...}} | {{...}} | sim/não | {{...}} |
+| Pesquisador | {{...}} | sim/não | {{...}} |
 
 ## 2.4 Que características desses perfis podem influenciar a interação?
 
 Considere conhecimento do domínio, experiência tecnológica, frequência de uso, necessidades de acessibilidade, responsabilidade profissional, familiaridade com métricas, linguagem técnica, urgência etc.
 
 {{[F/H/?] ...}}
+[H] H04 - A interação com a aplicação por parte de um aluno exige que a linguagem seja compreensível para indivíduos com pouco conhecimento em termos de programação competitiva.
 
 ---
 
