@@ -1,7 +1,7 @@
 # Entrega 1 — Conhecendo o projeto, o usuário e o problema
 
 **Data:** 13/08/2026  
-**Status:** ⬜ Iniciada  
+**Status:** 🟨 Em andamento  
 **Responsabilidade:** 1 solução consolidada por equipe
 
 ## Objetivo da atividade
@@ -156,14 +156,13 @@ Considere perfis profissionais e stakeholders, não apenas consumidores finais.
 
 | Stakeholder | Como é afetado | Usa interface? | Status/evidência |
 |---|---|---|---|
-| Pesquisador | {{...}} | sim/não | {{...}} |
+| Pesquisador | Pode buscar utilizar o modelo LLM  | não | H04 |
 
 ## 2.4 Que características desses perfis podem influenciar a interação?
 
 Considere conhecimento do domínio, experiência tecnológica, frequência de uso, necessidades de acessibilidade, responsabilidade profissional, familiaridade com métricas, linguagem técnica, urgência etc.
 
-{{[F/H/?] ...}}
-[H] H04 - A interação com a aplicação por parte de um aluno exige que a linguagem seja compreensível para indivíduos com pouco conhecimento em termos de programação competitiva.
+[H] H05 - A interação com a aplicação por parte de um aluno exige que a linguagem seja compreensível para indivíduos com pouco conhecimento em termos de programação competitiva.
 
 ---
 
@@ -173,23 +172,26 @@ Considere conhecimento do domínio, experiência tecnológica, frequência de us
 
 Não responda “usar o algoritmo”, “clicar no sistema” ou “ver o dashboard”.
 
-{{[F/H/?] ...}}
+
+[H] H06 - O usuário está tentando aprender/ensinar o conteúdo de questões de programação competitiva de forma visual e consolidada em fontes confiáveis.
 
 ## 3.2 Quais são as atividades mais importantes?
 
 | ID | Atividade/objetivo | Quem realiza | Frequência/criticidade inicial | Status/evidência |
 |---|---|---|---|---|
-| A01 | {{...}} | {{...}} | {{...}} | {{...}} |
-| A02 | {{...}} | {{...}} | {{...}} | {{...}} |
-| A03 | {{...}} | {{...}} | {{...}} | {{...}} |
+| A01 | Resolvendo uma questão de programação competitiva | Aluno | Crítico | F |
+| A02 | Ensinando programação competitiva | Tutor | Crítico | F |
 
 ## 3.3 Qual atividade parece mais frequente? Por quê?
 
-{{[F/H/?] ...}}
+
+[H] H07 - A atividade mais frequente parece ser uma consulta feita por um aluno para descobrir os tópicos de uma determinada questão.
+
 
 ## 3.4 Qual parece mais crítica? Que consequência existe se for mal executada?
 
-{{[F/H/?] ...}}
+
+[F] F - A atividade mais crítica é a feita por um aluno resolvendo uma questão de programação competitiva. A consequência de sua mal execução seria passar o conteúdo errado e causar mais dificuldades e confusão no aluno.
 
 ---
 
@@ -199,25 +201,25 @@ Não responda “usar o algoritmo”, “clicar no sistema” ou “ver o dashbo
 
 Pode existir software concorrente, linha de comando, planilha, notebook, script, painel técnico, processo manual, consulta a logs, análise visual, troca de mensagens, decisão por especialista etc.
 
-{{[F/H/?] ...}}
+[F] F - Hoje os usuários poderiam baixar o modelo disponibilizado no HuggingFace e rodar localmente através da linha de comando ou alguma outra interface.
 
 ## 4.2 O que é difícil, demorado, confuso, repetitivo, arriscado ou pouco transparente?
 
-{{[F/H/?] ...}}
+[F] F - O acesso a ferramenta pode ser confuso, pois requereria conhecimento em soluções de IA, assim como encontrar o modelo no fórum HuggingFace.
 
 ## 4.3 Que informações o profissional precisa interpretar para tomar decisão?
 
-{{[F/H/?] ...}}
+[F] F - Saber ler e escrever. É uma ferramenta destinada a iniciantes de programação competitiva.
 
 ## 4.4 O que acontece quando a atividade falha ou quando o resultado é interpretado incorretamente?
 
-{{[F/H/?] ...}}
+[F] F - A consequência de um atividade mal executada seria passar o conteúdo errado e causar mais dificuldades e confusão no aluno.
 
 ## 4.5 Conte uma situação concreta.
 
 Escreva uma pequena narrativa com pessoa, objetivo, atividade, contexto, dificuldade e consequência. **Não descreva ainda a futura solução.**
 
-{{[F/H/?] narrativa...}}
+[F] F - O aluno está treinando para uma competição de programação competitiva. O aluno chega em uma questão que não sabe por onde começar a resolvê-la, pois não conhece os tópicos necessários para tal. Ele pode tentar procurar questões similares resolvidas em fóruns de programação competitiva, ou tentar ler livros didáticos sobre o tema por sua conta. Caso não tenha sucesso ele pode desistir da competição ou da modalidade.  
 
 ## 4.6 Que evidência existe hoje?
 
@@ -231,31 +233,38 @@ Escreva uma pequena narrativa com pessoa, objetivo, atividade, contexto, dificul
 
 ## 5.1 Onde e em quais situações a interação poderia ocorrer?
 
-{{[F/H/?] ...}}
+[H] H08 - A interação pode ocorrer com um aluno sozinho, fazendo uma consulta na ferramenta para estudo.
+[H] H09 - A interação pode ocorrer com um aluno acompanhado de um tutor, fazendo uma consulta na ferramenta e contando com o apoio do tutor para dúvidas mais específicas sobre o tópico.
+[H] H10 - A interação pode ocorrer com um tutor sozinho, fazendo uma consulta na ferramenta, a fim de certificar-se que a ferramenta é válida e correta.
+
+
 
 ## 5.2 Em quais dispositivos/equipamentos?
 
-{{[F/H/?] ...}}
+[F] F - Qualquer dispositivo com um browser e acesso a internet.
+
 
 ## 5.3 Existem condições físicas relevantes?
 
 Considere iluminação, ruído, mobilidade, conexão, privacidade, uso compartilhado, interrupções, pressão de tempo etc.
 
-{{[F/H/?] ...}}
+[F] F - A única condição relevante é a conexão a internet.
+
 
 ## 5.4 Existem fatores sociais ou organizacionais?
 
 Considere papéis, chefias, equipes, permissões, aprovação, responsabilidade profissional, auditoria, turnos e colaboração.
 
-{{[F/H/?] ...}}
+[F] F - Caso a ferramenta seja utilizada por tutores, é responsabilidade deles certificar-se de que ela apresenta conteúdo correto.
+
 
 ## 5.5 Existe necessidade de histórico, rastreabilidade ou auditoria?
 
-{{[F/H/?] ...}}
+[F] F - Não.
 
 ## 5.6 Um erro pode produzir consequência relevante? Qual?
 
-{{[F/H/?] ...}}
+[F] F - O erro mais relevante seria o aluno perder seu tempo aprendendo temas não relacionados a questão.
 
 ---
 
@@ -267,21 +276,24 @@ Considere papéis, chefias, equipes, permissões, aprovação, responsabilidade 
 
 | Alternativa atual | Quem usa | Para quê | Status/evidência |
 |---|---|---|---|
-| {{...}} | {{...}} | {{...}} | {{...}} |
+| Fórum de programação competitiva | Alunos | Para aprender a resolver questões | F |
+| Modelos de IA  | Alunos e Tutores | Para auxílio no aprendizado e na tutoria | F |
 
 ## 6.2 Existem produtos que atuam na mesma área, mesmo sem serem equivalentes ao TCC?
 
-{{[F/H/?] ...}}
+[F] F - Existem fóruns de programação competitiva e outros "Chatbots" no mercado.
+
 
 ## 6.3 Quais interfaces profissionais esse público já conhece?
 
 Exemplos possíveis: ferramentas de banco, IDEs, consoles de nuvem, dashboards, plataformas de dados, ferramentas de monitoramento, painéis de IA, sistemas administrativos.
 
-{{[F/H/?] ...}}
+[F] F - "Chatbots" e fóruns/juízes online.
 
 ## 6.4 O que essas soluções parecem fazer bem?
 
-{{[F/H/?] ...}}
+[F] F - Os juízes online servem como local para a comunidade praticar a modalidade.
+[F] F - Os juízes online servem como repositório de questões de programação competitiva.
 
 ## 6.5 O que parecem fazer mal, dificultar ou não atender?
 
