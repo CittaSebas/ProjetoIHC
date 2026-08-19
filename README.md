@@ -17,32 +17,32 @@ Leia obrigatoriamente o [Guia para definir o escopo de IHC a partir do tema do T
 
 ## Identificação
 
-**Título do projeto de IHC:** {{TÍTULO DO PROJETO}}  
-**TCC/projeto de origem:** {{TÍTULO ORIGINAL DO TCC}}  
-**Orientador(a):** {{NOME}}  
+**Título do projeto de IHC:** Interface "Chatbot"   
+**TCC/projeto de origem:** Geração Automática de Trilhas de Aprendizado para programação competitiva
+**Orientador(a):** Charles Henrique Porto Ferreira  
 **Disciplina:** Interação Humano-Computador  
-**Instituição:** {{INSTITUIÇÃO}}  
-**Semestre:** {{ANO/SEMESTRE}}
+**Instituição:** FEI  
+**Semestre:** 2026/2
 
 ### Equipe
 
 | Nome completo | Matrícula | GitHub | Responsabilidade principal |
 |---|---:|---|---|
-| {{Nome 1}} | {{matrícula}} | {{@usuario}} | {{...}} |
-| {{Nome 2}} | {{matrícula}} | {{@usuario}} | {{...}} |
+| Juan Manuel Citta | 24.123.022-6 | @JuanCitta | A definir |
+| Sebastian Citta | 24.123.068-9 | @CittaSebas | A definir |
 
 ## Relação entre TCC e projeto de IHC
 
 | Item | Descrição |
 |---|---|
-| Tema central do TCC | {{...}} |
-| Resultado técnico esperado do TCC | {{algoritmo, estudo, sistema, modelo, análise, API...}} |
-| O TCC já previa interface? | sim / não / parcialmente |
-| Capacidade técnica que pode gerar valor para pessoas | {{...}} |
-| Usuário principal adotado em IHC | {{...}} |
-| Objetivo principal desse usuário | {{...}} |
-| Interface/recorte explorado na disciplina | {{...}} |
-| Relação com o escopo formal do TCC | parte prevista / extensão conceitual / protótipo demonstrativo / outra |
+| Tema central do TCC | Geração Automática de Trilhas de Aprendizado para programação competitiva |
+| Resultado técnico esperado do TCC | Ferramenta web |
+| O TCC já previa interface? | sim  |
+| Capacidade técnica que pode gerar valor para pessoas | Gerar trilhas automáticas para aprender programação competitiva |
+| Usuário principal adotado em IHC | Alunos |
+| Objetivo principal desse usuário | Auxiliar o aprendizado na programação competitiva |
+| Interface/recorte explorado na disciplina | visualização de dados, resultados e ajuda contextual |
+| Relação com o escopo formal do TCC | parte prevista  |
 
 > **Importante:** a tabela acima explica a relação entre os dois trabalhos. Ela não altera o compromisso formal do TCC.
 
@@ -53,6 +53,8 @@ Escreva **um parágrafo curto e concreto** explicando: quem é o usuário escolh
 Evite começar pela tecnologia.
 
 > **Estrutura sugerida:** “`{{tipo de usuário}}` precisa `{{objetivo}}` em `{{contexto}}`. Atualmente enfrenta `{{problema/limitação}}` e utiliza `{{processo/alternativa atual}}`. O tema do TCC investiga `{{contribuição técnica}}`. Para fins da disciplina de IHC, será explorada uma interface que permita `{{forma de uso da contribuição}}`.”
+
+Aluno precisa de ajuda em Programação Competitiva. Atualmente enfrenta uma dificuldade em descobrir quais temas são abordados em questões, utilizando paginas de juízes online como codeforces, que associam tags genéricas a estas questões, não ficam claro os tópicos. O tema do TCC investiga o uso de LLM para diminuir a barreira de entrada. Para fins da disciplina de IHC, será explorada uma interface que permita um acesso amigável a estrutura de prompts e do modelo criado no trabalho.
 
 Se alguma afirmação ainda não estiver sustentada por evidência, registre-a como hipótese na [Entrega 1](docs/01_conhecendo_o_problema.md).
 
