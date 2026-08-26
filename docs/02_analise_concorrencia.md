@@ -1,8 +1,9 @@
 # Entrega 2 — Público-alvo e análise de concorrência
 
-**Data:** {{dd/mm/aaaa}}  
-**Status:** ⬜ não iniciada  
+**Data:** 26/08/2026  
+**Status:** 🟨 iniciada  
 **Responsabilidade mínima:** cada integrante analisa pelo menos 1 concorrente/interface representativa; a equipe produz síntese comparativa.
+
 
 ## Objetivo da atividade
 
@@ -30,32 +31,45 @@ Retome o mapa inicial de alternativas e produtos citado na Entrega 1. Aqui a equ
 
 | Item citado na Entrega 1 | Tipo | Por que foi citado | Status inicial | Decisão nesta entrega |
 |---|---|---|---|---|
-| {{...}} | concorrente / análogo / ferramenta cotidiana / processo manual | {{...}} | F / H / ? | analisar / descartar com justificativa |
+| Fórum de programação competitiva | ferramenta cotidiana | Porque é uma das formas tradicionais de aprender programação competitiva, com ajuda da comunidade e de colegas com mais experiência | F | analisar |
+| Modelos de IA | ferramenta cotidiana | Por se tratar de uma ferramenta que pode ser usada para o aprendizado autônomo e pode ajudar a destrinchar conteúdo de livros didáticos | F | analisar |
 
 Se uma hipótese da Entrega 1 for confirmada ou refutada durante esta análise, atualize `H01`, `H02`... em [`../RASTREABILIDADE.md`](../RASTREABILIDADE.md).
 
 ## 1. Público-alvo desta análise
 
-{{descrever e ligar à Entrega 1}}
+Alunos de programação competitiva
 
 ## 2. Concorrentes diretos/indiretos
 
-### Análise C01 — {{produto}}
+### Análise C01 — Fórum de programação competitiva 
 
-**Autor(a):** {{nome — matrícula}}  
-**Tipo:** direto / indireto / análogo  
-**Link oficial:** {{URL}}  
-**Data de acesso:** {{dd/mm/aaaa}}
+**Autor(a):**  Juan Manuel Citta 24.123.022-6
+**Tipo:** indireto  
+**Link oficial:** [https://codeforces.com/](https://codeforces.com/) <br>
+**Data de acesso:** 26/08/2026
+
+### Análise C02 — Modelos de IA
+
+**Autor(a):** Sebastian Citta 24.123.068-9  
+**Tipo:** direto 
+**Link oficial:** [ChatGPT](https://chatgpt.com/) <br>
+**Data de acesso:** 26/08/2026
 
 #### Contexto e proposta
 
-{{...}}
+C01 - É uma plataforma para praticar programação competitiva. Nela o usuário pode procurar questões, subir suas tentativas e recebe aprovação ou reprovação da tentativa, com uma análise do erro identificado, como o tempo límite estourado. Além de poder praticar, o usuário também pode interagir com a comunidade através de posts, no estilo de fórum com tópicos e pode procurar por questões ou competições inteiras já resolvidas.
+
+C02 - É uma plataforma Web para acessar um modelo LLM generalista, onde o usuário pode fazer perguntas, subir arquivos (com límite de tamanho dependendo da assinatura) para receber uma resposta. A proposta do produto é ser uma ferramenta de assistência geral.
 
 #### Funcionalidades relevantes
 
 | Funcionalidade | Como é realizada | Evidência/print | Observação de IHC |
 |---|---|---|---|
-| {{...}} | {{...}} | `../assets/02_concorrencia/...` | {{...}} |
+| C01-  Acessar fórum para fazer perguntas | Clickando na aba "Catalog" na Home do site | <img width="1223" height="898" alt="image" src="https://github.com/user-attachments/assets/5d521552-7d11-4280-bdd7-0cb57384b35e" />| É no modelo fórum tradicional |
+ | C01 - Acessar lista de problemas | Clickando na aba "ProblemSet" na Home do site | <img width="1263" height="902" alt="image" src="https://github.com/user-attachments/assets/dcc28068-dddc-4d49-b847-b790b065c06d" />| É uma tabela com as informações relevantes |
+ | C01 - Acessar lista de competições | Clickando na aba "Contests" na Home do site | <img width="1255" height="907" alt="image" src="https://github.com/user-attachments/assets/0804ef2f-a134-48bd-84b3-f9ac04d72ada" />| É uma lista filtrável de competições antigas e atualmente ativas |
+ | C02 - Fazer prompt ou subir arquivos | Clickando na caixa texto ou no ícone de soma | <img width="1916" height="911" alt="image" src="https://github.com/user-attachments/assets/20ca14c9-24cc-494d-95aa-6a4d0a7d0bad" />| É uma interface simples com apenas duas opções de input e alguns botões de configuração e assinatura |
 
 #### Experiência do usuário e opiniões
 
@@ -73,7 +87,10 @@ Use avaliações públicas, relatos, estudos, testes próprios ou outra fonte id
 
 | Ponto | Evidência | Implicação para nosso projeto |
 |---|---|---|
-| {{...}} | {{...}} | {{...}} |
+| C01 - Interface antiga | Como vísivel nos prints a interface do CodeForces segue um estilo antigo de fórum clássico  | Alunos mais jovens podem não estar acostumados ou não ter preferência pela interface, por isso o nosso projeto buscará manter um visual moderno |
+| C01 - Excesso de opções | Como vísivel no print da Home Page a interface do CodeForces apresenta muitas opções com pouca ligação entre eles  | No nosso projeto iremos procurar deixar opções parecidas em "compartimentos" para manter uma interface limpa e sem ser sobrecarregada de informações |
+| C01 - Filtros completos | Como vísivel nos prints da página Contests e da página Problem Set, a interface do CodeForces permite a filtragem avançada das informações da tela  | Pessoas com conhecimento prévio da página tem um alto controle da informação mostrada na tela. No nosso projeto podemos adicionar filtragem avançada nos grafos de conhecimento. |
+| C02 - Interface simples | Como vísivel no print da Home Page a interface do ChatGPT apresenta uma quantidade baixa de opções, com pouco ruído na tela  | No projeto planejamos fazer uma interface simples e parecida com o padrão vísivel dos diferentes proveedores de LLMs do mercado, que tem aparência similar. |
 
 > Repita a subseção para C02, C03... até atender à quantidade da equipe.
 
