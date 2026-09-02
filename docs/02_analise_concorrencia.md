@@ -77,11 +77,14 @@ Use avaliações públicas, relatos, estudos, testes próprios ou outra fonte id
 
 #### Preço/modelo de negócio
 
-{{...}}
+C01 - Grátis. É um fórum com patrocínio da fundação TON (The Open Network).
+C02 - Modelo de subscrição. Tem plano grátis com um acesso de base limitado e tem opções de subscrições com acesso maior (mais tokens) e a outras funcionalidades como modelos LLM mais potentes.  
 
 #### Padrões e tendências percebidos
 
-{{...}}
+C01 - Fóruns de programação competitiva em sua maioria, tem interface mais antiga, por se tratarem de sites com mais tempo no mercado. Além disso, a funcionalidade principal da página é o de fórum de posts, onde usuários interagem comentando em postagens feitas.
+
+C02 - LLMs em sua maioria usam a interface no modelo chat. A maioria deles tem uma interface moderna com visuais limpos e sem muito conteúdo. A maioria dos serviços (Deepseek, Claude, Gemini) parecidos com o ChatGPT seguem o mesmo padrão. 
 
 #### Pontos positivos, limitações e lições
 
@@ -100,7 +103,11 @@ Analise interfaces que moldam a expectativa do público, mesmo que não sejam co
 
 | Software | Por que o público usa | Padrões relevantes | Prints | O que aprender |
 |---|---|---|---|---|
-| {{...}} | {{...}} | {{...}} | {{link local}} | {{...}} |
+| CodeForces | Para procurar perguntas e repostas de programação competitiva | Estilo fórum | {{link local}} | A abundância de informações e filtros é algo positivo da ferramenta, mesmo requerendo mais uso da ferramenta para masterizar |
+| Stackoverflow | Para fazer perguntas de programação em geral | Estilo fórum | <img width="1265" height="904" alt="image" src="https://github.com/user-attachments/assets/6896c782-2386-4a4c-85da-21bdb5e0a986" />| O formato de post/comentários é prevalente nos usuários de programação |
+| ChatGPT | Complementar ao Stackoverflow para receber respostas a perguntas especifícas | Chat | <img width="1507" height="711" alt="image" src="https://github.com/user-attachments/assets/4e28b680-68c7-4237-a819-42a8e634f951" />| O público-alvo prefere o foco da tela ser o conteúdo sendo editado |
+| Visual Studio Code e outras IDEs | Para escrever código | Espaço de trabalho claro no centro. Altamente customizável | <img width="1191" height="794" alt="image" src="https://github.com/user-attachments/assets/19576140-d69b-4b12-9cee-0a4e660f7130" />| O público-alvo está acostumado com ferramentas customisáveis e com aparência mais complexa no início |
+ | Github | Para versionamento e compartilhamento do código | Feed com atualizações gerais da plataforma e de mudanças em repositórios de contatos | <img width="1890" height="856" alt="image" src="https://github.com/user-attachments/assets/fa80e2e2-0f00-4aad-8dee-d81703e136d4" />| Público alvo está acostumado com feed de noticias e abundante quantidade de opções na página inicial |
 
 ## 3.1 Padrões de interface relevantes ao escopo de IHC
 
@@ -108,35 +115,44 @@ Registre somente padrões encontrados nas soluções analisadas e que possam ter
 
 | Padrão observado | Produto(s) | Para qual tarefa serve | Vantagem percebida | Risco/limitação | Aplicável ao nosso escopo? |
 |---|---|---|---|---|---|
-| dashboard | {{...}} | {{...}} | {{...}} | {{...}} | sim/não/talvez |
-| relatório | {{...}} | {{...}} | {{...}} | {{...}} | {{...}} |
-| histórico + filtros | {{...}} | {{...}} | {{...}} | {{...}} | {{...}} |
-| administração/CRUD | {{...}} | {{...}} | {{...}} | {{...}} | {{...}} |
-| comparação de resultados | {{...}} | {{...}} | {{...}} | {{...}} | {{...}} |
+| dashboard | ChatGPT | Garante o acesso a ferramenta | Permite customização | Pode sobrecarregar usuário | talvez |
+| histórico + filtros | CodeForces, StackOverflow, Github | Para rever questões/perguntas antigas | Melhora a usabilidade recorrente da ferramenta | Perder histórico e requer DB | não |
+| administração/CRUD | Todos | Atrelar configurações/subscrições/postagens a um usuário | Customização da ferramenta | Requer um DB | talvez |
 
 > O objetivo não é concluir “todo concorrente tem dashboard, então teremos um”. O padrão só será adotado se apoiar uma tarefa rastreável.
 
 ## 4. Síntese comparativa da equipe
 
-| Critério | C01 | C02 | C03 | Oportunidade para o projeto |
+| Critério | C01 | C02 | Oportunidade para o projeto |
 |---|---|---|---|---|
-| Navegação |  |  |  |  |
-| Feedback/estado |  |  |  |  |
-| Prevenção/recuperação de erro |  |  |  |  |
-| Terminologia |  |  |  |  |
-| Acessibilidade |  |  |  |  |
-| Eficiência |  |  |  |  |
+| Navegação | Sobrecarregada de opções | Pouca navegação, apenas para opções | Manter o padrão da ferramenta mais parecida, pois terá as funcionalidades parecidas (ChatGPT) |  
+| Feedback/estado | Não tem | Mostra erros e mensagens de estado no processamento | O projeto tem a necessidade de fornecer feedback ao usuário |  
+| Prevenção/recuperação de erro | Não tem | Permite reenviar mensagens | Utilizar recuperação de erro para melhorar usabilidade |  
+| Terminologia | Repleto de terminologia de programação competitiva de diferentes niveís | Apenas linguagem simples | É importante manter um balanço entre terminologia da modalidade e manter a resposta intelegível para todos os usuários |  
+| Acessibilidade | Não tem | Tem entrada por voz | Pode ser considerado para o projeto em estágios mais avançados |  
+| Eficiência | Requer uso recorrente para se acostumar, porém tem muita informação escondida atrás de filtros e navegação | É muito simples para o usuário médio acessar todas as funcionalidades | O escopo do projeto se encaixa melhor na simplicidade do ChatGPT |  
 
 ## 5. Recomendações derivadas
 
 Liste recomendações com origem explícita.
 
-- **RC01:** {{recomendação}} — derivada de {{C01/C02/evidência}}.
-- **RC02:** {{...}}
+- **RC01:** Navegação simples derivada de C02.
+- **RC02:** Feedback/estado da aplicação deve estar sempre visível derivda de C02.
+- **RC03:** A terminologia deve estar balanceada entre termos de programação competitiva e linguagem simples derivada de C01 e C02.
 
 ## Referências
 
 {{fontes dos produtos, avaliações e literatura}}
+
+1.Avaliação de usuário sobre programação competitiva no [CodeForces](https://codeforces.com/blog/entry/75742).
+
+2.Competitive Programming 4 (CP4) de Steven Halim, Felix Halim e Suhendry Efendy (2020), Prefácio de Brian Christopher Dean
+
+3.[Early Introduction of Competitive Programming](https://www.researchgate.net/publication/228411471_Early_introduction_of_competitive_programming), escrito por Pedro Ribeiro e Pedro Guerreiro (2008)
+
+4.[ChatGPT](https://chatgpt.com/)
+
+5.[CodeForces](https://codeforces.com/)
 
 ## Checklist
 
