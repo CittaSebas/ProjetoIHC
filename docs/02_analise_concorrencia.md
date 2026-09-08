@@ -103,7 +103,8 @@ Analise interfaces que moldam a expectativa do público, mesmo que não sejam co
 
 | Software | Por que o público usa | Padrões relevantes | Prints | O que aprender |
 |---|---|---|---|---|
-| CodeForces | Para procurar perguntas e repostas de programação competitiva | Estilo fórum | {{link local}} | A abundância de informações e filtros é algo positivo da ferramenta, mesmo requerendo mais uso da ferramenta para masterizar |
+| CodeForces | Para procurar perguntas e repostas de programação competitiva | Estilo fórum | <img width="1542" height="857" alt="image" src="https://github.com/user-attachments/assets/29dd7d73-f867-406d-b59f-d6c14d29f3ee" />
+ | A abundância de informações e filtros é algo positivo da ferramenta, mesmo requerendo mais uso da ferramenta para masterizar |
 | Stackoverflow | Para fazer perguntas de programação em geral | Estilo fórum | <img width="1265" height="904" alt="image" src="https://github.com/user-attachments/assets/6896c782-2386-4a4c-85da-21bdb5e0a986" />| O formato de post/comentários é prevalente nos usuários de programação |
 | ChatGPT | Complementar ao Stackoverflow para receber respostas a perguntas especifícas | Chat | <img width="1507" height="711" alt="image" src="https://github.com/user-attachments/assets/4e28b680-68c7-4237-a819-42a8e634f951" />| O público-alvo prefere o foco da tela ser o conteúdo sendo editado |
 | Visual Studio Code e outras IDEs | Para escrever código | Espaço de trabalho claro no centro. Altamente customizável | <img width="1191" height="794" alt="image" src="https://github.com/user-attachments/assets/19576140-d69b-4b12-9cee-0a4e660f7130" />| O público-alvo está acostumado com ferramentas customisáveis e com aparência mais complexa no início |
@@ -124,9 +125,8 @@ Registre somente padrões encontrados nas soluções analisadas e que possam ter
 ## 4. Síntese comparativa da equipe
 
 | Critério | C01 | C02 | Oportunidade para o projeto |
-|---|---|---|---|---|
-| Navegação | Sobrecarregada de opções | Pouca navegação, apenas para opções | Manter o padrão da ferramenta mais parecida, pois terá as funcionalidades parecidas (ChatGPT) |  
-| Feedback/estado | Não tem | Mostra erros e mensagens de estado no processamento | O projeto tem a necessidade de fornecer feedback ao usuário |  
+|---|---|---|---|
+| Navegação | Sobrecarregada de opções | Pouca navegação, apenas para opções | Manter o padrão da ferramenta mais parecida, pois terá as funcionalidades parecidas (ChatGPT) | | Feedback/estado | Não tem | Mostra erros e mensagens de estado no processamento | O projeto tem a necessidade de fornecer feedback ao usuário |  
 | Prevenção/recuperação de erro | Não tem | Permite reenviar mensagens | Utilizar recuperação de erro para melhorar usabilidade |  
 | Terminologia | Repleto de terminologia de programação competitiva de diferentes niveís | Apenas linguagem simples | É importante manter um balanço entre terminologia da modalidade e manter a resposta intelegível para todos os usuários |  
 | Acessibilidade | Não tem | Tem entrada por voz | Pode ser considerado para o projeto em estágios mais avançados |  
