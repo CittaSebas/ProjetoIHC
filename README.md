@@ -24,7 +24,7 @@ Leia obrigatoriamente o [Guia para definir o escopo de IHC a partir do tema do T
 **Instituição:** FEI  
 **Semestre:** 2026/2
 
-### Equipe
+### Equipe 03
 
 | Nome completo | Matrícula | GitHub | Responsabilidade principal |
 |---|---:|---|---|
