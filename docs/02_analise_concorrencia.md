@@ -1,7 +1,7 @@
 # Entrega 2 — Público-alvo e análise de concorrência
 
 **Data:** 26/08/2026  
-**Status:** 🟨 iniciada  
+**Status:** 🟩 concluída  
 **Responsabilidade mínima:** cada integrante analisa pelo menos 1 concorrente/interface representativa; a equipe produz síntese comparativa.
 
 
@@ -103,8 +103,7 @@ Analise interfaces que moldam a expectativa do público, mesmo que não sejam co
 
 | Software | Por que o público usa | Padrões relevantes | Prints | O que aprender |
 |---|---|---|---|---|
-| CodeForces | Para procurar perguntas e repostas de programação competitiva | Estilo fórum | <img width="1542" height="857" alt="image" src="https://github.com/user-attachments/assets/29dd7d73-f867-406d-b59f-d6c14d29f3ee" />
- | A abundância de informações e filtros é algo positivo da ferramenta, mesmo requerendo mais uso da ferramenta para masterizar |
+| CodeForces | Para procurar perguntas e repostas de programação competitiva | Estilo fórum | <img width="1542" height="857" alt="image" src="https://github.com/user-attachments/assets/29dd7d73-f867-406d-b59f-d6c14d29f3ee" />| A abundância de informações e filtros é algo positivo da ferramenta, mesmo requerendo mais uso da ferramenta para masterizar |
 | Stackoverflow | Para fazer perguntas de programação em geral | Estilo fórum | <img width="1265" height="904" alt="image" src="https://github.com/user-attachments/assets/6896c782-2386-4a4c-85da-21bdb5e0a986" />| O formato de post/comentários é prevalente nos usuários de programação |
 | ChatGPT | Complementar ao Stackoverflow para receber respostas a perguntas especifícas | Chat | <img width="1507" height="711" alt="image" src="https://github.com/user-attachments/assets/4e28b680-68c7-4237-a819-42a8e634f951" />| O público-alvo prefere o foco da tela ser o conteúdo sendo editado |
 | Visual Studio Code e outras IDEs | Para escrever código | Espaço de trabalho claro no centro. Altamente customizável | <img width="1191" height="794" alt="image" src="https://github.com/user-attachments/assets/19576140-d69b-4b12-9cee-0a4e660f7130" />| O público-alvo está acostumado com ferramentas customisáveis e com aparência mais complexa no início |
@@ -141,8 +140,6 @@ Liste recomendações com origem explícita.
 - **RC03:** A terminologia deve estar balanceada entre termos de programação competitiva e linguagem simples derivada de C01 e C02.
 
 ## Referências
-
-{{fontes dos produtos, avaliações e literatura}}
 
 1.Avaliação de usuário sobre programação competitiva no [CodeForces](https://codeforces.com/blog/entry/75742).
 
