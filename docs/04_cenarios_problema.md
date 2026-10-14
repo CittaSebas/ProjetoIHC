@@ -1,7 +1,7 @@
 # Entrega 4 — Cenários de análise/problema
 
-**Data:** {{dd/mm/aaaa}}  
-**Status:** ⬜ não iniciada  
+**Data:** 14/10/2002 
+**Status:** 🟨 iniciada  
 **Responsabilidade:** 1 solução completa por integrante
 
 ## Objetivo da atividade
@@ -22,17 +22,27 @@ A interface da disciplina aparecerá somente depois, nos cenários de interaçã
 
 Se o integrante escolher um novo problema/situação, explique por que ele passou a ser relevante e indique a evidência que motivou sua inclusão.
 
-## Cenário C01 — {{título}}
+## Cenário C01 — Inferência de tópicos a partir do enunciado
 
-**Autor(a):** {{nome — matrícula}}  
-**Persona(s) relacionada(s):** {{P01}}  
-**Necessidade relacionada:** {{R01}}  
-**Situação concreta da Entrega 1 relacionada:** {{seção 4.4 / H01 / outra ou “nova situação justificada”}}  
-**Hipóteses ainda presentes:** {{H01, H02 ou —}}
+**Autor(a):** Sebastian Citta - 24.123.068-9
+**Persona(s) relacionada(s):** P01
+**Necessidade relacionada:** R01
+**Situação concreta da Entrega 1 relacionada:** H21
+**Hipóteses ainda presentes:** H05, H06, H07, H08
+
+## Cenário C02 — Ancoragem dos tópicos em materiais didáticos consolidados
+
+**Autor(a):** Juan Manuel Citta - 24.123.022-6
+**Persona(s) relacionada(s):** P02  
+**Necessidade relacionada:** R03
+**Situação concreta da Entrega 1 relacionada:** H11
+**Hipóteses ainda presentes:** H10, 
 
 ### 1. Cenário inicial
 
-{{narrativa}}
+C01 - Um integrante do time de programação competitiva está estudando sozinho para uma competição. Ao procurar problemas em Juizes Online não encontra problemas que saiba resolver.
+
+C02 - O professor responsável pelo time da maratona está muito ocupado com as matérias que leciona e não consegue elaborar um plano de treino para a competição a tempo. Na hora do treino ele recomenda para os alunos utilizarem modelos de IA disponível no mercado porém percebe que não tem controle sobre quais fontes estão sendo usados pelo modelo o que gera incosistencias com o restante do material entregue antes.
 
 ### 2. Questões de refinamento
 
