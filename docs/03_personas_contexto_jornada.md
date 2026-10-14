@@ -22,14 +22,6 @@ Também considere papéis diferentes quando houver tarefas distintas, por exempl
 - gestor que consulta relatórios e decide;
 - auditor que revisa histórico.
 
-## Como ler as afirmações desta entrega
-
-> **Aviso central.** A equipe **não coletou nenhum dado com usuários** até esta entrega — nenhuma entrevista, observação, questionário ou relato identificado (ver Entrega 1, seção 4.6). Em consequência, **as duas personas são proto-personas**: construções hipotéticas derivadas do problema descrito no TCC e das hipóteses da Entrega 1.
->
-> Isso não as torna inúteis — elas organizam o raciocínio de design e tornam as suposições discutíveis. Mas nenhuma afirmação sobre comportamento, preferência ou dificuldade destas personas pode ser tratada como fato. A convenção `[F]` / `[H]` / `[?]` da Entrega 1 vale em cada linha das tabelas abaixo.
->
-> A validação ocorre na **Entrega 7**, que é quando as hipóteses marcadas como críticas serão investigadas com pessoas reais.
-
 ## Entradas da Entrega 1
 
 Antes de criar personas, retome os tipos de usuários, características relevantes, objetivos e hipóteses registradas na Entrega 1. A persona **não deve transformar uma hipótese inicial em fato por meio de uma história fictícia**.
@@ -42,22 +34,6 @@ Antes de criar personas, retome os tipos de usuários, características relevant
 
 ## 1. Personas
 
-> ### ⚠ Pendência de conformidade — artefatos locais
->
-> As imagens abaixo estão referenciadas por URLs externas de anexo do GitHub, e `assets/03_personas/` contém apenas os arquivos `PLACEHOLDER DE ARTEFATO` que vieram do template. É a mesma pendência já apontada na Entrega 2.
->
-> **Ação necessária (a equipe precisa executar):**
->
-> | Arquivo esperado | Conteúdo |
-> |---|---|
-> | `assets/03_personas/persona_p01.png` | ficha da proto-persona P01 |
-> | `assets/03_personas/persona_p02.png` | ficha da proto-persona P02 |
-> | `assets/03_personas/mapa_empatia_p01.png` | mapa de empatia da equipe sobre P01 |
->
-> Depois de salvos, trocar cada `<img src="https://github.com/...">` por `![legenda](../assets/03_personas/arquivo.png)` e remover os dois `.svg` de placeholder.
->
-> **Observação:** as três imagens atualmente referenciadas têm título *"Blue Yellow Simple Empathy Map Brainstorm"*. Se as três são mapas de empatia, então **as fichas de persona ainda não existem como artefato visual** — o que seria um artefato faltante, e não apenas um arquivo fora de lugar.
-
 ### Persona P01 — Alfreda Marta
 
 **Autor(a):** Sebastian Citta — 24.123.068-9
@@ -65,9 +41,8 @@ Antes de criar personas, retome os tipos de usuários, características relevant
 **Base de evidências:** **proto-persona** — construída a partir do público-alvo declarado no TCC e das hipóteses da Entrega 1. Nenhuma observação, entrevista ou questionário foi realizado.
 **Hipóteses da Entrega 1 relacionadas:** H06, H07, H08, H09, H12, H17, H19, H21, H22, H23, H24 — e as lacunas Q02, Q06, Q08, Q09, Q12
 
-<img width="1920" height="1080" alt="Proto-persona P01 — Alfreda Marta" src="https://github.com/user-attachments/assets/88552e37-49e4-4822-a41e-be09648231af" />
+<img width="1920" height="1080" alt="Proto-persona P01 — Alfreda Marta" src="assets/03_personas/MapaEmpatiaMulher" />
 
-*Figura 1 — Proto-persona P01. Fonte: elaboração da equipe. Arquivo local pendente: `assets/03_personas/persona_p01.png`.*
 
 | Campo | Descrição | Status |
 |---|---|---|
@@ -100,8 +75,6 @@ Antes de criar personas, retome os tipos de usuários, características relevant
 | N05 | Entender os termos da resposta, que chegam em jargão e em inglês | H05, Q02, Q06 | Mantém a ajuda contextual/glossário `em aberto`, e RC03 como provisória |
 | N06 | Não ficar sem saber se o sistema está trabalhando, dada a latência do modelo | [F] latência do LLM (Entrega 1, 9.3) | Sustenta F02 |
 
-> **O que esta persona não decide.** "Estilo chat" e "grafo" não aparecem como consequência de P01, e sim como **hipóteses de design** H12 e H15, ainda abertas. A persona justifica *a necessidade* (começar rápido, ver ordem, ver fonte, calibrar confiança); a *forma* de atender cada necessidade será testada na Entrega 6. A versão anterior derivava "que tenha um estilo Chat de LLM" diretamente da persona, o que inverte a ordem do raciocínio.
-
 ### Persona P02 — José Carlos Trunchado
 
 **Autor(a):** Juan Manuel Citta — 24.123.022-6
@@ -109,9 +82,7 @@ Antes de criar personas, retome os tipos de usuários, características relevant
 **Base de evidências:** **proto-persona** — nenhuma conversa com professores ou treinadores foi realizada
 **Hipóteses da Entrega 1 relacionadas:** H10, H11, H25 — e as lacunas Q01, Q11
 
-<img width="1920" height="1080" alt="Proto-persona P02 — José Carlos Trunchado" src="https://github.com/user-attachments/assets/3e92701e-98da-4103-9cf5-ea44ad932df1" />
-
-*Figura 2 — Proto-persona P02. Fonte: elaboração da equipe. Arquivo local pendente: `assets/03_personas/persona_p02.png`.*
+<img width="1920" height="1080" alt="Proto-persona P02 — José Carlos Trunchado" src=assets/03_personas/MapaEmpatiaHomem.png />
 
 | Campo | Descrição | Status |
 |---|---|---|
@@ -164,11 +135,7 @@ Antes de criar personas, retome os tipos de usuários, características relevant
 **Persona escolhida:** P01
 **Justificativa:** é a persona primária e o público-alvo declarado do TCC.
 
-<img width="1920" height="1080" alt="Mapa de empatia — P01" src="https://github.com/user-attachments/assets/1e8ae664-4031-4be4-ba26-183971c094ce" />
-
-*Figura 3 — Mapa de empatia da equipe sobre P01. Fonte: elaboração da equipe. Arquivo local pendente: `assets/03_personas/mapa_empatia_p01.png`.*
-
-> **Mapa de empatia hipotético.** O quadro abaixo é a leitura da equipe sobre P01, derivada do TCC e das hipóteses da Entrega 1. **Quase tudo aqui é `[H]`**, e isso é esperado nesta fase — o mapa de empatia existe para explicitar o que a equipe acredita, e não para registrar o que ela comprovou.
+<img width="1920" height="1080" alt="Mapa de empatia — P01" src=assets/03_personas/MapaEmpatiaMulher.png />
 
 | Quadrante | Conteúdo | Status |
 |---|---|---|
@@ -184,9 +151,9 @@ Antes de criar personas, retome os tipos de usuários, características relevant
 | | Abre um livro didático e não sabe em que capítulo procurar | [H] H26 |
 | | Alterna entre enunciado, editor e aba de consulta | [H] H24 |
 | **O que pensa e sente** | "Não sei nem o que pesquisar" | [H] H21 |
-| | Insegurança sobre a própria capacidade, não sobre o conteúdo | [H] |
+| | Insegurança sobre a própria capacidade, não necessariamente sobre o conteúdo | [H] |
 | | Pressa: o tempo de treino está passando | [H] H23; [?] Q08 em competição |
-| | Aceita a primeira explicação plausível, por não ter como contestá-la | [H] H06 — **é o ponto mais importante do mapa** |
+| | Aceita a primeira explicação plausível, por não ter como contestá-la | [H] H06 |
 | **Dores** | Não conhecer o nome do que precisa aprender — a busca vira tentativa e erro | [H] H21 |
 | | Investir tempo num tópico que não a aproxima da solução | [H] H21 |
 | | Receber a solução pronta e destravar a questão sem aprender o caminho | [H] H18 |
@@ -196,11 +163,7 @@ Antes de criar personas, retome os tipos de usuários, características relevant
 | | Resolver a questão **por conta própria** depois de estudar | [H] H07 |
 | | Perceber que está construindo repertório, e não só fechando questões | [H] |
 
-[?] Q06 — O quadrante "o que vê" é o mais frágil do mapa: a equipe listou o que **está disponível na tela do juiz online**, não o que P01 efetivamente olha e usa para decidir. Essa é a principal lacuna do projeto e será investigada na Entrega 7 com protocolo *think-aloud*.
-
 ## 3. Contexto de uso — consolidação
-
-> **Revisão.** A versão anterior afirmava como fato o ambiente físico, a ausência de urgência e a inexistência de necessidades de acessibilidade. A tabela foi realinhada às hipóteses e lacunas da Entrega 1, seção 5.
 
 | Dimensão | Descrição | Status | Implicação de design |
 |---|---|---|---|
@@ -209,13 +172,13 @@ Antes de criar personas, retome os tipos de usuários, características relevant
 | Equipamentos | Notebook ou desktop, com o enunciado em outra aba | [H] H22; [?] Q09 | Condiciona a viabilidade de uma representação gráfica das dependências (H15). **Se o uso em celular for relevante, o formato precisa mudar** |
 | Ambiente físico | Casa, laboratório da faculdade ou sala de treino | [?] Q10 | Nenhuma implicação derivada enquanto a lacuna estiver aberta |
 | Momento e estado | O aluno chega **já travado e frustrado**, durante ou após uma tentativa que falhou | [H] H23 | A primeira tela precisa aceitar a questão imediatamente, sem etapa de configuração (N01) |
-| Pressão de tempo | Em treino, moderada — o tempo de treino é finito. Em competição, severa | [H] H23; [?] Q08 | *A versão anterior afirmava "não tem urgência na interface". Isso só é defensável no cenário de treino, e o cenário de competição ainda não foi decidido* |
+| Pressão de tempo | Em treino, moderada — o tempo de treino é finito. Em competição, severa | [H] H23; [?] Q08 | Não tem urgência na interface. A competição não será o foco principal da interface no momento. |
 | Interrupções e paralelismo | Alterna entre enunciado, editor de código e ferramenta de consulta | [H] H24 | Reforça o argumento para retomada de contexto e para o histórico (Q12) |
-| Ambiente social/organizacional | Estudo individual, sem tutor presente | [H] H09 | A interface precisa ser autoexplicativa: não há ninguém para tirar dúvidas |
+| Ambiente social/organizacional | Estudo individual, sem tutor presente | [H] H09 | A interface precisa ser autoexplicativa: possivelmente o aluno esteja sozinho |
 | | Pode existir equipe de maratona com treinador | [?] Q11 | Nenhuma consequência adotada |
 | Papéis/permissões/governança | Nenhum papel previsto no recorte adotado | [F] decorre de H09 | Sem login, perfis ou permissões — ver Entrega 1, seção 8 |
 | Acessibilidade | **Não investigado** | [?] Q03 | Requisitos serão definidos na Entrega 8. Uma alternativa textual à representação gráfica já se desenha como provável necessidade |
-| Volume de dados/histórico | Uma trilha é consumida ao longo de dias, não de uma sessão | [?] Q12 | Histórico `em aberto` — a decisão virá da necessidade do usuário, não da viabilidade técnica |
+| Volume de dados/histórico | Uma trilha é consumida ao longo de dias, não de uma sessão | [?] Q12 | Histórico `em aberto` — a decisão virá da necessidade do usuário |
 | Conexão | Necessária; sem conexão não há consulta | [F] arquitetura web | Reforça o valor de poder recuperar o que já foi obtido (Q12) |
 | Idioma | O modelo foi treinado sobre enunciados em inglês e devolve tópicos em inglês | [F] Seção VII.A do TCC | Possível barreira de vocabulário (H05, N05); mantém RC03 provisória |
 
@@ -224,8 +187,6 @@ Antes de criar personas, retome os tipos de usuários, características relevant
 **Persona:** P01 — Alfreda Marta
 **Objetivo da jornada:** resolver, por conta própria, uma questão de programação competitiva em que travou
 **Início e fim da jornada:** começa **antes** do contato com a ferramenta, no momento em que ela escolhe a questão e tenta resolvê-la; termina **depois**, quando ela retorna à questão tendo estudado — ou desiste dela.
-
-> A jornada **não** começa em "colar o enunciado". Esse é um passo da interface, não da atividade. O trecho mais importante para o projeto é o **antes**, porque é ali que a necessidade se forma — e é justamente o trecho que a equipe conhece menos.
 
 | Etapa | Fase | Situação/ação | Objetivo | Pensamento/emoção | Dor | Oportunidade de design | Evidência |
 |---|---|---|---|---|---|---|---|
@@ -267,8 +228,6 @@ Antes de criar personas, retome os tipos de usuários, características relevant
 6. **A fonte pedagógica por tópico resolve uma dor específica** (N03, H26): ela não sabe o nome do assunto, logo não sabe onde procurar.
 7. **O vocabulário é um obstáculo em si** (N05, H05, Q02), não um detalhe de redação.
 
-**Lacunas que precisam ser fechadas antes da Entrega 5:** Q02 (o que é "iniciante"), Q06 (que informações ela interpreta hoje), Q08 (treino ou competição), Q09 (dispositivo), Q16 (como percebe que travou) e Q17 (como decide que já estudou o suficiente). Todas estão registradas em [`../RASTREABILIDADE.md`](../RASTREABILIDADE.md) com método e momento de investigação.
-
 ## Checklist
 
 - [X] Existe pelo menos uma persona por integrante. *(P01 — Sebastian Citta; P02 — Juan Manuel Citta)*
@@ -282,8 +241,6 @@ Antes de criar personas, retome os tipos de usuários, características relevant
 - [X] Jornada possui etapas, dores e oportunidades e não é apenas wireflow. *(17 etapas em antes/durante/depois, com 6 anteriores ao contato com o sistema)*
 - [X] IDs das personas foram adicionados à rastreabilidade. *(P01 na coluna Persona das linhas R01–R05, seção 3; a reclassificação de P02 registrada na seção 5)*
 - [ ] Artefatos visuais salvos em `assets/03_personas/`. — **pendente: as três imagens continuam hospedadas externamente e os arquivos locais são placeholders do template**
-
-> O último item permanece desmarcado de propósito: depende de salvar os arquivos de imagem no repositório, trabalho que a equipe precisa executar.
 
 ---
 
