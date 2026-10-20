@@ -40,9 +40,25 @@ Se o integrante escolher um novo problema/situação, explique por que ele passo
 
 ### 1. Cenário inicial
 
-C01 - Um integrante do time de programação competitiva está estudando sozinho para uma competição. Ao procurar problemas em Juizes Online não encontra problemas que saiba resolver.
+C01 - Descobrir o que falta saber para resolver uma questão
 
-C02 - O professor responsável pelo time da maratona está muito ocupado com as matérias que leciona e não consegue elaborar um plano de treino para a competição a tempo. Na hora do treino ele recomenda para os alunos utilizarem modelos de IA disponível no mercado porém percebe que não tem controle sobre quais fontes estão sendo usados pelo modelo o que gera incosistencias com o restante do material entregue antes.
+Atores: Rafael (nome fictício), estudante de Ciência da Computação
+
+Rafael é graduando em Ciência da Computação e treina programação competitiva sozinho, no notebook. Ele programa com segurança e resolve sem ajuda as questões mais fáceis do Codeforces, mas ainda não sabe identificar, pelo enunciado, qual técnica uma questão exige. Hoje ele abriu um problema novo, com o enunciado em uma aba e o editor de código em outra, e o leu várias vezes. Escreveu uma primeira tentativa e submeteu, mas o veredito foi Wrong Answer. Ele entende o veredito, mas isso não o ajuda a saber o que fazer.
+
+Rafael já viu as palavras dp, greedy e constructive algorithms nas etiquetas de problemas. Algumas ele reconhece de disciplinas do curso, mas não consegue dizer qual delas se aplica à questão, nem o que precisaria estudar antes. Sem saber o que procurar, ele passa a tentar por eliminação: reescreve a solução com outra abordagem, submete de novo e erra de novo. A cada tentativa o tempo de treino diminui e a frustração aumenta. No meio disso, uma mensagem o interrompe, e ao voltar ele precisa reler o enunciado e o código para lembrar em que ponto estava.
+
+Rafael não quer a solução pronta, porque o objetivo é evoluir no treino. O que ele quer é descobrir o que lhe falta saber para destravar a questão. Mas, do jeito que está, ele sai do treino sem saber se o obstáculo foi uma técnica que desconhece, um pré-requisito que não estudou ou apenas um detalhe da implementação.
+
+C02 - Confiar no material antes de repassá-lo aos alunos
+
+Atores: Helena (nome fictícia), professora de Ciência da Computação e, eventualmente, treinadora do time de maratona
+
+Helena leciona em turmas grandes e, nos períodos de preparação para a competição, também treina o time de maratona da faculdade. Ela é especialista: lê o enunciado de uma questão e reconhece na hora a técnica que ela exige. O que lhe falta é tempo. Com poucas horas de aula e muitos alunos, não consegue atender individualmente quem trava, e o plano de treino da maratona acaba sendo montado às pressas.
+
+Quando um aluno trava durante o treino, Helena costuma sugerir que ele consulte um dos modelos de IA disponíveis no mercado. Ela sabe que o aluno precisa de alguma ajuda, mas não tem como saber em quais fontes o modelo se baseia, nem se a explicação segue a mesma linha do material que ela já entregou à turma. Como tem o hábito de verificar as fontes antes de repassar qualquer conteúdo, isso a incomoda. Alguns alunos voltam com explicações que divergem do que foi ensinado, e ela gasta parte do pouco tempo de aula descobrindo de onde veio a divergência e desfazendo a confusão.
+
+Helena não quer proibir os alunos de buscar apoio. O que ela quer é poder confiar no material antes de repassá-lo, porque a reputação dela e da instituição, assim como o resultado dos alunos, dependem disso. Do jeito que está, ela encerra o treino sem saber o que cada aluno estudou nem se o que estudou está correto.
 
 ### 2. Questões de refinamento
 
