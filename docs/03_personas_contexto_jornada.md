@@ -1,7 +1,9 @@
 # Entrega 3 — Personas, mapa de empatia, contexto de uso e jornada
 
 **Data:** 09/09/2026 - finalizada em 02/11/2026
+
 **Status:** 🟩finalizada 
+
 **Responsabilidade:** 1 persona por integrante; 1 mapa de empatia, 1 contexto de uso consolidado e 1 jornada por equipe (salvo orientação diferente do docente).
 
 ## Objetivo da atividade
@@ -100,11 +102,7 @@ Antes de criar personas, retome os tipos de usuários, características relevant
 | Ambiente típico de uso | Sala de aula e preparação de treino | [H] — **contexto diferente do adotado no recorte** (H09: aluno sozinho, treino individual) |
 | Comportamentos relevantes | Procura se manter atualizado; verifica fontes | [H] H25 |
 
-**Por que P02 é secundária.** A Entrega 1, seção 2.2, decidiu que o tutor permanece no mapa de stakeholders mas **não influencia decisões de interface enquanto H11 não for investigada**. Três razões concretas:
-
-1. **Não há evidência de que exista esse uso.** H11 ("tutores usariam a ferramenta para montar planos de treino e validar conteúdo") nunca foi verificada — a equipe não conversou com nenhum professor ou treinador.
-2. **O contexto não é o mesmo.** P02 usaria a ferramenta em sala de aula ou em preparação de treino; o recorte adotado é o aluno sozinho, já travado, em treino individual (H09, H23). São momentos, pressões e necessidades diferentes.
-3. **O conhecimento de domínio é oposto.** P01 não consegue julgar se a trilha está correta (H06); P02 consegue, e é justamente o que ele faria. Projetar para os dois ao mesmo tempo é o "usuário elástico": a mesma tela teria de explicar tudo para quem não sabe nada e não atrapalhar quem sabe tudo.
+O usuário secundário é o Tutor, pois ele acessa funcionalidades de verificação de fonte e não do uso principal que é gerar a trilha personalizada pelo enunciado. Por isso, as decisões de design devem priorizar a P01.
 
 **O que P02 exigiria *se* H11 fosse sustentada** — registrado para rastreabilidade, **não aplicado agora**:
 
@@ -126,7 +124,6 @@ Antes de criar personas, retome os tipos de usuários, características relevant
 | Pressão | Tempo de treino perdido | Tempo de aula e tamanho da turma |
 | Influencia o design nesta disciplina? | **Sim, integralmente** | **Não**, até H11 ser investigada |
 
-**As personas não são variações demográficas da mesma pessoa.** A diferença decisiva não é idade nem ocupação: é **a capacidade de julgar o resultado do sistema**. P01 recebe uma trilha e não tem como saber se ela está certa; P02 recebe a mesma trilha e detecta o erro imediatamente. Isso produz requisitos opostos — P01 precisa de explicação, fonte e sinalização de incerteza; P02 precisaria de densidade e velocidade.
 
 **Persona prioritária: P01.** Pelo público-alvo declarado no TCC, por ser o perfil com evidência documental de existência, por ser acessível à equipe para as Entregas 7 e 14, e por concentrar a tensão de IHC do projeto, com alta competência tecnológica e baixa competência de domínio.
 
@@ -176,10 +173,10 @@ Antes de criar personas, retome os tipos de usuários, características relevant
 | Interrupções e paralelismo | Alterna entre enunciado, editor de código e ferramenta de consulta | [H] H24 | Reforça o argumento para retomada de contexto e para o histórico (Q12) |
 | Ambiente social/organizacional | Estudo individual, sem tutor presente | [H] H09 | A interface precisa ser autoexplicativa: possivelmente o aluno esteja sozinho |
 | | Pode existir equipe de maratona com treinador | [?] Q11 | Nenhuma consequência adotada |
-| Papéis/permissões/governança | Nenhum papel previsto no recorte adotado | [F] decorre de H09 | Sem login, perfis ou permissões — ver Entrega 1, seção 8 |
+| Papéis/permissões/governança | Nenhum papel previsto no recorte adotado | [F] decorre de H09 | Sem login, perfis ou permissões |
 | Acessibilidade | **Não investigado** | [?] Q03 | Requisitos serão definidos na Entrega 8. Uma alternativa textual à representação gráfica já se desenha como provável necessidade |
-| Volume de dados/histórico | Uma trilha é consumida ao longo de dias, não de uma sessão | [?] Q12 | Histórico `em aberto` — a decisão virá da necessidade do usuário |
-| Conexão | Necessária; sem conexão não há consulta | [F] arquitetura web | Reforça o valor de poder recuperar o que já foi obtido (Q12) |
+| Volume de dados/histórico | Uma trilha é consumida ao longo de dias, não de uma sessão | [?] Q12 | Histórico de uso da aplicação vira necessidade |
+| Conexão | Necessária; sem conexão não há consulta | [F] arquitetura web | - |
 | Idioma | O modelo foi treinado sobre enunciados em inglês e devolve tópicos em inglês | [F] Seção VII.A do TCC | Possível barreira de vocabulário (H05, N05); mantém RC03 provisória |
 
 ## 4. Jornada do usuário — equipe
@@ -193,20 +190,20 @@ Antes de criar personas, retome os tipos de usuários, características relevant
 | 1 | antes | Escolhe uma questão para treinar, pela dificuldade ou pela lista da competição | Progredir no treino | Confiança, expectativa | — | — | [H] |
 | 2 | antes | Lê o enunciado e tenta identificar a abordagem | Entender o que a questão pede | Concentração | A narrativa do enunciado não indica a técnica necessária | — | [F] formato observado no Codeforces |
 | 3 | antes | Tenta resolver e falha, ou não consegue nem começar | Resolver | Dúvida, depois frustração | Não sabe se o problema é a lógica ou um conteúdo que desconhece | — | [H] |
-| 4 | antes | **Percebe que está travada** e que não vai sair sozinha | Decidir o que fazer | Frustração, urgência | Não existe um sinal claro de "você está travada por falta de conteúdo X" | É aqui que a necessidade do produto nasce | [?] **Q16 — não sabemos quando nem como ela percebe isso, nem quanto tempo passa antes** |
-| 5 | antes | Decide buscar ajuda externa e escolhe onde: tags, editorial, fórum ou chatbot | Encontrar orientação | Esperança misturada com receio de ver a solução | Cada caminho tem um custo: a tag não ensina, o editorial entrega a resposta, o chatbot não cita fonte | Ser uma opção melhor que as três — orientação sem espoiler | [H] H17, H18, H19 |
+| 4 | antes | **Percebe que está travada** e que não vai sair sozinha | Decidir o que fazer | Frustração, urgência | Não existe um sinal claro de "você está travada por falta de conteúdo X" | É aqui que a necessidade do produto nasce | [?] Q16 — não sabemos quando nem como ela percebe isso, nem quanto tempo passa antes |
+| 5 | antes | Decide buscar ajuda externa e escolhe onde: tags, editorial, fórum ou chatbot | Encontrar orientação | Esperança misturada com receio de ver a solução | Cada caminho tem um custo: a tag não ensina, o editorial entrega a resposta, o chatbot não cita fonte | Ser uma opção diferente, com fontes declaradas e confiáveis | [H] H17, H18, H19 |
 | 6 | antes | Procura o assunto num livro e não sabe em que capítulo | Estudar o conteúdo certo | Desorientação | O material é organizado por assunto, e ela não sabe o nome do assunto | Ligar cada tópico a uma fonte específica (N03) | [H] H26 |
 | 7 | durante | Apresenta a questão ao sistema | Iniciar a consulta | Alívio por haver um caminho simples | Qualquer decisão pedida aqui é uma decisão que ela não tem informação para tomar | Ação inicial única, sem configuração prévia (N01) | [H] H23; [?] Q15 |
-| 8 | durante | Aguarda o processamento | Saber que está funcionando | Impaciência — ela já estava frustrada antes de chegar | Sem retorno, não distingue "processando" de "travou" | Feedback de estado (N06) | [F] latência do LLM (Entrega 1, 9.3) |
-| 9 | durante | Recebe a trilha e tenta entendê-la | Saber o que estudar e em que ordem | Expectativa, depois possível sobrecarga | Uma lista de tópicos sem ordem nem relação não diz por onde começar | Tornar visível a dependência entre tópicos (N02) | [F] lacuna declarada na Seção VII.C do TCC; [H] H15 |
-| 10 | durante | Encontra termos que não reconhece | Compreender o que foi indicado | Insegurança | Jargão em inglês para quem por definição ainda não domina o assunto | Ajuda contextual — `em aberto` (N05) | [H] H05; [F] rótulos em inglês (Tabela II do TCC) |
+| 8 | durante | Aguarda o processamento | Saber que está funcionando | Impaciência — ela já estava frustrada antes de chegar | Sem retorno, não distingue "processando" de "travou" | Feedback de estado (N06) | [F] latência do LLM  |
+| 9 | durante | Recebe a trilha e tenta entendê-la | Saber o que estudar e em que ordem | Expectativa, depois possível sobrecarga | Uma lista de tópicos sem ordem nem relação não diz por onde começar | Tornar visível a dependência entre tópicos (N02) | [F] lacuna encontrada na pesquisa do TCC; [H] H15 |
+| 10 | durante | Encontra termos que não reconhece | Compreender o que foi indicado | Insegurança | Jargão em inglês para quem por definição ainda não domina o assunto | Ajuda contextual, tópico tem rótulo de `em aberto` ou `já estudado` (N05) | [H] H05; [F] rótulos (tags) em inglês |
 | 11 | durante | **Tenta avaliar se pode confiar na trilha** | Não perder tempo com orientação errada | Dúvida que ela não consegue resolver | Não tem repertório para contestar; tende a aceitar a primeira explicação plausível | Explicabilidade, fonte e sinalização de incerteza (N04) | [H] H06; [F] F1 Macro 0,5820 e alucinação registrada |
 | 12 | durante | Decide por onde começar | Ter um próximo passo concreto | Alívio ou ainda dúvida | — | O resultado da consulta precisa terminar numa ação, não numa lista | [H] H07 |
 | 13 | depois | Estuda o tópico no material indicado | Adquirir o conhecimento que faltava | Esforço, progresso | O material pode ser mais extenso do que o tempo disponível | Indicar o recorte do material, não só o livro | [H] H26 |
 | 14 | depois | Volta à questão e tenta de novo | Resolver por conta própria | Determinação | Não sabe se já estudou o suficiente para tentar novamente | — | [?] **Q17 — não sabemos como ela decide que já sabe o bastante para voltar** |
-| 15 | depois | **Caso resolva:** confirma que o caminho funcionou | Confiar na ferramenta na próxima vez | Satisfação, confiança | — | É o momento que constrói adoção | [H] |
+| 15 | depois | **Caso resolva:** confirma que o caminho funcionou | Confiar na ferramenta na próxima vez | Satisfação, confiança | — | É o momento que constrói adoção da ferramenta | [H] |
 | 16 | depois | **Caso não resolva:** reavalia se o problema era o conteúdo indicado ou a própria execução | Entender o que faltou | Desânimo | Pode concluir que é incapaz, quando a trilha estava errada | Permitir voltar e questionar a orientação recebida | [H] H06, H21; [?] Q07 |
-| 17 | depois | Dias depois, retoma o estudo do mesmo assunto | Continuar a trilha | — | Se fechou a aba, perdeu o resultado e precisa reprocessar | Histórico — `em aberto` | [?] Q12 |
+| 17 | depois | Dias depois, retoma o estudo do mesmo assunto | Continuar a trilha | — | Se fechou a aba, perdeu o resultado e precisa reprocessar | Histórico de uso da aplicação acessível | Foi implementado na aplicação, mas aparece em Q12 |
 
 > A jornada pode incluir etapas **antes, durante e depois** do uso do produto. Não transforme a jornada em lista de telas.
 
