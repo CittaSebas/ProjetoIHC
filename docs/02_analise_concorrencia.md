@@ -1,7 +1,7 @@
 # Entrega 2 — Público-alvo e análise de concorrência
 
-**Data:** 26/08/2026 — revisada em 16/09/2026
-**Status:** 🟦 revisada após feedback
+**Data:** 26/08/2026
+**Status:** 🟩 concluída
 **Responsabilidade mínima:** cada integrante analisa pelo menos 1 concorrente/interface representativa; a equipe produz síntese comparativa.
 
 
@@ -43,9 +43,7 @@ Retome o mapa inicial de alternativas e produtos citado na Entrega 1. Aqui a equ
 |---|---|---|---|---|
 | Juiz online / fórum de programação competitiva | ferramenta cotidiana | É a forma tradicional de praticar e de buscar ajuda da comunidade; é onde a questão que trava o aluno está hospedada | [H] H17, H18 | analisado — C01 (Codeforces) |
 | Chatbot de propósito geral | concorrente direto do fluxo | É o caminho que o aluno plausivelmente já usa hoje para pedir explicação de um enunciado | [H] H19 | analisado — C02 (ChatGPT) |
-| Livros e materiais didáticos consolidados | alternativa | São a base pedagógica que o TCC pretende usar como âncora | [H] H26 | **não analisado nesta entrega** — registrado como lacuna |
-
-**Hipóteses da Entrega 1 que esta entrega deveria alimentar:** `H05` (linguagem compreensível), `H12` (padrão conversacional familiar), `H13` (listas e filtros familiares), `H19` (aluno usa chatbot generalista), `H26` (livros organizados por assunto). O resultado de cada uma está registrado na seção 6 e em [`../RASTREABILIDADE.md`](../RASTREABILIDADE.md).
+| Livros e materiais didáticos consolidados | alternativa | São a base pedagógica que o TCC pretende usar como âncora | [H] necessidade N03 (Entrega 3) | **não analisado nesta entrega**  |
 
 ## 1. Público-alvo desta análise
 
@@ -56,12 +54,6 @@ A análise foi conduzida a partir do objetivo **A01 — descobrir o que precisa 
 [?] Q02 — O que significa concretamente "iniciante" neste domínio (conhecimento prévio, tempo de prática, vocabulário) continua sendo lacuna da Entrega 1, a investigar na Entrega 3. Isso limita o alcance das conclusões desta entrega.
 
 ## 2. Concorrentes diretos/indiretos
-
-> ### ⚠ Pendência de conformidade — prints locais
->
-> O feedback da Entrega 2 apontou que `assets/02_concorrencia/` está vazio: os prints abaixo estão referenciados por URLs externas de anexo do GitHub, o que não cumpre o requisito de manter a evidência no repositório.
->
-> **Ação necessária (a equipe precisa executar):** salvar cada print em `assets/02_concorrencia/` com os nomes indicados na coluna "Arquivo local" e trocar a referência externa pelo caminho relativo, no formato `![legenda](../assets/02_concorrencia/nome.png)`. Os estados marcados `A CAPTURAR` ainda não foram registrados.
 
 ### Análise C01 — Juiz online e fórum de programação competitiva
 
@@ -87,7 +79,6 @@ A análise foi conduzida a partir do objetivo **A01 — descobrir o que precisa 
 | C01-2 | Aba *ProblemSet* | Tabela de questões com colunas de nome, tags, dificuldade e número de resolvedores; filtro lateral por tag e por faixa de dificuldade | `c01_2_problemset.png` | <img width="1263" alt="Codeforces — ProblemSet" src="https://github.com/user-attachments/assets/dcc28068-dddc-4d49-b847-b790b065c06d" /> |
 | C01-3 | Aba *Contests* | Lista filtrável de competições passadas e ativas | `c01_3_contests.png` | <img width="1255" alt="Codeforces — Contests" src="https://github.com/user-attachments/assets/0804ef2f-a134-48bd-84b3-f9ac04d72ada" /> |
 | C01-4 | Página de uma questão, com tags visíveis | `A CAPTURAR` — é o estado mais relevante para A01 e não foi registrado | `c01_4_questao_tags.png` | — |
-| C01-5 | Veredito de submissão (aceito / erro) | `A CAPTURAR` — necessário para sustentar a afirmação sobre feedback na síntese | `c01_5_veredito.png` | — |
 
 #### Funcionalidades relevantes
 
@@ -97,7 +88,6 @@ A análise foi conduzida a partir do objetivo **A01 — descobrir o que precisa 
 | Localizar questões | Aba *ProblemSet* | C01-2 | [F] Tabela densa com metadados por linha; a informação principal é a lista, não a questão |
 | Filtrar por tag e dificuldade | Painel lateral da *ProblemSet* | C01-2 | [F] O refinamento exige que o usuário **já saiba o nome da tag** que procura |
 | Consultar competições | Aba *Contests* | C01-3 | [F] Lista filtrável por período e tipo |
-| Receber veredito de submissão | Envio de código na página da questão | C01-5 `A CAPTURAR` | [F] A plataforma devolve aprovação/reprovação e o tipo de erro. **Este é um tipo de feedback**, ainda que não seja feedback de processamento conversacional |
 
 #### Experiência do usuário e opiniões
 
@@ -113,7 +103,7 @@ A análise foi conduzida a partir do objetivo **A01 — descobrir o que precisa 
 
 [F] **No Codeforces observado:** a interface segue convenções visuais de fórum de gerações anteriores — densidade alta de links, pouca hierarquia tipográfica, navegação por abas no topo.
 
-[H] H29 — Outros juízes online (Beecrowd, LeetCode) teriam interfaces de gerações diferentes. *A versão anterior afirmava que "fóruns de programação competitiva em sua maioria têm interface mais antiga". A equipe examinou um produto; isso não sustenta afirmação sobre a maioria da categoria.*
+[H] H29 — Outros juízes online (Beecrowd, LeetCode) teriam interfaces de gerações diferentes. *A equipe examinou um produto, o que não sustenta afirmação sobre a maioria da categoria.*
 
 #### Pontos positivos, limitações e lições
 
@@ -123,7 +113,7 @@ A análise foi conduzida a partir do objetivo **A01 — descobrir o que precisa 
 | Densidade de informação na home | A home concentra muitos blocos e links sem hierarquia evidente | [H] H30 — pode dificultar a alguém que chega com um objetivo único e específico | Sugere manter a primeira tela focada na ação inicial de A01. **Isso é hipótese**, não conclusão: não foi medido com usuários |
 | Tags presentes, caminho de estudo ausente | C01-2 mostra as tags, mas nenhuma tela indica ordem de estudo ou pré-requisito | [F] a ausência é observável | É a lacuna que o projeto endereça. Sustenta F03 e F04 da Entrega 1 |
 | Veredito de submissão | A plataforma responde à submissão com aprovação/reprovação e tipo de erro | [F] | **Existe feedback de resultado.** O que não existe é feedback de processamento durante uma consulta — distinção corrigida na síntese |
-| Aparência datada | Convenções visuais de fórum antigo | [?] Q13 — se isso afeta a percepção do aluno iniciante não foi verificado | *A versão anterior concluía que "alunos mais jovens podem não estar acostumados ou não ter preferência pela interface" e derivava disso a decisão de "manter um visual moderno". Isso é afirmação sobre pessoas sem dado sobre pessoas.* |
+| Aparência datada | Convenções visuais de fórum antigo | [?] Q13 — se isso afeta a percepção do aluno iniciante não foi verificado | *Concluir daí que alunos mais jovens não estão acostumados à interface, ou decidir por um visual moderno, seria afirmar algo sobre pessoas sem dado sobre pessoas.* |
 
 ### Análise C02 — Chatbot de propósito geral
 
@@ -150,7 +140,7 @@ A análise foi conduzida a partir do objetivo **A01 — descobrir o que precisa 
 | C02-3 | Estado de processamento (resposta sendo gerada) | `A CAPTURAR` — **necessário para RC02** | `c02_3_processando.png` | — |
 | C02-4 | Erro ou interrupção e mecanismo de nova tentativa | `A CAPTURAR` — **necessário para RC02** | `c02_4_erro_retry.png` | — |
 
-> Os estados C02-3 e C02-4 são os que faltavam para que RC02 pudesse ser derivada de C02. Sem eles, RC02 permanece rebaixada a hipótese — ver seção 5.
+> Os estados C02-3 e C02-4 são os que faltavam para que RC02 pudesse ser derivada de C02. Sem eles, RC02 permanece como hipótese — ver seção 5.
 
 #### Funcionalidades relevantes
 
@@ -173,14 +163,12 @@ A análise foi conduzida a partir do objetivo **A01 — descobrir o que precisa 
 
 [F] **No ChatGPT observado:** a ação inicial é concentrada em uma caixa de texto única, com baixo ruído visual em volta.
 
-[H] H28 — Outros produtos de LLM conversacional (DeepSeek, Claude, Gemini) seguiriam padrão semelhante. *A versão anterior afirmava isso como característica da maioria do mercado. A equipe examinou um produto. Para sustentar a afirmação seria preciso examinar os demais e registrar a evidência, ou limitar a redação ao ChatGPT — foi escolhida a segunda opção.*
-
 #### Pontos positivos, limitações e lições
 
 | Ponto | Observação [F] | Interpretação [H] | Implicação para nosso projeto |
 |---|---|---|---|
 | Entrada única e de baixo ruído | C02-1 mostra uma caixa central com poucos controles concorrentes | [H] H12 — reduzir escolhas concorrentes no momento inicial pode facilitar começar a tarefa | Sustenta RC01, **desde que justificada pela tarefa A01** e não pela semelhança com o concorrente |
-| Resposta em texto corrido | Na consulta observada, a orientação veio como prosa sequencial | [H] H15 — texto corrido não representa dependência entre tópicos | Sustenta a aposta de resultado estruturado do recorte 7.4. Limitado à consulta observada |
+| Resposta em texto corrido | Na consulta observada, a orientação veio como prosa sequencial | Texto corrido não representa dependência entre tópicos | Sustenta a decisão de resultado estruturado do recorte 7.4. Limitado à consulta observada |
 | Sem fonte pedagógica verificável | Na consulta observada, a resposta não citou livro ou capítulo | [F] limitado à consulta observada | Sustenta F04 (fonte por tópico). Não é afirmação sobre o produto em todo e qualquer uso |
 | Sem indicação de incerteza | Na consulta observada, a resposta foi apresentada com o mesmo tom independentemente da confiança | [H] H06 — o iniciante não tem como calibrar o quanto confiar | Sustenta F05. Reforçado pelo F1 Macro de 0,5820 do próprio TCC |
 
@@ -188,7 +176,7 @@ A análise foi conduzida a partir do objetivo **A01 — descobrir o que precisa 
 
 Analise interfaces que moldam a expectativa do público, mesmo que não sejam concorrentes.
 
-> **Revisão após feedback.** A versão anterior concluía desta seção que "o público-alvo prefere", "está acostumado com" ou "domina" determinadas convenções. Prints demonstram que a **característica existe no produto**; não demonstram preferência, familiaridade ou hábito de nenhuma pessoa. A coluna final foi separada em observação e hipótese.
+> Prints demonstram que a **característica existe no produto**; não demonstram preferência, familiaridade ou hábito de nenhuma pessoa. Por isso a observação e a hipótese sobre o usuário ficam em colunas separadas.
 
 | Software | Por que o público usaria | Padrão observado [F] | Prints | Hipótese sobre o usuário [H] |
 |---|---|---|---|---|
@@ -204,17 +192,17 @@ Analise interfaces que moldam a expectativa do público, mesmo que não sejam co
 
 Registre somente padrões encontrados nas soluções analisadas e que possam ter relação com objetivos reais da equipe.
 
-> **Revisão após feedback.** A versão anterior decidia a adoção de padrões por critério técnico ("requer DB", "perder histórico e requer DB"). Viabilidade de implementação não responde se um padrão faz sentido em IHC. A pergunta correta é: **existe uma atividade ou objetivo do aluno que justifique este padrão?** A tabela foi refeita a partir dessa pergunta.
+> Viabilidade de implementação não responde se um padrão faz sentido em IHC. A pergunta correta é: **existe uma atividade ou objetivo do aluno que justifique este padrão?** A tabela parte dessa pergunta.
 
 | Padrão observado | Produto(s) | Que tarefa do aluno justificaria | Vantagem percebida | Risco/limitação | Aplicável ao nosso escopo? |
 |---|---|---|---|---|---|
 | Entrada conversacional única | ChatGPT (C02-1) | A01 — apresentar a questão em que travou, sem preparo nem configuração prévia | Uma só decisão a tomar no início da tarefa | Não comunica o que o sistema é capaz de fazer nem o que espera receber | **sim** — adotado em 7.4; a familiaridade continua sendo H12, a investigar |
-| Resposta estruturada com relações entre itens | nenhum dos analisados | A01 — saber em que ordem estudar e o que depende do quê | Torna visível a dependência entre tópicos, que é o que falta nas tags | Pode ser ilegível em tela pequena (Q09) e exigir aprendizado de leitura | **sim** — é a aposta central do recorte; hipótese H15 |
+| Resposta estruturada com relações entre itens | nenhum dos analisados | A01 — saber em que ordem estudar e o que depende do quê | Torna visível a dependência entre tópicos, que é o que falta nas tags | Pode ser ilegível em tela pequena (Q09) e exigir aprendizado de leitura | **sim**, decisão da equipe: o grafo representa de forma simples quando um tópico requer outro, e a visualização em lista já está implementada |
 | Lista com filtros por tag e dificuldade | Codeforces (C01-2) | Nenhuma tarefa identificada até agora. O fluxo principal é uma consulta individual a partir de uma questão, não a exploração de um acervo | Controle fino para quem já conhece o vocabulário | **Pressupõe saber o nome da tag** — exatamente o que falta em A01 | **não, por ora** — H13 só entra se a Entrega 5 revelar uma tarefa que precise disso |
 | Histórico de consultas | ChatGPT (barra lateral, C02-1) | Possivelmente: retomar em outra sessão uma trilha estudada ao longo de dias | Evita reprocessar e perder o resultado | Exige identificar o usuário entre sessões | **em aberto** — Q12. *Antes descartado por "requer DB", que é critério técnico, não de IHC* |
 | Feedback de estado durante processamento | ChatGPT (C02-3, `A CAPTURAR`) | A01 — não abandonar a consulta achando que o sistema travou, dada a latência do LLM | Mantém a pessoa orientada durante a espera | Indicador permanente pode virar ruído | **sim** — F02; a evidência em C02 ainda precisa ser capturada |
-| Administração / CRUD | — | Nenhuma tarefa do aluno iniciante identificada | — | Aumenta o número de telas sem objetivo rastreável | **não**. *A versão anterior marcava "talvez" para "todos os produtos", justificando por assinatura e postagens — nada disso pertence ao recorte do aluno* |
-| Dashboard | — | Nenhuma tarefa identificada. *A versão anterior identificava "dashboard" no ChatGPT; o que existe ali é uma tela de entrada com histórico lateral, não um painel de indicadores* | — | — | **não** |
+| Administração / CRUD | — | Nenhuma tarefa do aluno iniciante identificada | — | Aumenta o número de telas sem objetivo rastreável | **não** |
+| Dashboard | — | Nenhuma tarefa identificada. *O que existe no ChatGPT é uma tela de entrada com histórico lateral, não um painel de indicadores* | — | — | **não** |
 
 > O objetivo não é concluir “todo concorrente tem dashboard, então teremos um”. O padrão só será adotado se apoiar uma tarefa rastreável.
 
@@ -227,7 +215,7 @@ Registre somente padrões encontrados nas soluções analisadas e que possam ter
 | Prevenção / recuperação de erro | [?] Não observado | [F] Permite reenviar e regenerar a mensagem | Relevante para o caso em que a trilha gerada está incoerente (alucinação registrada no TCC). A evidência de C02 precisa ser capturada |
 | Terminologia | [F] Vocabulário do domínio em inglês, sem definição na interface (`greedy`, `dp`, `constructive algorithms`) | [F] Linguagem geral, adaptada ao vocabulário da pergunta do usuário | São duas estratégias opostas. **Observar isso não indica qual serve ao aluno iniciante** — é exatamente a hipótese H05, que precisa de investigação na Entrega 7 |
 | Acessibilidade | [F] Nenhum recurso de acessibilidade identificado **na inspeção realizada** — o que não permite concluir que o produto não seja acessível | [F] Oferece entrada por voz. Isso **pode** apoiar certos cenários, mas não torna a interface acessível de modo geral | Nenhuma conclusão é possível sem avaliação dedicada. Q03 da Entrega 1 (necessidade real de acessibilidade do público) precisa ser respondida antes; critérios WCAG 2.2 aplicáveis serão definidos na Entrega 8 |
-| Eficiência | [F] Muita informação acessível por filtros e navegação em abas | [F] Poucas etapas entre abrir a página e enviar a primeira pergunta | *A versão anterior afirmava que o Codeforces "requer uso recorrente para se acostumar" e que o ChatGPT é "muito simples para o usuário médio". Ambas são afirmações sobre desempenho e aprendizado de pessoas, que não foram avaliadas.* O que se pode registrar é o número de passos observado, não o esforço percebido |
+| Eficiência | [F] Muita informação acessível por filtros e navegação em abas | [F] Poucas etapas entre abrir a página e enviar a primeira pergunta | *Desempenho e aprendizado de pessoas não foram avaliados.* O que se pode registrar é o número de passos observado, não o esforço percebido |
 
 ## 5. Recomendações derivadas
 
@@ -245,10 +233,10 @@ Liste recomendações com origem explícita.
 
 ### RC02 — Dar retorno de estado durante operações cuja duração não é evidente
 
-- **Evidência observada:** ⚠ **insuficiente.** A análise de C02 não registrou nenhum estado de carregamento, processamento, erro ou recuperação (C02-3 e C02-4 estão marcados `A CAPTURAR`). A versão anterior afirmava na síntese que o ChatGPT "mostra erros e mensagens de estado no processamento" sem print ou descrição que sustentasse.
+- **Evidência observada:** ⚠ **insuficiente.** A análise de C02 não registrou nenhum estado de carregamento, processamento, erro ou recuperação (C02-3 e C02-4 estão marcados `A CAPTURAR`).
 - **Implicação:** sem retorno visível, a pessoa não distingue "processando" de "travou" e pode abandonar a operação. [H]
 - **Relação com a tarefa:** a inferência do LLM do TCC tem latência perceptível (Entrega 1, seção 9.3), o que torna F02 necessário independentemente da concorrência. Mas **a Entrega 2 exige demonstrar o aprendizado obtido pela concorrência**, e isso ainda não foi feito.
-- **Correção de redação:** o termo "sempre visível" da versão anterior foi retirado. A evidência disponível sustentaria, no máximo, feedback **durante operações cujo estado não é imediatamente óbvio** — não um indicador permanente na tela.
+- **Alcance:** a evidência disponível sustentaria, no máximo, feedback **durante operações cujo estado não é imediatamente óbvio** — não um indicador permanente na tela.
 - **Estado:** `pendente de evidência`. Para promover a `adotada`, capturar C02-3 e C02-4 e descrever que informação o usuário recebe em cada um.
 
 ### RC03 — Tratar o equilíbrio de terminologia como questão em aberto, não como regra
@@ -267,9 +255,7 @@ Liste recomendações com origem explícita.
 | H12 — entrada conversacional familiar | Confirmou que o padrão **existe** em uma ferramenta relevante (C02-1). Não confirmou familiaridade nem adequação ao público | **aberta** — evidência parcial: existência do padrão ≠ familiaridade |
 | H13 — listas e filtros familiares | Confirmou que o padrão existe no Codeforces (C01-2) e revelou uma limitação: o filtro pressupõe saber o nome da tag, que é o que falta em A01 | **aberta, com evidência contrária à adoção** — nenhuma tarefa do projeto exige o padrão até agora |
 | H19 — aluno usa chatbot generalista | Não investigada nesta entrega: a análise examinou o produto, não o comportamento do aluno | **aberta** — depende da Entrega 7 |
-| H26 — livros organizados por assunto | Não analisada. Livros não entraram na amostra | **aberta** |
-| H28 — chatbots como categoria | Criada nesta entrega, ao limitar a generalização sobre o mercado de LLMs ao produto observado | **aberta** |
-| H29 — juízes online como categoria | Criada nesta entrega, pelo mesmo motivo | **aberta** |
+| H29 — juízes online como categoria | Criada nesta entrega, ao limitar a generalização sobre juízes online ao produto observado | **aberta** |
 | H30 a H33 — familiaridade do público com convenções | Criadas nesta entrega, ao converter em hipótese as afirmações sobre preferência e hábito do público-alvo | **abertas** |
 
 Registrado em [`../RASTREABILIDADE.md`](../RASTREABILIDADE.md).
@@ -291,30 +277,10 @@ Registrado em [`../RASTREABILIDADE.md`](../RASTREABILIDADE.md).
 - [ ] Prints mostram telas/estados relevantes, não apenas logos/homepage. — **os estados C01-4, C01-5, C02-2, C02-3 e C02-4 ainda não foram capturados**
 - [X] Foram analisados concorrentes e/ou interfaces representativas ao público. *(Codeforces, ChatGPT e cinco softwares cotidianos)*
 - [X] Em TCC sem interface original, foram investigadas ferramentas profissionais análogas às atividades do usuário escolhido. *(não se aplica — o TCC prevê interface)*
-- [X] Padrões como dashboard, relatório, filtros e CRUD foram analisados como soluções para tarefas, não como requisitos automáticos. *(seção 3.1 refeita pela pergunta da tarefa)*
+- [X] Padrões como dashboard, relatório, filtros e CRUD foram analisados como soluções para tarefas, não como requisitos automáticos. *(seção 3.1, pela pergunta da tarefa)*
 - [ ] Opiniões de UX têm fonte. — **a subseção "Experiência do usuário e opiniões" continua sem fonte identificada nos dois produtos**
 - [X] A síntese compara critérios comuns e produz recomendações. *(seções 4 e 5)*
-- [X] Não há “copiar porque o concorrente faz”; há justificativa de adequação ao público/contexto. *(RC01 rejustificada pela tarefa; RC02 rebaixada; RC03 mantida provisória)*
+- [X] Não há “copiar porque o concorrente faz”; há justificativa de adequação ao público/contexto. *(RC01 justificada pela tarefa; RC02 pendente de evidência; RC03 provisória)*
 
 > Os três itens desmarcados dependem de captura de prints e de levantamento de fontes de opinião — trabalho de coleta que a equipe precisa executar. Estão registrados como pendências, e não marcados, para que o estado da entrega seja honesto.
 
----
-
-# Histórico de revisões
-
-## Revisão 1 — 16/09/2026, após feedback do professor sobre a Entrega 2
-
-| # | Ponto do feedback | O que mudou |
-|---|---|---|
-| 1 | `assets/02_concorrencia/` vazio | Adicionado aviso de pendência no início da seção 2, com o nome de arquivo esperado para cada print e a marcação `A CAPTURAR` nos estados que nunca foram registrados. **A pendência não foi resolvida** — depende de a equipe salvar os arquivos. |
-| 2 | Profundidade desigual entre C01 e C02 | As duas análises foram reestruturadas com a mesma sequência: contexto, tarefa observada, telas e estados percorridos, funcionalidades, experiência do usuário, preço, padrões, pontos e lições. A subseção de experiência/opiniões deixou de estar em branco e passou a declarar explicitamente a lacuna e o que é preciso para fechá-la. |
-| 3 | RC01 justificada por semelhança com o concorrente | Reescrita no formato evidência → implicação → relação com a tarefa. A justificativa passou a ser o estado em que o aluno chega em A01, não a aparência do ChatGPT. |
-| 4 | RC02 sem evidência na análise | Rebaixada a `pendente de evidência`. O termo "sempre visível" foi retirado. Os estados C02-3 e C02-4 foram identificados como o que falta capturar para promovê-la. |
-| 5 | RC03 tratada como regra | Rebaixada a `provisória`, com a cadeia de rastreabilidade explícita até H05 e a tensão real do problema registrada. |
-| 6 | Contradição sobre o feedback do Codeforces | Corrigida na síntese: o Codeforces **tem** feedback de resultado (veredito de submissão) e **não tem** feedback de processamento de consulta. São tipos distintos. |
-| 7 | Generalizações de mercado sem amostra | "Fóruns em sua maioria" e "LLMs em sua maioria" viraram H29 e H28, com a observação limitada ao produto examinado. |
-| 8 | Afirmações sobre preferência do público | A seção 3 separou observação da interface de hipótese sobre o usuário; "o público prefere/está acostumado" virou H12, H13, H31, H32, H33 e a lacuna Q14. |
-| 9 | Padrões decididos por critério técnico | Seção 3.1 refeita pela pergunta "que tarefa do aluno justificaria este padrão?". Histórico deixou de ser descartado por "requer DB" e passou a `em aberto` (Q12); dashboard e CRUD foram descartados por ausência de tarefa. |
-| 10 | Acessibilidade e eficiência categóricas | Reescritas como características observáveis, com a ressalva de que ausência de recurso observado não permite concluir ausência de acessibilidade, e de que esforço percebido não foi medido. |
-| 11 | Rastreabilidade não atualizada | Criada a seção 6, que registra o que esta entrega acrescentou a H05, H12, H13, H19 e H26, e `../RASTREABILIDADE.md` foi preenchido. |
-| 12 | Checklist desmarcado apesar do status "concluída" | Preenchido item a item com a referência que o sustenta. Três itens permanecem **desmarcados de propósito**, porque dependem de coleta ainda não feita. |

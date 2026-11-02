@@ -27,7 +27,7 @@ Se o integrante escolher um novo problema/situação, explique por que ele passo
 **Autor(a):** Sebastian Citta - 24.123.068-9
 **Persona(s) relacionada(s):** P01
 **Necessidade relacionada:** R01
-**Situação concreta da Entrega 1 relacionada:** H21
+**Situação concreta da Entrega 1 relacionada:** seção 4.5
 **Hipóteses ainda presentes:** H05, H06, H07, H08
 
 ## Cenário C02 — Ancoragem dos tópicos em materiais didáticos consolidados
@@ -36,7 +36,7 @@ Se o integrante escolher um novo problema/situação, explique por que ele passo
 **Persona(s) relacionada(s):** P02  
 **Necessidade relacionada:** R03
 **Situação concreta da Entrega 1 relacionada:** H11
-**Hipóteses ainda presentes:** H10, 
+**Hipóteses ainda presentes:** H11
 
 ### 1. Cenário inicial
 
@@ -78,7 +78,7 @@ C02:
 | # | Questão | Por que precisa ser respondida | Fonte/forma de obter resposta |
 |---|---|---|---|
 | Q6 | **[Planejamento]** Como Helena monta hoje o plano de treino e o material entregue (de onde vêm as questões e o conteúdo, em que formato, quanto tempo leva)? | O cenário diz que o plano sai “às pressas”, mas não como é feito. Sem isso não dá para saber onde o tempo se perde. | Entrevista com professores/treinadores. |
-| Q7 | **[Ação]** Que critérios ela usa para considerar uma fonte confiável e que ações faz ao verificá-la? | O cenário afirma que ela verifica fontes (H25), mas não como nem com qual critério. | Entrevista; observação de uma preparação de aula. |
+| Q7 | **[Ação]** Que critérios ela usa para considerar uma fonte confiável e que ações faz ao verificá-la? | O cenário afirma que ela verifica fontes (H11), mas não como nem com qual critério. | Entrevista; observação de uma preparação de aula. |
 | Q8 | **[Ator]** Como Helena fica sabendo hoje que um aluno trouxe uma explicação divergente (ele conta, ela percebe em aula, nunca)? | Mostra se a dor é detectada na hora ou só depois, e quanto tempo de aula ela custa. | Entrevista com o professor e conversa com alunos. |
 | Q9 | **[Ambiente]** Quanto tempo ela tem entre preparar o material e o treino, e quem mais participa (monitores, outros treinadores, coordenação)? | Define a pressão real de tempo e se existem outras pessoas que dependem do resultado ou poderiam ajudar na revisão. | Entrevista; levantamento do calendário de preparação. |
 | Q10 | **[Verificação]** Helena permitiria que os alunos usassem apoio de IA se as fontes tivessem sido definidas ou aprovadas por ela? | Testa se o problema é o uso de IA em si ou a falta de controle sobre as fontes, o que muda o que significa “confiar”. | Entrevista. Validação com mais de um professor. |
@@ -143,7 +143,7 @@ Tarefas que merecem análise
 - Diagnosticar o tipo de obstáculo (técnica, pré-requisito ou implementação). É o núcleo do objetivo e hoje não tem estratégia que o atenda.
 - Decidir quando parar de tentar sozinho e buscar ajuda, já que o ponto de chegada condiciona o estado do usuário (H23).
 - Consultar as fontes disponíveis (etiquetas, editorial, colega, LLM), analisando o que cada uma entrega e onde falha.
-- Retomar o trabalho depois de uma interrupção (H24).
+- Retomar o trabalho depois de uma interrupção.
 
 Informações a coletar
 

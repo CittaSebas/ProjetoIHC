@@ -32,7 +32,7 @@ Antes de criar personas, retome os tipos de usuários, características relevant
 |---|---|---|---|
 | Aluno iniciante em programação competitiva | [F] como público-alvo; [?] Q02 quanto ao que "iniciante" significa | Público-alvo declarado da aplicação e do TCC. É uma suposição construída da observação, ainda não verificada | incorporar como proto-persona primária (P01), mantendo Q02 aberta |
 | Tutor / treinador | [H] H11 — a equipe não tem evidência de que tutores usariam a ferramenta | Nenhuma. A Entrega 1 decidiu que o tutor **não influencia decisões de interface** enquanto H11 não for investigada | incorporar como proto-persona secundária (P02), sem poder de decisão sobre a interface |
-| Pesquisador | [H] H03, H04 | Nenhuma | descartar — consome o artefato técnico do TCC, não a interface. Fora do recorte de IHC |
+| Pesquisador | [H] H04 | Nenhuma | descartar — consome o artefato técnico do TCC, não a interface. Fora do recorte de IHC |
 | A atividade mais frequente é a consulta feita por um aluno para descobrir os tópicos de uma determinada questão. | [H] H08 | Nenhuma evidência sobre o padrão de consumo do aluno | Será tratado como um fato, pois é a funcionalidade principal da ferramenta |
 
 
@@ -44,7 +44,7 @@ Antes de criar personas, retome os tipos de usuários, características relevant
 **Autor(a):** Sebastian Citta — 24.123.068-9
 **Tipo:** **primária** — é a persona que dirige as decisões de design do semestre
 **Base de evidências:** **proto-persona** — construída a partir do público-alvo declarado no TCC e das hipóteses da Entrega 1. Nenhuma observação, entrevista ou questionário foi realizado.
-**Hipóteses da Entrega 1 relacionadas:** H06, H07, H08, H09, H12, H17, H19, H21, H22, H23, H24 — e as lacunas Q02, Q06, Q08, Q09, Q12
+**Hipóteses da Entrega 1 relacionadas:** H06, H07, H08, H09, H12, H17, H19, H22, H23 — e as lacunas Q02, Q06, Q09, Q12
 
 ![P01](../assets/03_personas/P01.png)
 
@@ -61,12 +61,11 @@ Antes de criar personas, retome os tipos de usuários, características relevant
 | Experiência tecnológica | Alta — opera interfaces web sem dificuldade e usa LLMs no cotidiano | [H] H06, H19 |
 | Objetivos | Destacar-se no curso e na profissão; progredir no treino de programação competitiva | [H] |
 | Necessidades | Descobrir **o que lhe falta saber** para resolver a questão em que travou, sem receber a solução pronta | [H] H07 |
-| Dores/frustrações | Trava numa questão e não sabe nem o nome do que precisa procurar; perde tempo de treino tentando por eliminação | [H] H21 — *é a dor, não o desejo de aprender* |
+| Dores/frustrações | Trava numa questão e não sabe nem o nome do que precisa procurar; perde tempo de treino tentando por eliminação | [H] H17  |
 | Motivadores | Conseguir um bom emprego, aproveitar o curso, não ficar para trás da equipe | [H] |
 | Restrições/acessibilidade | **Não investigado** — a equipe não sabe se há necessidade de contraste, navegação por teclado, leitor de tela ou alternativa textual a uma representação gráfica | [?] Q03 — *a versão anterior registrava "não se aplica", o que afirmava a ausência de uma necessidade sem tê-la verificado* |
 | Dispositivo | Notebook ou desktop, porque o enunciado está em outra aba e o código na mesma máquina | [H] H22, [?] Q09 |
-| Ambiente típico de uso | Treino individual, sozinho, sem tutor presente | [H] H09; [?] Q08 — se competição entra no contexto, ainda não foi decidido |
-| Comportamentos relevantes | Alterna entre enunciado, editor de código e ferramenta de consulta; sofre interrupções | [H] H24 |
+| Ambiente típico de uso | Treino individual, sozinho, sem tutor presente | [H] H09 |
 | Estado em que chega ao sistema | **Já travado e já frustrado**, durante ou logo após uma tentativa que falhou | [H] H23 — *condiciona o que precisa estar visível na primeira tela* |
 
 **Necessidades que P01 impõe ao projeto:**
@@ -74,8 +73,8 @@ Antes de criar personas, retome os tipos de usuários, características relevant
 | # | Necessidade da persona | Hipótese/lacuna que a sustenta | Consequência para o design |
 |---|---|---|---|
 | N01 | Começar a consulta sem precisar decidir nada antes, porque ela chega travada e sem repertório para escolher opções | H23, Q15 | A ação inicial precisa ser única — sustenta F01 e RC01 da Entrega 2 |
-| N02 | Saber o que estudar **em que ordem**, não apenas quais são os assuntos | H07; [F] lacuna declarada na Seção VII.C do TCC | Sustenta F03 e a hipótese de design H15 |
-| N03 | Chegar ao material de estudo sem já saber o nome do assunto | H26 | Sustenta F04 — e explica por que o padrão de filtro por tag do Codeforces **não** serve (H13) |
+| N02 | Saber o que estudar **em que ordem**, não apenas quais são os assuntos | H07; [F] lacuna declarada na implementação do TCC | Sustenta F03 e a decisão de mostrar a trilha em grafo |
+| N03 | Chegar ao material de estudo sem já saber o nome do assunto | H17 | Sustenta F04 — e explica por que o padrão de filtro por tag do Codeforces **não** serve (H13) |
 | N05 | Entender os termos da resposta, que chegam em jargão e em inglês | H05, Q02, Q06 | Mantém a ajuda contextual/glossário `em aberto`, e RC03 como provisória |
 | N06 | Não ficar sem saber se o sistema está trabalhando, dada a latência do modelo | [F] latência do LLM (Entrega 1, 9.3) | Sustenta F02 |
 
@@ -84,7 +83,7 @@ Antes de criar personas, retome os tipos de usuários, características relevant
 **Autor(a):** Juan Manuel Citta — 24.123.022-6
 **Tipo:** **secundária** — registrada no mapa de perfis, mas **não dirige decisões de interface** nesta disciplina
 **Base de evidências:** **proto-persona** — nenhuma conversa com professores ou treinadores foi realizada
-**Hipóteses da Entrega 1 relacionadas:** H10, H11, H25 — e as lacunas Q01, Q11
+**Hipóteses da Entrega 1 relacionadas:** H11 — e as lacunas Q01, Q11
 
 ![P02](../assets/03_personas/P02.png)
 
@@ -95,22 +94,20 @@ Antes de criar personas, retome os tipos de usuários, características relevant
 | Conhecimento do domínio | Especialista — reconhece a técnica exigida lendo o enunciado | [H] |
 | Experiência tecnológica | Extensa | [H] |
 | Objetivos | Melhorar a experiência de aprendizagem dos alunos e o aproveitamento da própria aula | [H] |
-| Necessidades | Ensino eficiente e correto; confiar no material antes de repassá-lo | [H] H25 |
+| Necessidades | Ensino eficiente e correto; confiar no material antes de repassá-lo | [H] H11 |
 | Dores/frustrações | Turmas grandes, pouco tempo de aula, dificuldade de atender individualmente quem travou | [H] |
 | Motivadores | Reputação própria e da instituição; resultado dos alunos | [H] |
 | Restrições/acessibilidade | Não investigado | [?] Q03 |
 | Ambiente típico de uso | Sala de aula e preparação de treino | [H] — **contexto diferente do adotado no recorte** (H09: aluno sozinho, treino individual) |
-| Comportamentos relevantes | Procura se manter atualizado; verifica fontes | [H] H25 |
+| Comportamentos relevantes | Procura se manter atualizado; verifica fontes | [H] H11 |
 
 O usuário secundário é o Tutor, pois ele acessa funcionalidades de verificação de fonte e não do uso principal que é gerar a trilha personalizada pelo enunciado. Por isso, as decisões de design devem priorizar a P01.
 
-**O que P02 exigiria *se* H11 fosse sustentada** — registrado para rastreabilidade, **não aplicado agora**:
 
 | Exigência | Hipótese | Observação |
 |---|---|---|
-| Fontes pedagógicas verificáveis por tópico | H25 | **Converge com N03/N04 de P01** — é a única exigência de P02 que já está no escopo, mas entra pelo aluno, não pelo professor |
-| Verificar rapidamente várias questões em sequência | H11, H14 | Fora do escopo: o fluxo adotado é consulta individual |
-| Exportar ou compartilhar uma trilha com a turma | [?] Q11 | Fora do escopo; nenhuma tarefa do aluno justifica |
+| Fontes pedagógicas verificáveis por tópico | H11 | **Converge com N03/N04 de P01** — é a única exigência de P02 que já está no escopo, mas entra pelo aluno, não pelo professor |
+| Exportar ou compartilhar uma trilha com a turma | [?] Q11 | Ainda está em análise se fará parte da aplicação. Por hora não tem tarefa atribuída. |
 
 ### Síntese das personas
 
@@ -119,7 +116,7 @@ O usuário secundário é o Tutor, pois ele acessa funcionalidades de verificaç
 | Papel | **Primária** | Secundária |
 | Conhecimento do domínio | **Baixo** — não reconhece a técnica pelo enunciado | Alto — reconhece e valida |
 | Objetivo | Destravar e voltar a progredir no próprio treino | Melhorar o aprendizado de uma turma |
-| Relação com o resultado da ferramenta | **Consome e não consegue auditar** (H06) | Audita antes de repassar (H25) |
+| Relação com o resultado da ferramenta | **Consome e não consegue auditar** (H06) | Audita antes de repassar (H11) |
 | Contexto | Sozinha, travada, em treino individual | Sala de aula ou preparação de treino |
 | Pressão | Tempo de treino perdido | Tempo de aula e tamanho da turma |
 | Influencia o design nesta disciplina? | **Sim, integralmente** | **Não**, até H11 ser investigada |
@@ -147,17 +144,15 @@ O usuário secundário é o Tutor, pois ele acessa funcionalidades de verificaç
 | O que diz e faz | Relê o enunciado várias vezes procurando uma palavra que reconheça | [H] H17 |
 | | Procura a questão em fóruns e editoriais | [H] H18 |
 | | Cola o enunciado num chatbot e pede explicação | [H] H19 |
-| | Abre um livro didático e não sabe em que capítulo procurar | [H] H26 |
-| | Alterna entre enunciado, editor e aba de consulta | [H] H24 |
-| **O que pensa e sente** | "Não sei nem o que pesquisar" | [H] H21 |
+| | Abre um livro didático e não sabe em que capítulo procurar | [H] N03 |
+| **O que pensa e sente** | "Não sei nem o que pesquisar" | [H] N03 |
 | | Insegurança sobre a própria capacidade, não necessariamente sobre o conteúdo | [H] |
-| | Pressa: o tempo de treino está passando | [H] H23; [?] Q08 em competição |
+| | Pressa: o tempo de treino está passando | [H] H23 |
 | | Aceita a primeira explicação plausível, por não ter como contestá-la | [H] H06 |
-| Dores | Não conhecer o nome do que precisa aprender — a busca vira tentativa e erro | [H] H21 |
-| | Investir tempo num tópico que não a aproxima da solução | [H] H21 |
+| Dores | Não conhecer o nome do que precisa aprender. Busca vira tentativa e erro | [H] N03 |
 | | Receber a solução pronta e destravar a questão sem aprender o caminho | [H] H18 |
 | Ganhos | Sair da consulta sabendo qual é o próximo passo concreto de estudo | [H] H07 |
-| | Chegar ao material certo sem já saber o nome do assunto | [H] H26 |
+| | Chegar ao material certo sem já saber o nome do assunto | [H] N03 |
 | | Resolver a questão por conta própria depois de estudar | [H] H07 |
 
 ## 3. Contexto de uso — consolidação
@@ -166,18 +161,17 @@ O usuário secundário é o Tutor, pois ele acessa funcionalidades de verificaç
 |---|---|---|---|
 | Usuários | Aluno iniciante em programação competitiva (P01). Tutor (P02) registrado, sem influência nas decisões | [F] público-alvo do TCC; [?] Q02 quanto ao perfil concreto | Toda decisão de linguagem e explicação é calibrada para baixo conhecimento de domínio |
 | Tarefas | A01 — descobrir o que precisa saber para resolver uma questão em que travou | [F] a atividade existe; [H] H08 quanto à frequência | Fluxo único e principal; sem exploração de acervo |
-| Equipamentos | Notebook ou desktop, com o enunciado em outra aba | [H] H22; [?] Q09 | Condiciona a viabilidade de uma representação gráfica das dependências (H15). **Se o uso em celular for relevante, o formato precisa mudar** |
+| Equipamentos | Notebook ou desktop, com o enunciado em outra aba | [H] H22; [?] Q09 | Condiciona a viabilidade do grafo. Se o uso em celular for relevante, a visualização em lista, já implementada, é a alternativa |
 | Ambiente físico | Casa, laboratório da faculdade ou sala de treino | [?] Q10 | Nenhuma implicação derivada enquanto a lacuna estiver aberta |
 | Momento e estado | O aluno chega **já travado e frustrado**, durante ou após uma tentativa que falhou | [H] H23 | A primeira tela precisa aceitar a questão imediatamente, sem etapa de configuração (N01) |
-| Pressão de tempo | Em treino, moderada — o tempo de treino é finito. Em competição, severa | [H] H23; [?] Q08 | Não tem urgência na interface. A competição não será o foco principal da interface no momento. |
-| Interrupções e paralelismo | Alterna entre enunciado, editor de código e ferramenta de consulta | [H] H24 | Reforça o argumento para retomada de contexto e para o histórico (Q12) |
+| Pressão de tempo | Em treino, moderada| [H] H23 | Não tem urgência na interface. A competição não será o foco principal da interface. |
 | Ambiente social/organizacional | Estudo individual, sem tutor presente | [H] H09 | A interface precisa ser autoexplicativa: possivelmente o aluno esteja sozinho |
 | | Pode existir equipe de maratona com treinador | [?] Q11 | Nenhuma consequência adotada |
 | Papéis/permissões/governança | Nenhum papel previsto no recorte adotado | [F] decorre de H09 | Sem login, perfis ou permissões |
 | Acessibilidade | **Não investigado** | [?] Q03 | Requisitos serão definidos na Entrega 8. Uma alternativa textual à representação gráfica já se desenha como provável necessidade |
 | Volume de dados/histórico | Uma trilha é consumida ao longo de dias, não de uma sessão | [?] Q12 | Histórico de uso da aplicação vira necessidade |
 | Conexão | Necessária; sem conexão não há consulta | [F] arquitetura web | - |
-| Idioma | O modelo foi treinado sobre enunciados em inglês e devolve tópicos em inglês | [F] Seção VII.A do TCC | Possível barreira de vocabulário (H05, N05); mantém RC03 provisória |
+| Idioma | O modelo foi treinado sobre enunciados em inglês e devolve tópicos em inglês | [F] implementação do TCC | Possível barreira de vocabulário (H05, N05); mantém RC03 provisória |
 
 ## 4. Jornada do usuário — equipe
 
@@ -192,17 +186,17 @@ O usuário secundário é o Tutor, pois ele acessa funcionalidades de verificaç
 | 3 | antes | Tenta resolver e falha, ou não consegue nem começar | Resolver | Dúvida, depois frustração | Não sabe se o problema é a lógica ou um conteúdo que desconhece | — | [H] |
 | 4 | antes | **Percebe que está travada** e que não vai sair sozinha | Decidir o que fazer | Frustração, urgência | Não existe um sinal claro de "você está travada por falta de conteúdo X" | É aqui que a necessidade do produto nasce | [?] Q16 — não sabemos quando nem como ela percebe isso, nem quanto tempo passa antes |
 | 5 | antes | Decide buscar ajuda externa e escolhe onde: tags, editorial, fórum ou chatbot | Encontrar orientação | Esperança misturada com receio de ver a solução | Cada caminho tem um custo: a tag não ensina, o editorial entrega a resposta, o chatbot não cita fonte | Ser uma opção diferente, com fontes declaradas e confiáveis | [H] H17, H18, H19 |
-| 6 | antes | Procura o assunto num livro e não sabe em que capítulo | Estudar o conteúdo certo | Desorientação | O material é organizado por assunto, e ela não sabe o nome do assunto | Ligar cada tópico a uma fonte específica (N03) | [H] H26 |
+| 6 | antes | Procura o assunto num livro e não sabe em que capítulo | Estudar o conteúdo certo | Desorientação | O material é organizado por assunto, e ela não sabe o nome do assunto | Ligar cada tópico a uma fonte específica (N03) | [H] N03 |
 | 7 | durante | Apresenta a questão ao sistema | Iniciar a consulta | Alívio por haver um caminho simples | Qualquer decisão pedida aqui é uma decisão que ela não tem informação para tomar | Ação inicial única, sem configuração prévia (N01) | [H] H23; [?] Q15 |
 | 8 | durante | Aguarda o processamento | Saber que está funcionando | Impaciência — ela já estava frustrada antes de chegar | Sem retorno, não distingue "processando" de "travou" | Feedback de estado (N06) | [F] latência do LLM  |
-| 9 | durante | Recebe a trilha e tenta entendê-la | Saber o que estudar e em que ordem | Expectativa, depois possível sobrecarga | Uma lista de tópicos sem ordem nem relação não diz por onde começar | Tornar visível a dependência entre tópicos (N02) | [F] lacuna encontrada na pesquisa do TCC; [H] H15 |
+| 9 | durante | Recebe a trilha e tenta entendê-la | Saber o que estudar e em que ordem | Expectativa, depois possível sobrecarga | Uma lista de tópicos sem ordem nem relação não diz por onde começar | Tornar visível a dependência entre tópicos (N02) | [F] lacuna encontrada na pesquisa do TCC |
 | 10 | durante | Encontra termos que não reconhece | Compreender o que foi indicado | Insegurança | Jargão em inglês para quem por definição ainda não domina o assunto | Ajuda contextual, tópico tem rótulo de `em aberto` ou `já estudado` (N05) | [H] H05; [F] rótulos (tags) em inglês |
 | 11 | durante | **Tenta avaliar se pode confiar na trilha** | Não perder tempo com orientação errada | Dúvida que ela não consegue resolver | Não tem repertório para contestar; tende a aceitar a primeira explicação plausível | Explicabilidade, fonte e sinalização de incerteza (N04) | [H] H06; [F] F1 Macro 0,5820 e alucinação registrada |
 | 12 | durante | Decide por onde começar | Ter um próximo passo concreto | Alívio ou ainda dúvida | — | O resultado da consulta precisa terminar numa ação, não numa lista | [H] H07 |
-| 13 | depois | Estuda o tópico no material indicado | Adquirir o conhecimento que faltava | Esforço, progresso | O material pode ser mais extenso do que o tempo disponível | Indicar o recorte do material, não só o livro | [H] H26 |
+| 13 | depois | Estuda o tópico no material indicado | Adquirir o conhecimento que faltava | Esforço, progresso | O material pode ser mais extenso do que o tempo disponível | Indicar o recorte do material, não só o livro | [H] N03 |
 | 14 | depois | Volta à questão e tenta de novo | Resolver por conta própria | Determinação | Não sabe se já estudou o suficiente para tentar novamente | — | [?] **Q17 — não sabemos como ela decide que já sabe o bastante para voltar** |
 | 15 | depois | **Caso resolva:** confirma que o caminho funcionou | Confiar na ferramenta na próxima vez | Satisfação, confiança | — | É o momento que constrói adoção da ferramenta | [H] |
-| 16 | depois | **Caso não resolva:** reavalia se o problema era o conteúdo indicado ou a própria execução | Entender o que faltou | Desânimo | Pode concluir que é incapaz, quando a trilha estava errada | Permitir voltar e questionar a orientação recebida | [H] H06, H21; [?] Q07 |
+| 16 | depois | **Caso não resolva:** reavalia se o problema era o conteúdo indicado ou a própria execução | Entender o que faltou | Desânimo | Pode concluir que é incapaz, quando a trilha estava errada | Permitir voltar e questionar a orientação recebida | [H] H06 |
 | 17 | depois | Dias depois, retoma o estudo do mesmo assunto | Continuar a trilha | — | Se fechou a aba, perdeu o resultado e precisa reprocessar | Histórico de uso da aplicação acessível | Foi implementado na aplicação, mas aparece em Q12 |
 
 > A jornada pode incluir etapas **antes, durante e depois** do uso do produto. Não transforme a jornada em lista de telas.
@@ -220,7 +214,7 @@ O usuário secundário é o Tutor, pois ele acessa funcionalidades de verificaç
 1. **O objetivo é destravar e voltar a resolver por conta própria** (H07, N02) — não "receber uma lista de tópicos" nem "usar o modelo". Um cenário que termine na entrega da trilha está incompleto: precisa ir até a etapa 14.
 2. **A tarefa não começa em "colar o enunciado"** (etapas 1 a 6). A decomposição da Entrega 5 precisa incluir o que acontece antes do contato com o sistema, ou vai modelar a interface em vez da atividade.
 3. **A incapacidade de julgar o resultado é a característica definidora da persona** (H06, etapa 11, N04). Qualquer cenário ou tarefa que suponha uma usuária capaz de validar a trilha está descrevendo P02, não P01.
-4. **A fonte pedagógica por tópico resolve uma dor específica** (N03, H26): ela não sabe o nome do assunto, logo não sabe onde procurar.
+4. **A fonte pedagógica por tópico resolve uma dor específica** (N03): ela não sabe o nome do assunto, logo não sabe onde procurar.
 5. **Vocabulário tem que atender a suposição feita em H05 e ser intelegível para baixo conhecimento de domínio**
 
 ## Checklist
