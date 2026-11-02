@@ -46,7 +46,7 @@ Antes de criar personas, retome os tipos de usuários, características relevant
 **Base de evidências:** **proto-persona** — construída a partir do público-alvo declarado no TCC e das hipóteses da Entrega 1. Nenhuma observação, entrevista ou questionário foi realizado.
 **Hipóteses da Entrega 1 relacionadas:** H06, H07, H08, H09, H12, H17, H19, H21, H22, H23, H24 — e as lacunas Q02, Q06, Q08, Q09, Q12
 
-![P01](../assets/03_assets/P01.png)
+![P01](../assets/03_personas/P01.png)
 
 
 | Campo | Descrição | Status |
@@ -86,7 +86,7 @@ Antes de criar personas, retome os tipos de usuários, características relevant
 **Base de evidências:** **proto-persona** — nenhuma conversa com professores ou treinadores foi realizada
 **Hipóteses da Entrega 1 relacionadas:** H10, H11, H25 — e as lacunas Q01, Q11
 
-![P02](../assets/03_assets/P02.png)
+![P02](../assets/03_personas/P02.png)
 
 | Campo | Descrição | Status |
 |---|---|---|
@@ -134,7 +134,7 @@ O usuário secundário é o Tutor, pois ele acessa funcionalidades de verificaç
 **Persona escolhida:** P01
 **Justificativa:** é a persona primária e o público-alvo declarado do TCC.
 
-![Mapa Empatia P01](../assets/03_assets/MapaEmpatiaMulher.png)
+![Mapa Empatia P01](../assets/03_personas/MapaEmpatiaMulher.png)
 
 | Quadrante | Conteúdo | Status |
 |---|---|---|
