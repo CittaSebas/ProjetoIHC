@@ -61,6 +61,8 @@ Usabilidade deve ser discutida **no contexto de uso**. Metas quantitativas devem
 
 ### 3.2 Metas quantitativas
 
+> MU04 e MU05 medem T02, tarefa da persona secundária P02. Elas são legítimas porque T02 ocorre na mesma interface de T01, sem tela ou permissão própria (ver classificação de P02 na Entrega 3). Os valores são subordinados a P01: nenhuma decisão tomada por MU04 ou MU05 pode alterar o que P01 precisa em T01.
+
 | ID | Dimensão | Métrica | Tarefa/escopo | Meta | Como medir | Justificativa |
 |---|---|---|---|---|---|---|
 | MU01 | eficácia | taxa de conclusão sem ajuda | T01 | ≥ 50% | teste observado | Concluir é dizer, sem ajuda, por qual tópico começaria e por quê (H37). |

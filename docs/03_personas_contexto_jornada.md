@@ -81,7 +81,7 @@ Antes de criar personas, retome os tipos de usuários, características relevant
 ### Persona P02 — José Carlos Trunchado
 
 **Autor(a):** Juan Manuel Citta — 24.123.022-6
-**Tipo:** **secundária** — registrada no mapa de perfis, mas **não dirige decisões de interface** nesta disciplina
+**Tipo:** **secundária** — atendida pela mesma interface de P01, com necessidades próprias que cabem nela
 **Base de evidências:** **proto-persona** — nenhuma conversa com professores ou treinadores foi realizada
 **Hipóteses da Entrega 1 relacionadas:** H11 — e as lacunas Q01, Q11
 
@@ -98,15 +98,25 @@ Antes de criar personas, retome os tipos de usuários, características relevant
 | Dores/frustrações | Turmas grandes, pouco tempo de aula, dificuldade de atender individualmente quem travou | [H] |
 | Motivadores | Reputação própria e da instituição; resultado dos alunos | [H] |
 | Restrições/acessibilidade | Não investigado | [?] Q03 |
-| Ambiente típico de uso | Sala de aula e preparação de treino | [H] — **contexto diferente do adotado no recorte** (H09: aluno sozinho, treino individual) |
+| Ambiente típico de uso | Sala de aula e preparação de treino | [H] |
 | Comportamentos relevantes | Procura se manter atualizado; verifica fontes | [H] H11 |
 
-O usuário secundário é o Tutor, pois ele acessa funcionalidades de verificação de fonte e não do uso principal que é gerar a trilha personalizada pelo enunciado. Por isso, as decisões de design devem priorizar a P01.
+**Por que P02 é secundária**
+
+O critério adotado é o de interface própria: uma persona é primária quando não pode ser atendida pela interface projetada para outra.
+
+A tarefa de P02, conferir a fonte de cada tópico antes de recomendar o material, é realizada na mesma interface de P01, sem login, sem permissão e sem tela exclusiva. P01 também precisa ver a fonte de cada tópico (N03), por um motivo diferente: saber onde estudar. A mesma tela atende aos dois objetivos.
+
+Isso caracteriza persona secundária, e não ausência de relevância. A diferença entre os dois perfis está na tarefa, não na interface.
+
+A classificação mudaria se o escopo passasse a incluir o histórico de consultas por aluno, o que exigiria identificação e controle de acesso, portanto uma interface própria. Essa possibilidade está registrada como fora do escopo na Entrega 9.
+
+**H11 e a classificação são coisas separadas.** H11 pergunta se tutores adotariam a ferramenta, e continua aberta. A classificação de P02 como secundária não depende de H11: depende do teste de interface própria, que já pode ser aplicado hoje. Por isso P02 pode originar tarefa (T02) e metas (MU04, MU05) sem contrariar a rastreabilidade.
 
 
 | Exigência | Hipótese | Observação |
 |---|---|---|
-| Fontes pedagógicas verificáveis por tópico | H11 | **Converge com N03/N04 de P01** — é a única exigência de P02 que já está no escopo, mas entra pelo aluno, não pelo professor |
+| Fontes pedagógicas verificáveis por tópico | H11 | **Converge com N03/N04 de P01.** A mesma tela atende aos dois, por motivos diferentes. É o que sustenta a classificação secundária |
 | Exportar ou compartilhar uma trilha com a turma | [?] Q11 | Ainda está em análise se fará parte da aplicação. Por hora não tem tarefa atribuída. |
 
 ### Síntese das personas
@@ -119,7 +129,8 @@ O usuário secundário é o Tutor, pois ele acessa funcionalidades de verificaç
 | Relação com o resultado da ferramenta | **Consome e não consegue auditar** (H06) | Audita antes de repassar (H11) |
 | Contexto | Sozinha, travada, em treino individual | Sala de aula ou preparação de treino |
 | Pressão | Tempo de treino perdido | Tempo de aula e tamanho da turma |
-| Influencia o design nesta disciplina? | **Sim, integralmente** | **Não**, até H11 ser investigada |
+| **Precisa de interface própria?** | **Sim**, a interface é projetada a partir dela | **Não**, usa a mesma de P01 |
+| Influencia o design nesta disciplina? | **Sim, integralmente** | **Sim, de forma subordinada.** Pode gerar tarefa e metas, desde que na mesma interface e sem alterar o que P01 precisa |
 
 
 **Persona prioritária: P01.** Pelo público-alvo declarado no TCC, por ser o perfil com evidência documental de existência, por ser acessível à equipe para as Entregas 7 e 14, e por concentrar a tensão de IHC do projeto, com alta competência tecnológica e baixa competência de domínio.

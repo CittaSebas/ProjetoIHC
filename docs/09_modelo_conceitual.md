@@ -79,7 +79,7 @@ Helena não quer proibir os alunos de buscar apoio. O incômodo dela não é a I
 | A fonte usada é identificada como o Cormen | Ela confia em livros-texto reconhecidos | C02 `[Q7]`; Entrega 8, delimitação |
 | Ela vê capítulo e explicação de cada tópico e a ordem entre eles | Ela precisa comparar com o material que já entregou à turma | Entrega 8, meta qualitativa de P02; MU04 |
 | Tópicos sem capítulo são sinalizados | Sem isso, a ausência de capítulo pareceria erro da ferramenta | Comportamento atual do sistema (alguns tópicos não têm capítulo) |
-| A ferramenta não mostra as perguntas dos alunos | Decisão de escopo: o professor tem acesso apenas ao grafo geral | Entrega 8, papéis/permissões |
+| A ferramenta não mostra as perguntas dos alunos | Decisão de escopo: o professor tem acesso apenas ao grafo geral. É essa decisão que mantém P02 como persona secundária, pois ela dispensa interface própria. Incluir histórico por aluno exigiria identificação e controle de acesso, e tornaria P02 primária | Entrega 8, papéis/permissões; Entrega 3, classificação de P02 |
 
 ## 2. Design centrado na comunicação
 

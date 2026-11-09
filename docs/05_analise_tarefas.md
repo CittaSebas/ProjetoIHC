@@ -32,6 +32,8 @@ Um CRUD pode gerar tarefas relevantes, mas “cadastrar usuário” só merece m
 | T01 | Informar-se sobre programação competitiva  | C01 e P01 | Uso mais frequente e crítico da aplicação | Sebastian Citta |
 | T02 | Informar-se sobre fontes utilizadas no modelo  | C02 e P02 | Frequência baixa e criticidade média | Juan Manuel Citta |
 
+**Por que T02 entra na modelagem mesmo sendo de baixa frequência.** O critério não é frequência, é interface. T02 acontece na mesma interface de T01, sem login, permissão ou tela exclusiva, e por isso pertence ao mesmo recorte. A consulta à fonte de cada tópico também é necessidade de P01 (N03 da Entrega 3): o professor confere para confiar antes de repassar, o aluno consulta para saber onde estudar. Modelar T02 não desloca o escopo para a persona secundária, apenas descreve o segundo uso da mesma tela. Ver a justificativa da classificação de P02 na Entrega 3.
+
 > Priorize tarefas necessárias para que o usuário alcance objetivos centrais. Não desperdice a modelagem em ações triviais isoladas, como “clicar em login”, se o objetivo relevante é maior. Da mesma forma, não modele o funcionamento interno do algoritmo como se fosse uma tarefa humana.
 
 ---

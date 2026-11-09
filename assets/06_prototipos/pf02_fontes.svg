@@ -1,0 +1,84 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="840" height="430" viewBox="0 0 840 430" font-family="Verdana, Geneva, sans-serif">
+  <style>
+    .scr  { fill:#ffffff; stroke:#444; stroke-width:2.5; }
+    .bar  { fill:#ececec; stroke:#444; stroke-width:2; }
+    .box  { fill:#f7f7f7; stroke:#777; stroke-width:2; }
+    .btn  { fill:#ddd; stroke:#444; stroke-width:2; }
+    .node { fill:#fff; stroke:#444; stroke-width:2; }
+    .lbl  { font-size:15px; font-weight:bold; fill:#111; }
+    .t    { font-size:12px; fill:#222; }
+    .tg   { font-size:12px; fill:#888; }
+    .ts   { font-size:11px; fill:#444; }
+    .arrow{ stroke:#333; stroke-width:2.5; fill:none; marker-end:url(#b); }
+    .acap { font-size:11.5px; fill:#333; font-style:italic; }
+  </style>
+  <defs>
+    <marker id="b" markerWidth="10" markerHeight="8" refX="9" refY="4" orient="auto">
+      <path d="M0,0 L10,4 L0,8 z" fill="#333"/>
+    </marker>
+  </defs>
+
+  <text x="20" y="28" class="lbl" font-size="17">PF02: Conferir as fontes usadas pelo modelo (T02)</text>
+  <text x="20" y="48" class="tg">Mesma interface de PF01, alcançada pelo item "Fontes" da barra superior. Sem login e sem permissão.</text>
+
+  <!-- P07 -->
+  <g transform="translate(20,70)">
+    <rect class="scr" width="360" height="290" rx="4"/>
+    <rect class="bar" x="0" y="0" width="360" height="32"/>
+    <text x="12" y="21" class="t">Trilha de Estudo</text>
+    <text x="268" y="21" class="t" font-weight="bold">Fontes</text>
+    <text x="12" y="58" class="lbl">P07: Livros usados</text>
+    <rect class="box" x="12" y="72" width="230" height="26" rx="3"/>
+    <text x="22" y="90" class="tg">buscar por título ou autor</text>
+    <rect class="btn" x="250" y="72" width="98" height="26" rx="3"/>
+    <text x="262" y="90" class="t">Ver grafo</text>
+
+    <line x1="12" y1="112" x2="348" y2="112" stroke="#bbb" stroke-width="1.5"/>
+    <text x="12" y="134" class="t">Cormen, Introduction to Algorithms</text>
+    <text x="12" y="150" class="ts">42 tópicos</text>
+    <line x1="12" y1="162" x2="348" y2="162" stroke="#bbb" stroke-width="1.5"/>
+    <text x="12" y="184" class="t">Halim, Competitive Programming 4</text>
+    <text x="12" y="200" class="ts">31 tópicos</text>
+    <line x1="12" y1="212" x2="348" y2="212" stroke="#bbb" stroke-width="1.5"/>
+    <text x="12" y="234" class="t">Sedgewick, Algorithms</text>
+    <text x="12" y="250" class="ts">18 tópicos</text>
+    <line x1="12" y1="262" x2="348" y2="262" stroke="#bbb" stroke-width="1.5"/>
+    <text x="12" y="282" class="ts">Toque num livro para ver seus tópicos.</text>
+  </g>
+  <text x="20" y="378" class="acap">Busca e ordenação resolvem a lista longa apontada na Entrega 5.</text>
+
+  <!-- P08 -->
+  <g transform="translate(440,70)">
+    <rect class="scr" width="360" height="290" rx="4"/>
+    <rect class="bar" x="0" y="0" width="360" height="32"/>
+    <text x="12" y="21" class="t">Trilha de Estudo</text>
+    <text x="268" y="21" class="t" font-weight="bold">Fontes</text>
+    <text x="12" y="58" class="lbl">P08: Grafo completo</text>
+    <rect class="box" x="12" y="72" width="230" height="26" rx="3"/>
+    <text x="22" y="90" class="tg">filtrar por tópico</text>
+    <rect class="btn" x="250" y="72" width="98" height="26" rx="3"/>
+    <text x="264" y="90" class="t">Ver lista</text>
+
+    <circle class="node" cx="70" cy="150" r="22"/>
+    <text x="52" y="154" class="ts">Arrays</text>
+    <circle class="node" cx="170" cy="130" r="22"/>
+    <text x="150" y="134" class="ts">Ordena.</text>
+    <circle class="node" cx="272" cy="150" r="22"/>
+    <text x="254" y="154" class="ts">Grafos</text>
+    <circle class="node" cx="120" cy="226" r="22"/>
+    <text x="102" y="230" class="ts">Prefixo</text>
+    <circle class="node" cx="226" cy="226" r="22"/>
+    <text x="214" y="230" class="ts">DP</text>
+    <line x1="92" y1="146" x2="148" y2="134" class="arrow"/>
+    <line x1="192" y1="134" x2="250" y2="146" class="arrow"/>
+    <line x1="84" y1="168" x2="108" y2="204" class="arrow"/>
+    <line x1="142" y1="226" x2="204" y2="226" class="arrow"/>
+    <text x="12" y="276" class="ts">Tópicos sem capítulo aparecem em cinza.</text>
+  </g>
+  <text x="440" y="378" class="acap">O professor confere o conjunto de tópicos. Não há acesso às consultas dos alunos.</text>
+
+  <line x1="384" y1="200" x2="434" y2="200" class="arrow"/>
+  <text x="378" y="192" class="ts">ver grafo</text>
+  <path d="M414,236 L414,250 L390,250" stroke="#333" stroke-width="2.5" fill="none" marker-end="url(#b)"/>
+  <text x="392" y="268" class="ts">ver lista</text>
+</svg>
