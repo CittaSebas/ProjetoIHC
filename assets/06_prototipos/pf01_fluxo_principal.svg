@@ -21,7 +21,7 @@
   </defs>
 
   <text x="20" y="28" class="lbl" font-size="17">PF01: Descobrir o que estudar a partir de uma questão (T01)</text>
-  <text x="20" y="48" class="tg">Protótipo de baixa fidelidade. Equipe 03. Caminho principal: P01 › P03 › P04 › P05. Desvios: P02 (entrada inválida), P06 (falha na geração).</text>
+  <text x="20" y="48" class="tg">Protótipo de baixa fidelidade. Equipe 03. Caminho principal: P01 › P03 › P04 › P05. Desvio: P06 (entrada não reconhecida ou falha na geração).</text>
 
   <!-- ============ P01 ============ -->
   <g transform="translate(20,70)">
@@ -88,28 +88,9 @@
     <rect class="btn" x="300" y="130" width="44" height="26" rx="3"/>
     <text x="318" y="148" class="t">-</text>
     <text x="12" y="256" class="ts">Toque num tópico para ver a fonte</text>
-    <text x="12" y="274" class="ts">e por que ele foi indicado.</text>
+    <text x="12" y="274" class="ts">e uma explicação curta.</text>
   </g>
   <text x="860" y="378" class="acap">Caminho recomendado em destaque. Zoom. Atende F03 e H15.</text>
-
-  <!-- ============ P02 ============ -->
-  <g transform="translate(20,420)">
-    <rect class="scr" width="360" height="290" rx="4"/>
-    <rect class="bar" x="0" y="0" width="360" height="32"/>
-    <text x="12" y="21" class="t">Trilha de Estudo</text>
-    <text x="12" y="62" class="lbl">P02: Pedido de esclarecimento</text>
-    <rect class="box" x="12" y="80" width="336" height="64" rx="3"/>
-    <text x="22" y="102" class="tg">asdasd</text>
-    <text x="22" y="120" class="ts">(o texto continua no campo)</text>
-    <path d="M12,164 h336 v62 h-320 l-16,16 z" fill="#f4f4f4" stroke="#777" stroke-width="2"/>
-    <text x="24" y="186" class="t">Não consegui identificar a questão.</text>
-    <text x="24" y="204" class="t">Cole o enunciado completo ou o código</text>
-    <text x="24" y="222" class="t">do problema, por exemplo 1352A.</text>
-    <rect class="btn" x="248" y="244" width="100" height="36" rx="3"/>
-    <text x="268" y="267" class="t">Gerar trilha</text>
-    <text x="12" y="267" class="ts">Botão continua ativo</text>
-  </g>
-  <text x="20" y="728" class="acap">Resposta do sistema, não bloqueio. Coerente com a entrada conversacional do recorte 7.4.</text>
 
   <!-- ============ P06 ============ -->
   <g transform="translate(440,420)">
@@ -129,7 +110,7 @@
     <text x="12" y="256" class="ts">O sistema erra às vezes. Melhor dizer</text>
     <text x="12" y="272" class="ts">isso do que mostrar trilha inventada.</text>
   </g>
-  <text x="440" y="728" class="acap">Alucinação registrada no TCC (F1 Macro 0,5820). Recuperação de erro.</text>
+  <text x="440" y="728" class="acap">O modelo pode errar (F1 do núcleo 0,82). Recuperação de erro.</text>
 
   <!-- ============ P05 ============ -->
   <g transform="translate(860,420)">
@@ -142,25 +123,21 @@
     <text x="24" y="122" class="ts">ONDE ESTUDAR</text>
     <text x="24" y="140" class="t">Cormen, Introduction to Algorithms</text>
     <text x="24" y="156" class="t">cap. 4</text>
-    <text x="24" y="182" class="ts">POR QUE ESTE TÓPICO</text>
-    <text x="24" y="200" class="t">O enunciado pede soma de intervalos</text>
-    <text x="24" y="216" class="t">repetidas vezes.</text>
-    <text x="24" y="242" class="ts">CONFIANÇA DO SISTEMA</text>
-    <rect x="24" y="250" width="120" height="12" rx="6" fill="#ddd" stroke="#555" stroke-width="1.5"/>
-    <rect x="25" y="251" width="78" height="10" rx="5" fill="#999"/>
-    <text x="154" y="261" class="ts">média</text>
+    <text x="24" y="182" class="ts">O QUE É</text>
+    <text x="24" y="200" class="t">Guardar somas acumuladas para somar</text>
+    <text x="24" y="216" class="t">qualquer intervalo de uma vez.</text>
+    <text x="24" y="242" class="ts">A IA pode errar na escolha dos tópicos.</text>
+    <text x="24" y="258" class="ts">Confira a fonte antes de estudar.</text>
   </g>
-  <text x="860" y="728" class="acap">Fonte, motivo e incerteza na mesma tela. Atende F04, F05 e T02.</text>
+  <text x="860" y="728" class="acap">Fonte, explicação e aviso de erro (F04, F05, T02).</text>
 
   <!-- ============ setas entre telas ============ -->
   <line x1="384" y1="200" x2="434" y2="200" class="arrow"/>
   <text x="380" y="192" class="ts">enviar</text>
   <line x1="804" y1="200" x2="854" y2="200" class="arrow"/>
   <text x="806" y="192" class="ts">pronto</text>
-  <path d="M200,364 L200,414" class="arrow"/>
-  <text x="206" y="392" class="ts">não reconheceu</text>
   <path d="M620,364 L620,414" class="arrow"/>
-  <text x="626" y="392" class="ts">falha</text>
+  <text x="626" y="392" class="ts">falha ou não reconheceu</text>
   <path d="M1040,364 L1040,414" class="arrow"/>
   <text x="1046" y="392" class="ts">toca num tópico</text>
 </svg>

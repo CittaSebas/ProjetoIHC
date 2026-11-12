@@ -150,7 +150,7 @@ Considere perfis profissionais e stakeholders, não apenas consumidores finais.
 |---|---|---|---|---|
 | Aluno iniciante em programação competitiva | **usuário primário** | Usuário direto da interface | Submeter um enunciado e usar a trilha gerada para decidir o que estudar antes de tentar resolver a questão | [F] público-alvo declarado na pesquisa do TCC: "ferramenta de auxílio ao estudo em programação competitiva" |
 | Tutor / treinador de equipe | **usuário secundário** | Usuário direto da interface, em hipótese | Sugerir uso da ferramenta para alunos, com seu aval | [H] H11 — a equipe não tem evidência de que tutores usariam a ferramenta nem de que assumiriam essa responsabilidade |
-| Pesquisador de PLN/educação | **fora do recorte de IHC** | Consome o artefato técnico do TCC (o modelo), não a interface | Baixar o modelo publicado no Hugging Face e reproduzir os experimentos | [H] H03 quanto ao interesse efetivo; [F] quanto à publicação do modelo (implementação do TCC) |
+| Pesquisador de PLN/educação | **fora do recorte de IHC** | Consome o artefato técnico do TCC (o modelo), não a interface | Reproduzir os experimentos do TCC | [H] H03 quanto ao interesse efetivo |
 
 **Decisão de recorte:** o projeto de IHC será conduzido para o **aluno iniciante**. O tutor permanece no mapa de stakeholders, mas **não influenciará decisões de interface** enquanto H11 não for investigada. O pesquisador está fora do recorte: ele usa a contribuição técnica do TCC, não a interação projetada aqui.
 
@@ -159,7 +159,7 @@ Considere perfis profissionais e stakeholders, não apenas consumidores finais.
 
 | Stakeholder | Como é afetado | Usa interface? | Status/evidência |
 |---|---|---|---|
-| Pesquisador de PLN/educação | Consome o modelo por linha de comando ou *notebook*, sem passar pela interface projetada na disciplina | não | [H] H04 — plausível pela publicação do modelo no Hugging Face, mas a equipe não observou nenhum uso real |
+| Pesquisador de PLN/educação | Consome o modelo por linha de comando ou *notebook*, sem passar pela interface projetada na disciplina | não | [H] H04, plausível porque o modelo roda em *notebook*, mas a equipe não observou nenhum uso real |
 | Professor ou instituição que venha a adotar a ferramenta em disciplina ou treino | Passaria a depender da qualidade das trilhas para orientar turmas | indiretamente | [?] Q01 — não sabemos se existe interesse institucional; nenhuma evidência foi levantada |
 
 
@@ -193,7 +193,8 @@ Não responda “usar o algoritmo”, “clicar no sistema” ou “ver o dashbo
 | ID | Atividade/objetivo | Quem realiza | Frequência/criticidade inicial | Status/evidência |
 |---|---|---|---|---|
 | A01 | Descobrir o que precisa saber para conseguir resolver uma questão em que travou | Aluno | [H] alta frequência / [H] alta criticidade | [F] a atividade existe e motiva o TCC (pesquisa do TCC); [H] H08 quanto à frequência e [H] H16 quanto à criticidade — a equipe ainda não observou alunos |
-| A02 | Montar um plano de estudo/treino a partir de um conjunto de questões | Tutor | [?] frequência e criticidade desconhecidas | [H] H11 — a própria existência desta atividade como uso da ferramenta é hipótese |
+| A02 | Visualizar o grafo de conhecimento da aplicação | Aluno e/ou tutor | [?] frequência e criticidade desconhecidas | [H] H11 - o tutor talvez não utilize essa ferramenta |
+
 
 
 
@@ -236,7 +237,7 @@ Pode existir software concorrente, linha de comando, planilha, notebook, script,
 
 [H] H19 - O aluno cola o enunciado em um chatbot de propósito geral (ChatGPT, Claude) e pede explicação.
 
-[F] **O modelo do TCC, hoje, só é acessível por via técnica.** O modelo é publicado no Hugging Face e os resultados de inferência são salvos em JSON; não existe nenhuma via de acesso não técnica. *Fonte:* implementação do TCC.
+[F] **O modelo do TCC, hoje, só é acessível por via técnica.** O modelo roda em um *notebook* no Kaggle e os resultados de inferência são salvos em JSON; não existe nenhuma via de acesso não técnica. *Fonte:* implementação do TCC.
 
 H17, H18 e H19 descrevem comportamentos plausíveis do aluno que a equipe **não observou**. A Entrega 7 deverá verificar quais desses caminhos são efetivamente usados e em que ordem.
 
@@ -245,11 +246,9 @@ H17, H18 e H19 descrevem comportamentos plausíveis do aluno que a equipe **não
 
 | Dificuldade | Natureza | Status/evidência |
 |---|---|---|
-| Não existe via de acesso não técnica ao modelo: usá-lo exige ambiente, Python e Hugging Face | Barreira de acesso à contribuição do TCC | [F] implementação do TCC. *É fato que a barreira existe; que ela seja vivida como "confusa" pelo aluno é hipótese, ver H20* |
+| Não existe via de acesso não técnica ao modelo: usá-lo exige executar um *notebook* Python no Kaggle | Barreira de acesso à contribuição do TCC | [F] implementação do TCC |
 | A tag do juiz online nomeia o tópico, mas não indica ordem de estudo nem pré-requisitos | Falta de orientação | [F] pesquisa do TCC e inspeção da plataforma |
 | O resultado atual da ferramenta é uma lista de tópicos sem dependências entre eles e sem indicar a fonte pedagógica | Falta de estrutura e de lastro | [F] a implementação do TCC declara exatamente essas duas lacunas |
-
-[H] H20 - Para um aluno iniciante, localizar e executar o modelo seria percebido como confuso e inviável.
 
 
 ## 4.3 Que informações o profissional precisa interpretar para tomar decisão?
@@ -273,7 +272,7 @@ Essa lacuna é decisiva porque define o que a interface precisa efetivamente com
 
 Ver a tabela de tipos de erro em 3.4. Resumidamente:
 
-[H] H21 - O aluno estuda um tópico que não o aproxima da solução, perde tempo de treino e continua travado.
+[H] H20 - O aluno estuda um tópico que não o aproxima da solução, perde tempo de treino e continua travado.
 
 [H] H06 - Como ele não tem repertório para julgar a orientação recebida, pode não perceber que o caminho estava errado — o que torna o erro silencioso.
 
@@ -294,7 +293,7 @@ Um aluno está treinando para uma competição de programação competitiva. Ele
 
 | Evidência/fonte | O que sustenta | Limitação |
 |---|---|---|
-| TCC da equipe — `GERAÇÃO_AUTOMÁTICA_DE_TRILHAS_DE_ESTUDO_PARA_PROGRAMAÇÃO_COMPETITIVA-1.pdf` (2026) | Objetivo e público-alvo declarados, arquitetura, F1 Macro de 0,5820, caso de alucinação e as duas lacunas do resultado atual | Documento da própria equipe; não contém nenhum dado empírico sobre usuários |
+| TCC da equipe — `GERAÇÃO_AUTOMÁTICA_DE_TRILHAS_DE_ESTUDO_PARA_PROGRAMAÇÃO_COMPETITIVA-1.pdf` (2026) | Objetivo e público-alvo declarados, arquitetura, F1 do núcleo de 0,82 e as duas lacunas do resultado atual | Documento da própria equipe; não contém nenhum dado empírico sobre usuários |
 | RIBEIRO, P.; GUERREIRO, P. *Early introduction of competitive programming*. Olympiads in Informatics, v. 2, 2008 | Benefício da prática e o abismo teoria–prática quando o aluno não domina o assunto | Estudo de 2008, contexto europeu, anterior aos LLMs; não trata de escolha de material de estudo |
 | [Codeforces](https://codeforces.com/) — inspeção direta em 26/08/2026 | Que a identificação de conteúdo é feita por tags e que elas ficam ocultas durante competição | Observação de uma plataforma, sem registro sistemático; não diz nada sobre como o aluno usa essas tags |
 
@@ -320,7 +319,7 @@ Um aluno está treinando para uma competição de programação competitiva. Ele
 
 > Isso é uma **possibilidade técnica da Web**, não uma afirmação sobre a experiência de uso. Uma trilha representada como grafo de dependências pode ser legível em notebook e impraticável em celular.
 
-[H] H22 - O uso predominante ocorre em notebook ou desktop, porque a questão está aberta em outra aba e o aluno está programando na mesma máquina.
+[H] H21 - O uso predominante ocorre em notebook ou desktop, porque a questão está aberta em outra aba e o aluno está programando na mesma máquina.
 
 [?] Q09 - Não sabemos qual dispositivo o aluno realmente usa ao treinar, nem se consultaria a ferramenta pelo celular. Investigar na Entrega 3; a resposta afeta diretamente a viabilidade da representação em grafo.
 
@@ -333,11 +332,11 @@ Considere iluminação, ruído, mobilidade, conexão, privacidade, uso compartil
 | Dimensão de contexto | Situação considerada | Status |
 |---|---|---|
 | Conexão | Necessária; sem conexão não há consulta | [F] decorre da arquitetura web |
-| Momento da atividade | Durante ou logo após uma tentativa frustrada de resolver a questão — o aluno chega à ferramenta já travado | [H] H23 |
+| Momento da atividade | Durante ou logo após uma tentativa frustrada de resolver a questão — o aluno chega à ferramenta já travado | [H] H22 |
 | Pressão de tempo | Em treino, moderada; em competição, severa | [?] Q08 — depende de decidir se competição entra no contexto |
 | Ambiente | Casa, laboratório da faculdade ou sala de treino de equipe | [?] Q10 |
-| Interrupções e paralelismo | O aluno alterna entre enunciado, editor de código e ferramenta de consulta | [H] H24 |
-| Recursos disponíveis | Acesso simultâneo ao juiz online, a uma IDE e possivelmente a livros | [H] H24 |
+| Interrupções e paralelismo | O aluno alterna entre enunciado, editor de código e ferramenta de consulta | [H] H23 |
+| Recursos disponíveis | Acesso simultâneo ao juiz online, a uma IDE e possivelmente a livros | [H] H23 |
 | Experiência prévia | Baixo conhecimento de domínio, alta familiaridade com ferramentas web | [H] H06 |
 | Privacidade | Sem dado sensível; não há requisito identificado | [F] o conteúdo tratado são enunciados públicos |
 
@@ -346,7 +345,7 @@ Considere iluminação, ruído, mobilidade, conexão, privacidade, uso compartil
 
 Considere papéis, chefias, equipes, permissões, aprovação, responsabilidade profissional, auditoria, turnos e colaboração.
 
-[H] H25 - Se a ferramenta for usada por um tutor, caberia a ele conferir a correção do conteúdo antes de repassá-lo ao aluno. É uma atribuição de responsabilidade que a equipe supôs, sem ter conversado com nenhum tutor.
+[H] H24 - Se a ferramenta for usada por um tutor, caberia a ele conferir a correção do conteúdo antes de repassá-lo ao aluno. É uma atribuição de responsabilidade que a equipe supôs, sem ter conversado com nenhum tutor.
 
 [?] Q11 - Não sabemos se existe alguma estrutura organizacional relevante em torno desse público — equipes de maratona com treinador, disciplinas eletivas, grupos de estudo informais — nem que papéis existiriam nelas. Investigar na Entrega 3.
 
@@ -362,9 +361,9 @@ Considere papéis, chefias, equipes, permissões, aprovação, responsabilidade 
 
 ## 5.6 Um erro pode produzir consequência relevante? Qual?
 
-[H] H21 - O erro mais relevante é o aluno estudar tópicos não relacionados à questão e perder tempo de treino. Ver a tabela de tipos de erro em 3.4.
+[H] H20 - O erro mais relevante é o aluno estudar tópicos não relacionados à questão e perder tempo de treino. Ver a tabela de tipos de erro em 3.4.
 
-[F] O erro tem probabilidade concreta e conhecida do lado técnico: F1 Macro de 0,5820 na classificação de rótulos, com caso registrado de alucinação em inferência. *Fonte:* implementação do TCC.
+[F] O erro tem probabilidade concreta e conhecida do lado técnico: F1 do núcleo de 0,82 na escolha dos tópicos centrais da questão, com caso registrado de alucinação em inferência. *Fonte:* implementação do TCC.
 
 [F] Não há consequência física, financeira, legal ou de segurança. A criticidade é **pedagógica e motivacional**.
 
@@ -383,7 +382,7 @@ Considere papéis, chefias, equipes, permissões, aprovação, responsabilidade 
 |---|---|---|---|
 | Juízes online e seus fóruns (ex.: Codeforces) | Alunos | Praticar, consultar questões e discutir soluções | [F] a plataforma existe e oferece isso (inspeção em 26/08/2026); [H] H17 e H18 quanto ao uso efetivo pelo aluno iniciante |
 | Chatbots de propósito geral (ex.: ChatGPT) | Alunos | Pedir explicação sobre um enunciado | [H] H19 — plausível pela popularidade, não verificado neste público |
-| Livros e materiais didáticos consolidados | Alunos e tutores | Estudar um assunto de forma estruturada | [F] existem e são a base pedagógica adotada pelo TCC; [H] H26 quanto ao uso pelo iniciante |
+| Livros e materiais didáticos consolidados | Alunos e tutores | Estudar um assunto de forma estruturada | [F] existem e são a base pedagógica adotada pelo TCC; [H] H25 quanto ao uso pelo iniciante |
 
 
 ## 6.2 Existem produtos que atuam na mesma área, mesmo sem serem equivalentes ao TCC?
@@ -395,7 +394,7 @@ Considere papéis, chefias, equipes, permissões, aprovação, responsabilidade 
 
 Exemplos possíveis: ferramentas de banco, IDEs, consoles de nuvem, dashboards, plataformas de dados, ferramentas de monitoramento, painéis de IA, sistemas administrativos.
 
-[H] H27 - O público já conhece juízes online, fóruns de programação, chatbots e IDEs. É plausível por se tratar de estudantes de computação, mas **quais ferramentas cada aluno realmente usa, e com que frequência, não foi levantado**. Investigar na Entrega 3.
+[H] H26 - O público já conhece juízes online, fóruns de programação, chatbots e IDEs. É plausível por se tratar de estudantes de computação, mas **quais ferramentas cada aluno realmente usa, e com que frequência, não foi levantado**. Investigar na Entrega 3.
 
 
 ## 6.4 O que essas soluções parecem fazer bem?
@@ -415,9 +414,9 @@ Exemplos possíveis: ferramentas de banco, IDEs, consoles de nuvem, dashboards, 
 |---|---|---|
 | Codeforces (examinado) | As tags nomeiam o tópico mas não apresentam ordem de estudo, pré-requisitos nem material de apoio | [F] observado em 26/08/2026 (Entrega 2, C01) |
 | ChatGPT (examinado) | Na consulta observada, a resposta veio como texto corrido, sem representação de dependência entre tópicos e sem citar fonte pedagógica verificável | [F] limitado à consulta observada (Entrega 2, C02) — não é uma afirmação sobre o produto em todos os usos |
-| Chatbots em geral | Suposição de que todos se comportam como o ChatGPT observado | [H] H28 — a equipe examinou um produto; não é base para concluir sobre a categoria |
+| Chatbots em geral | Suposição de que todos se comportam como o ChatGPT observado | [H] H27 — a equipe examinou um produto; não é base para concluir sobre a categoria |
 | Fóruns e editoriais | Suposição de que entregam a solução pronta e por isso não constroem caminho de estudo | [H] H18 |
-| Livros e materiais didáticos | Suposição de que trazem a trilha correta, mas organizada por assunto, de modo que o aluno travado não sabe em que capítulo procurar | [H] H26 |
+| Livros e materiais didáticos | Suposição de que trazem a trilha correta, mas organizada por assunto, de modo que o aluno travado não sabe em que capítulo procurar | [H] H25 |
 
 A Entrega 2 aprofundou Codeforces e ChatGPT. As demais linhas seguem como hipótese até que haja observação sistemática.
 
@@ -485,12 +484,12 @@ Marque apenas as que parecem plausíveis e explique o objetivo correspondente.
 | Relatório/resultados | sim | A01 — é o núcleo: os tópicos, a relação entre eles e a fonte de cada um | [F] as duas lacunas declaradas na implementação do TCC |
 | Histórico com busca/filtros | em aberto | Retomar uma trilha em outra sessão, já que o estudo se estende por dias. | [?] Q12 — necessidade não investigada |
 | Comparação de resultados | não | Comparar trilhas com e sem tags é atividade de pesquisa do TCC, não do aluno iniciante | [F] é objeto da pesquisa do TCC |
-| Explicabilidade/detalhamento | sim | A01 e o erro de confiança (3.4) — saber por que um tópico foi indicado, de que fonte vem e o quanto o sistema está seguro | [F] F1 Macro 0,5820 e alucinação registrada (implementação do TCC); [H] H06 |
+| Explicabilidade/detalhamento | sim | A01 e o erro de confiança (3.4): saber de que fonte consolidada vem cada tópico (livro e capítulo) e que a escolha dos tópicos pode errar | [F] F1 do núcleo de 0,82 e alucinação registrada (implementação do TCC); [H] H06 |
 | Administração/configurações globais | não | Não há operação institucional nem parâmetro sob responsabilidade de um administrador no recorte escolhido. *A versão anterior justificava com "configurar elementos visuais", que é preferência de aparência e não caracteriza tela administrativa.* | — |
 | Usuários/perfis/permissões | em aberto | Só se o histórico (Q12) exigir identificar o aluno entre sessões. Ainda assim o objetivo seria *recuperar minha trilha*, não *gerenciar usuários* | [?] Q12 |
 | CRUD de entidade do domínio | não | Nenhuma atividade do aluno envolve criar, editar e excluir entidades do domínio | — |
 | Auditoria/logs | não | Não há requisito de conformidade, aprovação ou responsabilização formal | [F] 5.5 |
-| Alertas/ocorrências | não | O único aviso relevante — baixa confiança na classificação — pertence ao resultado e será tratado dentro de explicabilidade | [H] H06 |
+| Alertas/ocorrências | não | O único aviso relevante, o de que a IA pode errar na escolha dos tópicos, pertence ao resultado e será tratado dentro de explicabilidade | [H] H06 |
 | Ajuda/documentação | em aberto | Glossário dos termos algorítmicos, que chegam em jargão e em inglês a quem por definição ainda não os domina | [H] H05; [?] Q06 |
 
 > **Atenção:** “login + dashboard + CRUD” não é uma solução universal. Cada padrão deve surgir de uma tarefa real.
@@ -502,13 +501,11 @@ Marque apenas as que parecem plausíveis e explique o objetivo correspondente.
 
 ## 9.1 Qual benefício concreto o projeto de IHC pretende oferecer?
 
-> O benefício humano que justifica o projeto não é tornar a capacidade do TCC utilizável sem conhecimento de IA, Python ou Hugging Face, porque isso é acesso à tecnologia. O aluno não quer deixar de usar Hugging Face, ele quer destravar e voltar a progredir.
-
 | Benefício esperado | Problema/necessidade | Usuário | Status/evidência |
 |---|---|---|---|
 | Sair de uma questão travada sabendo qual é o próximo passo de estudo | Hoje o aluno não identifica o que lhe falta saber e busca por tentativa e erro | Aluno iniciante | [F] problema descrito na pesquisa do TCC; [H] H07 quanto ao objetivo do aluno |
-| Chegar ao material certo sem precisar saber o nome do assunto de antemão | O aluno travado não sabe em que capítulo procurar | Aluno iniciante | [H] H26 |
-| Conseguir avaliar o quanto confiar na orientação recebida antes de investir tempo nela | O iniciante não tem repertório para contestar uma orientação incorreta | Aluno iniciante | [H] H06; [F] F1 Macro 0,5820 (implementação do TCC) |
+| Chegar ao material certo sem precisar saber o nome do assunto de antemão | O aluno travado não sabe em que capítulo procurar | Aluno iniciante | [H] H25 |
+| Conseguir avaliar o quanto confiar na orientação recebida antes de investir tempo nela | O iniciante não tem repertório para contestar uma orientação incorreta | Aluno iniciante | [H] H06; [F] F1 do núcleo de 0,82 (implementação do TCC) |
 | *Efeito secundário:* tornar a contribuição do TCC utilizável sem preparo técnico | O modelo hoje só é acessível por linha de comando | Aluno e tutor | [F] implementação do TCC. **É condição para os benefícios acima, não um benefício em si.** |
 
 ## 9.2 Que ações o usuário deverá conseguir realizar?
@@ -530,7 +527,7 @@ A tecnologia aparece **agora**, depois do entendimento do uso.
 | Tecnologia/restrição | Por que existe | Possível impacto na interação |
 |---|---|---|
 | LLM Qwen3-4B-Instruct-2507 com ajuste fino | Equilíbrio entre capacidade de inferência semântica e custo computacional (implementação do TCC) | Inferência não é instantânea: exige feedback de progresso (F02) |
-| F1 Macro de 0,5820 na classificação de rótulos | Resultado medido no TCC, abaixo do baseline de 0,79 de Souza et al. | O erro é frequente o bastante para ser regra de projeto, não exceção: sustenta F05 |
+| F1 do núcleo de 0,82 na escolha dos tópicos centrais da questão | Resultado medido no TCC, média de 10 problemas | O modelo ainda erra em parte das questões, o bastante para ser regra de projeto, não exceção: sustenta F05 |
 | Caso registrado de alucinação em inferência | Observado na segunda iteração de treinamento (implementação do TCC) | A interface precisa prever resposta incoerente e não exibi-la como trilha legítima |
 | Modelo treinado sobre enunciados do Codeforces **em inglês**, com tags em inglês | A base de Dinu et al. é em inglês (implementação do TCC) | Possível barreira de vocabulário para um público brasileiro iniciante — relaciona-se a H05 e Q06 |
 | Aplicação web dependente de conexão | Interface web prevista no TCC | Sem conexão não há consulta |
@@ -547,7 +544,7 @@ A tecnologia aparece **agora**, depois do entendimento do uso.
 |---|---|---|---|
 | H01 | Espera-se que as trilhas de estudo geradas sejam comparáveis às trilhas apresentadas nos livros-fonte. | **[TÉCNICA DO TCC]** É a validação científica do trabalho, não uma questão de interação. Para IHC importa apenas o reflexo: se a trilha pode errar, a interface precisa comunicar isso. | Avaliação experimental do TCC — comparação das trilhas geradas com trilhas de livros e currículos, pelas métricas já definidas na pesquisa do TCC. |
 | H02 | Espera-se que a ferramenta seja bem recebida pelos usuários. | **[SECUNDÁRIA — a reformular]** Como está, não é investigável: "bem recebida" pode ser satisfação, confiança, utilidade percebida ou facilidade de decidir. Não será decomposta agora para não escolher uma métrica antes de conhecer a necessidade. | Primeiro decidir, a partir das Entregas 3 e 7, qual aspecto da experiência importa ao projeto; só então virará meta verificável na Entrega 8. |
-| H03 | Pesquisadores teriam interesse em baixar o modelo, reproduzir os experimentos e analisar o processo de geração de trilhas. | **[FORA DO RECORTE]** Diz respeito ao artefato técnico do TCC, não à interface do aluno. Mantida apenas para registrar por que o perfil ficou fora. | Não será investigada na disciplina. Evidência eventual viria de downloads/citações do modelo no Hugging Face. |
+| H03 | Pesquisadores teriam interesse em baixar o modelo, reproduzir os experimentos e analisar o processo de geração de trilhas. | **[FORA DO RECORTE]** Diz respeito ao artefato técnico do TCC, não à interface do aluno. Mantida apenas para registrar por que o perfil ficou fora. | Não será investigada na disciplina. Evidência eventual viria de citações do TCC. |
 | H04 | O pesquisador consome o modelo por linha de comando ou notebook, sem passar pela interface projetada. | **[FORA DO RECORTE]** Confirma que o pesquisador é stakeholder do TCC e não usuário da interface. | Não será investigada. Basta observar que o artefato publicado é um modelo, não uma aplicação. |
 | H05 | A interação por parte do aluno exige que a linguagem seja compreensível para quem tem pouco conhecimento de programação competitiva. | **[CRÍTICA]** Determina vocabulário, rotulagem e necessidade de glossário em toda a interface. A Entrega 2 mostrou duas estratégias opostas de terminologia (Codeforces x ChatGPT) sem indicar qual serve ao iniciante. | Entrega 7: questionário e entrevista pedindo que alunos expliquem, com as próprias palavras, termos como `dp`, `greedy` e `pré-requisito`; observar em qual vocabulário eles descrevem o que não sabem. Evidência que enfraqueceria: iniciantes reconhecerem e preferirem o jargão original. |
 | H06 | O aluno iniciante sabe operar uma interface web sem dificuldade, mas não tem repertório para julgar se a trilha recebida está correta. | **[CRÍTICA]** É a premissa que desloca o projeto de "operar" para "interpretar e confiar". Se confirmada, explicabilidade, fonte e sinalização de incerteza deixam de ser acessórios. | Entrega 7: apresentar a alunos duas trilhas para a mesma questão, uma correta e uma com tópico intruso, e observar se percebem a diferença e como justificam. Evidência que enfraqueceria: iniciantes detectarem o intruso com segurança. |
@@ -564,15 +561,14 @@ A tecnologia aparece **agora**, depois do entendimento do uso.
 | H17 | O aluno consulta as tags da questão e tenta inferir sozinho o que estudar a partir delas. | **[CRÍTICA]** Descreve o processo atual. A Entrega 4 precisa desse dado para construir o cenário-problema. | Entrega 7: observação de alunos resolvendo uma questão desconhecida, registrando o que consultam e em que ordem. |
 | H18 | O aluno procura editoriais, soluções comentadas ou discussões em fóruns, que entregam a solução pronta em vez de construir o caminho de estudo. | **[SECUNDÁRIA]** Se for o caminho dominante, o projeto compete com editoriais e não com tags. | Entrega 7, junto com H17. |
 | H19 | O aluno cola o enunciado em um chatbot de propósito geral e pede explicação. | **[CRÍTICA]** Define quem é o concorrente real. A Entrega 2 examinou o ChatGPT justamente por essa suposição. | Entrega 7: perguntar diretamente se usa e para quê; pedir que mostre uma conversa real, se houver. |
-| H20 | Para um aluno iniciante, localizar e executar o modelo no Hugging Face seria percebido como confuso e inviável. | **[SECUNDÁRIA]** Sustenta a existência de uma interface, mas não orienta nenhuma decisão de design. | Entrega 7, como pergunta de apoio. |
-| H21 | O erro mais relevante é o aluno estudar tópicos não relacionados e perder tempo de treino. | **[CRÍTICA]** Define o que a interface precisa evitar e a severidade na Entrega 13. | Entregas 7 e 14. |
-| H22 | O uso predominante ocorre em notebook ou desktop, porque a questão está aberta em outra aba. | **[CRÍTICA]** Decide a viabilidade da representação em grafo: o que é legível em notebook pode ser impraticável em celular. | Entrega 3: levantamento de dispositivo no contexto real de treino. |
-| H23 | O aluno chega à ferramenta já travado, durante ou logo após uma tentativa frustrada. | **[CRÍTICA]** Define o estado emocional e cognitivo em que a interação começa e o que precisa estar visível na primeira tela. | Entregas 3 e 4. |
-| H24 | O aluno alterna entre enunciado, editor de código e ferramenta de consulta, com interrupções. | **[SECUNDÁRIA]** Afeta retomada de contexto e reforça o argumento a favor do histórico (Q12). | Entrega 3. |
-| H25 | Caberia ao tutor conferir a correção do conteúdo antes de repassá-lo ao aluno. | **[SECUNDÁRIA]** Atribuição de responsabilidade suposta pela equipe, sem conversa com nenhum tutor. | Entrega 7, junto com H11. |
-| H26 | Livros e materiais consolidados trazem a trilha correta, mas organizada por assunto, de modo que o aluno travado não sabe em que capítulo procurar. | **[CRÍTICA]** É o que justifica ligar cada tópico a uma fonte específica (F04). | Entrega 2 (aprofundamento) e Entrega 7. |
-| H27 | O público já conhece juízes online, fóruns, chatbots e IDEs. | **[SECUNDÁRIA]** Informa convenções, mas não decide nada sozinha. | Entrega 3: levantamento de ferramentas efetivamente usadas. |
-| H28 | Chatbots de propósito geral, como categoria, comportam-se como o ChatGPT observado. | **[SECUNDÁRIA]** Generalização a partir de um produto examinado. Não sustenta conclusão de mercado. | Entrega 2 (ampliar a amostra) ou limitar a redação ao produto observado. |
+| H20 | O erro mais relevante é o aluno estudar tópicos não relacionados e perder tempo de treino. | **[CRÍTICA]** Define o que a interface precisa evitar e a severidade na Entrega 13. | Entregas 7 e 14. |
+| H21 | O uso predominante ocorre em notebook ou desktop, porque a questão está aberta em outra aba. | **[CRÍTICA]** Decide a viabilidade da representação em grafo: o que é legível em notebook pode ser impraticável em celular. | Entrega 3: levantamento de dispositivo no contexto real de treino. |
+| H22 | O aluno chega à ferramenta já travado, durante ou logo após uma tentativa frustrada. | **[CRÍTICA]** Define o estado emocional e cognitivo em que a interação começa e o que precisa estar visível na primeira tela. | Entregas 3 e 4. |
+| H23 | O aluno alterna entre enunciado, editor de código e ferramenta de consulta, com interrupções. | **[SECUNDÁRIA]** Afeta retomada de contexto e reforça o argumento a favor do histórico (Q12). | Entrega 3. |
+| H24 | Caberia ao tutor conferir a correção do conteúdo antes de repassá-lo ao aluno. | **[SECUNDÁRIA]** Atribuição de responsabilidade suposta pela equipe, sem conversa com nenhum tutor. | Entrega 7, junto com H11. |
+| H25 | Livros e materiais consolidados trazem a trilha correta, mas organizada por assunto, de modo que o aluno travado não sabe em que capítulo procurar. | **[CRÍTICA]** É o que justifica ligar cada tópico a uma fonte específica (F04). | Entrega 2 (aprofundamento) e Entrega 7. |
+| H26 | O público já conhece juízes online, fóruns, chatbots e IDEs. | **[SECUNDÁRIA]** Informa convenções, mas não decide nada sozinha. | Entrega 3: levantamento de ferramentas efetivamente usadas. |
+| H27 | Chatbots de propósito geral, como categoria, comportam-se como o ChatGPT observado. | **[SECUNDÁRIA]** Generalização a partir de um produto examinado. Não sustenta conclusão de mercado. | Entrega 2 (ampliar a amostra) ou limitar a redação ao produto observado. |
 | Q01 | Existe interesse institucional (professor, curso, equipe de maratona) em adotar a ferramenta? | **[SECUNDÁRIA]** Definiria um stakeholder adicional. | Entrega 3. |
 | Q02 | O que significa concretamente "aluno iniciante" neste domínio? | **[CRÍTICA]** Sem isso, a persona da Entrega 3 será um estereótipo. | Entrega 3: levantamento de conhecimento prévio, tempo de prática, familiaridade com juízes online e vocabulário. |
 | Q03 | Existe necessidade de acessibilidade específica nesse público? | **[CRÍTICA]** Define requisitos de contraste, teclado e alternativa textual ao grafo. | Entrega 3 e Entrega 8, com apoio da WCAG 2.2. |
@@ -581,7 +577,7 @@ A tecnologia aparece **agora**, depois do entendimento do uso.
 | Q06 | **Quais informações o aluno realmente interpreta, hoje, para decidir o que estudar quando trava?** | **[CRÍTICA — principal lacuna da entrega]** Define o que a interface precisa comunicar. Sem isso, o conteúdo da tela será deduzido da solução imaginada, e não da necessidade. | Entrega 7: observação de alunos travando em uma questão desconhecida, com protocolo *think-aloud*, registrando o que olham e o que dizem não entender. |
 | Q07 | O aluno chega a abandonar a competição ou a modalidade por causa dessa dificuldade? | **[SECUNDÁRIA]** Afirmação forte sobre evasão, sem evidência. | Entrega 7, se houver acesso a alunos que pararam de praticar. |
 | Q08 | O uso durante uma competição oficial faz parte do contexto pretendido? | **[CRÍTICA]** Em competição há pressão de tempo severa, tags ocultas e possível restrição de regulamento. Muda o recorte inteiro. | Entrega 3: decisão da equipe documentada, apoiada no regulamento das competições de referência. |
-| Q09 | Que dispositivo o aluno usa ao treinar e consultaria a ferramenta? | **[CRÍTICA]** Afeta diretamente a viabilidade do grafo (H15, H22). | Entrega 3. |
+| Q09 | Que dispositivo o aluno usa ao treinar e consultaria a ferramenta? | **[CRÍTICA]** Afeta diretamente a viabilidade do grafo (H15, H21). | Entrega 3. |
 | Q10 | Em que ambiente o treino acontece? | **[SECUNDÁRIA]** Complementa o contexto. | Entrega 3. |
 | Q11 | Existe estrutura organizacional relevante em torno do público (equipe, treinador, disciplina)? | **[SECUNDÁRIA]** Definiria papéis e um possível segundo cenário. | Entrega 3. |
 | Q12 | O aluno precisa recuperar uma trilha consultada anteriormente? | **[CRÍTICA]** Decide se histórico e identificação entram no escopo. | Entrega 7: perguntar em quantas sessões o aluno estuda um mesmo assunto e se voltaria a consultar. |
@@ -601,10 +597,10 @@ Registre em [`../RASTREABILIDADE.md`](../RASTREABILIDADE.md).
 | O que ele precisa alcançar? | A01 — destravar em uma questão e voltar a progredir no treino, descobrindo o que precisa estudar sem receber a solução pronta (H07). |
 | Qual problema/atividade será estudado? | A decisão que o aluno toma quando trava: como ele identifica, hoje, o que lhe falta saber — e onde exatamente essa identificação falha (Q06). |
 | Como isso acontece hoje? | Suposições a verificar: pelas tags do juiz online (H17), por editoriais e fóruns (H18) ou por chatbots generalistas (H19). O modelo do TCC, hoje, só é acessível por via técnica [F]. |
-| Qual é o contexto de uso? | Treino individual, em navegador, com a questão aberta em outra aba e sem tutor presente (H09, H22, H23). Se competição entra no contexto é lacuna aberta (Q08). |
+| Qual é o contexto de uso? | Treino individual, em navegador, com a questão aberta em outra aba e sem tutor presente (H09, H21, H22). Se competição entra no contexto é lacuna aberta (Q08). |
 | Que interface/recorte será explorado? | O fluxo de interação descrito em 7.4: entrada conversacional e resultado estruturado com dependências entre tópicos e fonte pedagógica. É hipótese de trabalho, não decisão fechada (H12, H15). |
 | Como a interface se relaciona ao TCC? | É o meio pelo qual o usuário acessa a contribuição do TCC. A disciplina aprofunda o fluxo, a apresentação e o tratamento de erro, que o TCC não especifica. |
-| Quais pontos ainda são hipóteses? | H01–H28 e as lacunas Q01–Q12 (seção 10). As críticas para o recorte são H05, H06, H07, H08, H09, H12, H15, H16, H17, H19, H21, H22, H23, H26 e as lacunas Q02, Q03, Q05, Q06, Q08, Q09, Q12. |
+| Quais pontos ainda são hipóteses? | H01–H27 e as lacunas Q01–Q12 (seção 10). As críticas para o recorte são H05, H06, H07, H08, H09, H12, H15, H16, H17, H19, H20, H21, H22, H25 e as lacunas Q02, Q03, Q05, Q06, Q08, Q09, Q12. |
 
 ### Delimitação
 
@@ -645,7 +641,7 @@ Prepare uma explicação de até três frases:
 
 2. **Contribuição técnica do TCC:** Um Grande Modelo de Linguagem ajustado lê o enunciado, infere os conceitos algorítmicos envolvidos e monta a partir deles uma trilha de estudo ancorada em livros didáticos consolidados.
 
-3. **Como uma pessoa poderia utilizar essa contribuição:** O aluno cola o enunciado da questão em uma caixa de texto e recebe um mapa de estudo com os tópicos na ordem certa, o que depende do quê, onde estudar cada um e o quanto o sistema está confiante para então voltar à questão e resolvê-la por conta própria.
+3. **Como uma pessoa poderia utilizar essa contribuição:** O aluno cola o enunciado da questão em uma caixa de texto e recebe um mapa de estudo com os tópicos na ordem certa, o que depende do quê, onde estudar cada um e o aviso de que a IA pode errar, para então voltar à questão e resolvê-la por conta própria.
 
 Essa síntese ajuda a apresentar o projeto para público não especializado sem reduzir seu mérito técnico.
 
@@ -668,7 +664,7 @@ Essa síntese ajuda a apresentar o projeto para público não especializado sem 
 - [X] Possibilidades como dashboard, relatório, histórico, filtros e CRUD foram tratadas como hipóteses de solução, não como requisitos automáticos. *(seção 8, com estado "em aberto" para o que não foi investigado)*
 - [X] Cada possibilidade de interface tem um objetivo/tarefa que poderia justificá-la. *(coluna "Objetivo/tarefa que justificaria" na seção 8)*
 - [X] Afirmações relevantes estão marcadas `[F]`, `[H]` ou `[?]`. *(cada `[F]` indica a origem: TCC, referência bibliográfica ou data de inspeção)*
-- [X] Hipóteses prioritárias receberam IDs e foram para a rastreabilidade. *(H01–H28 e Q01–Q12 na seção 10 e em `../RASTREABILIDADE.md`)*
+- [X] Hipóteses prioritárias receberam IDs e foram para a rastreabilidade. *(H01–H27 e Q01–Q12 na seção 10 e em `../RASTREABILIDADE.md`)*
 - [X] O recorte de IHC é viável para modelar, prototipar e avaliar no semestre. *(um fluxo principal, cinco ações F01–F05, sem administração nem CRUD)*
 - [X] A equipe consegue explicar problema humano → contribuição computacional → forma de uso. *(seção 13)*
 

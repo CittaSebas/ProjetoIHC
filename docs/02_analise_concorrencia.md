@@ -103,14 +103,14 @@ A análise foi conduzida a partir do objetivo **A01 — descobrir o que precisa 
 
 [F] **No Codeforces observado:** a interface segue convenções visuais de fórum de gerações anteriores — densidade alta de links, pouca hierarquia tipográfica, navegação por abas no topo.
 
-[H] H29 — Outros juízes online (Beecrowd, LeetCode) teriam interfaces de gerações diferentes. *A equipe examinou um produto, o que não sustenta afirmação sobre a maioria da categoria.*
+[H] H28 — Outros juízes online (Beecrowd, LeetCode) teriam interfaces de gerações diferentes. *A equipe examinou um produto, o que não sustenta afirmação sobre a maioria da categoria.*
 
 #### Pontos positivos, limitações e lições
 
 | Ponto | Observação [F] | Interpretação [H] | Implicação para nosso projeto |
 |---|---|---|---|
 | Filtros de refinamento | C01-2 oferece filtro por tag e por faixa de dificuldade | [H] H13 — dá controle a quem já conhece o vocabulário do domínio | **Não transferível diretamente:** o filtro pressupõe saber o nome da tag, que é exatamente o que falta ao aluno em A01. Se algum padrão de filtro entrar no projeto, precisará operar sobre algo que o aluno já saiba nomear |
-| Densidade de informação na home | A home concentra muitos blocos e links sem hierarquia evidente | [H] H30 — pode dificultar a alguém que chega com um objetivo único e específico | Sugere manter a primeira tela focada na ação inicial de A01. **Isso é hipótese**, não conclusão: não foi medido com usuários |
+| Densidade de informação na home | A home concentra muitos blocos e links sem hierarquia evidente | [H] H29 — pode dificultar a alguém que chega com um objetivo único e específico | Sugere manter a primeira tela focada na ação inicial de A01. **Isso é hipótese**, não conclusão: não foi medido com usuários |
 | Tags presentes, caminho de estudo ausente | C01-2 mostra as tags, mas nenhuma tela indica ordem de estudo ou pré-requisito | [F] a ausência é observável | É a lacuna que o projeto endereça. Sustenta F03 e F04 da Entrega 1 |
 | Veredito de submissão | A plataforma responde à submissão com aprovação/reprovação e tipo de erro | [F] | **Existe feedback de resultado.** O que não existe é feedback de processamento durante uma consulta — distinção corrigida na síntese |
 | Aparência datada | Convenções visuais de fórum antigo | [?] Q13 — se isso afeta a percepção do aluno iniciante não foi verificado | *Concluir daí que alunos mais jovens não estão acostumados à interface, ou decidir por um visual moderno, seria afirmar algo sobre pessoas sem dado sobre pessoas.* |
@@ -170,7 +170,7 @@ A análise foi conduzida a partir do objetivo **A01 — descobrir o que precisa 
 | Entrada única e de baixo ruído | C02-1 mostra uma caixa central com poucos controles concorrentes | [H] H12 — reduzir escolhas concorrentes no momento inicial pode facilitar começar a tarefa | Sustenta RC01, **desde que justificada pela tarefa A01** e não pela semelhança com o concorrente |
 | Resposta em texto corrido | Na consulta observada, a orientação veio como prosa sequencial | Texto corrido não representa dependência entre tópicos | Sustenta a decisão de resultado estruturado do recorte 7.4. Limitado à consulta observada |
 | Sem fonte pedagógica verificável | Na consulta observada, a resposta não citou livro ou capítulo | [F] limitado à consulta observada | Sustenta F04 (fonte por tópico). Não é afirmação sobre o produto em todo e qualquer uso |
-| Sem indicação de incerteza | Na consulta observada, a resposta foi apresentada com o mesmo tom independentemente da confiança | [H] H06 — o iniciante não tem como calibrar o quanto confiar | Sustenta F05. Reforçado pelo F1 Macro de 0,5820 do próprio TCC |
+| Sem indicação de incerteza | Na consulta observada, a resposta foi apresentada com o mesmo tom independentemente da confiança | [H] H06 — o iniciante não tem como calibrar o quanto confiar | Sustenta F05. Reforçado pelo F1 do núcleo de 0,82 do próprio TCC |
 
 ## 3. Softwares que o público-alvo usa no cotidiano
 
@@ -181,10 +181,10 @@ Analise interfaces que moldam a expectativa do público, mesmo que não sejam co
 | Software | Por que o público usaria | Padrão observado [F] | Prints | Hipótese sobre o usuário [H] |
 |---|---|---|---|---|
 | Codeforces | Procurar questões e discutir soluções | Fórum + tabelas densas + filtros | <img width="1542" alt="Codeforces — home" src="https://github.com/user-attachments/assets/29dd7d73-f867-406d-b59f-d6c14d29f3ee" /> | [H] H13 — listas com filtros seriam convenção conhecida por quem já usa juízes online |
-| Stack Overflow | Fazer perguntas de programação em geral | Post com respostas votadas e comentários | <img width="1265" alt="Stack Overflow" src="https://github.com/user-attachments/assets/6896c782-2386-4a4c-85da-21bdb5e0a986" /> | [H] H31 — o formato pergunta/resposta seria familiar ao público de programação |
+| Stack Overflow | Fazer perguntas de programação em geral | Post com respostas votadas e comentários | <img width="1265" alt="Stack Overflow" src="https://github.com/user-attachments/assets/6896c782-2386-4a4c-85da-21bdb5e0a986" /> | [H] H30 — o formato pergunta/resposta seria familiar ao público de programação |
 | ChatGPT | Pedir explicações pontuais | Chat com entrada única | <img width="1507" alt="ChatGPT" src="https://github.com/user-attachments/assets/4e28b680-68c7-4237-a819-42a8e634f951" /> | [H] H12 — a entrada conversacional seria familiar |
-| VS Code e outras IDEs | Escrever código | Área de trabalho central, alta densidade de painéis, forte customização | <img width="1191" alt="VS Code" src="https://github.com/user-attachments/assets/19576140-d69b-4b12-9cee-0a4e660f7130" /> | [H] H32 — o público toleraria interfaces densas e customizáveis. *Antes afirmado como fato* |
-| GitHub | Versionar e compartilhar código | Feed de atividade na página inicial | <img width="1890" alt="GitHub" src="https://github.com/user-attachments/assets/fa80e2e2-0f00-4aad-8dee-d81703e136d4" /> | [H] H33 — o público estaria habituado a feeds e a muitas opções na tela inicial. *Antes afirmado como fato* |
+| VS Code e outras IDEs | Escrever código | Área de trabalho central, alta densidade de painéis, forte customização | <img width="1191" alt="VS Code" src="https://github.com/user-attachments/assets/19576140-d69b-4b12-9cee-0a4e660f7130" /> | [H] H31 — o público toleraria interfaces densas e customizáveis. *Antes afirmado como fato* |
+| GitHub | Versionar e compartilhar código | Feed de atividade na página inicial | <img width="1890" alt="GitHub" src="https://github.com/user-attachments/assets/fa80e2e2-0f00-4aad-8dee-d81703e136d4" /> | [H] H32 — o público estaria habituado a feeds e a muitas opções na tela inicial. *Antes afirmado como fato* |
 
 [?] Q14 — Nenhuma dessas hipóteses sobre familiaridade foi verificada com alunos. Q02 (o que é "iniciante") precisa ser respondida antes: um aluno de primeiro ano e um competidor de terceiro ano podem ter repertórios de ferramenta muito diferentes. Investigar na Entrega 3.
 
@@ -255,8 +255,8 @@ Liste recomendações com origem explícita.
 | H12 — entrada conversacional familiar | Confirmou que o padrão **existe** em uma ferramenta relevante (C02-1). Não confirmou familiaridade nem adequação ao público | **aberta** — evidência parcial: existência do padrão ≠ familiaridade |
 | H13 — listas e filtros familiares | Confirmou que o padrão existe no Codeforces (C01-2) e revelou uma limitação: o filtro pressupõe saber o nome da tag, que é o que falta em A01 | **aberta, com evidência contrária à adoção** — nenhuma tarefa do projeto exige o padrão até agora |
 | H19 — aluno usa chatbot generalista | Não investigada nesta entrega: a análise examinou o produto, não o comportamento do aluno | **aberta** — depende da Entrega 7 |
-| H29 — juízes online como categoria | Criada nesta entrega, ao limitar a generalização sobre juízes online ao produto observado | **aberta** |
-| H30 a H33 — familiaridade do público com convenções | Criadas nesta entrega, ao converter em hipótese as afirmações sobre preferência e hábito do público-alvo | **abertas** |
+| H28 — juízes online como categoria | Criada nesta entrega, ao limitar a generalização sobre juízes online ao produto observado | **aberta** |
+| H29 a H32 — familiaridade do público com convenções | Criadas nesta entrega, ao converter em hipótese as afirmações sobre preferência e hábito do público-alvo | **abertas** |
 
 Registrado em [`../RASTREABILIDADE.md`](../RASTREABILIDADE.md).
 

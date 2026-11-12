@@ -1,84 +1,222 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="840" height="430" viewBox="0 0 840 430" font-family="Verdana, Geneva, sans-serif">
+<svg xmlns="http://www.w3.org/2000/svg" width="1240" height="470" viewBox="0 0 1240 470" font-family="Verdana, Geneva, sans-serif">
   <style>
     .scr  { fill:#ffffff; stroke:#444; stroke-width:2.5; }
     .bar  { fill:#ececec; stroke:#444; stroke-width:2; }
     .box  { fill:#f7f7f7; stroke:#777; stroke-width:2; }
     .btn  { fill:#ddd; stroke:#444; stroke-width:2; }
+    .chip { fill:#fff; stroke:#777; stroke-width:1.5; }
+    .chipHi { fill:#d6d6d6; stroke:#000; stroke-width:3; }
     .node { fill:#fff; stroke:#444; stroke-width:2; }
+    .nodeHi { fill:#e0e0e0; stroke:#000; stroke-width:3.5; }
+    .edge { stroke:#999; stroke-width:1; }
     .lbl  { font-size:15px; font-weight:bold; fill:#111; }
     .t    { font-size:12px; fill:#222; }
     .tg   { font-size:12px; fill:#888; }
     .ts   { font-size:11px; fill:#444; }
-    .arrow{ stroke:#333; stroke-width:2.5; fill:none; marker-end:url(#b); }
+    .arrow{ stroke:#333; stroke-width:2.5; fill:none; marker-end:url(#a); }
     .acap { font-size:11.5px; fill:#333; font-style:italic; }
   </style>
   <defs>
-    <marker id="b" markerWidth="10" markerHeight="8" refX="9" refY="4" orient="auto">
+    <marker id="a" markerWidth="10" markerHeight="8" refX="9" refY="4" orient="auto">
       <path d="M0,0 L10,4 L0,8 z" fill="#333"/>
     </marker>
   </defs>
 
-  <text x="20" y="28" class="lbl" font-size="17">PF02: Conferir as fontes usadas pelo modelo (T02)</text>
-  <text x="20" y="48" class="tg">Mesma interface de PF01, alcançada pelo item "Fontes" da barra superior. Sem login e sem permissão.</text>
+  <text x="20" y="28" class="lbl" font-size="17">PF02: Conferir o grafo de conhecimento (T02)</text>
+  <text x="20" y="48" class="tg">Protótipo de baixa fidelidade. Equipe 03. Acesso pela aba Fontes. Caminho: P07 e P08, nos dois sentidos.</text>
 
-  <!-- P07 -->
+  <!-- ============ P07 ============ -->
   <g transform="translate(20,70)">
-    <rect class="scr" width="360" height="290" rx="4"/>
-    <rect class="bar" x="0" y="0" width="360" height="32"/>
+    <rect class="scr" width="580" height="360" rx="4"/>
+    <rect class="bar" x="0" y="0" width="580" height="32"/>
     <text x="12" y="21" class="t">Trilha de Estudo</text>
-    <text x="268" y="21" class="t" font-weight="bold">Fontes</text>
-    <text x="12" y="58" class="lbl">P07: Livros usados</text>
-    <rect class="box" x="12" y="72" width="230" height="26" rx="3"/>
-    <text x="22" y="90" class="tg">buscar por título ou autor</text>
-    <rect class="btn" x="250" y="72" width="98" height="26" rx="3"/>
-    <text x="262" y="90" class="t">Ver grafo</text>
-
-    <line x1="12" y1="112" x2="348" y2="112" stroke="#bbb" stroke-width="1.5"/>
-    <text x="12" y="134" class="t">Cormen, Introduction to Algorithms</text>
-    <text x="12" y="150" class="ts">42 tópicos</text>
-    <line x1="12" y1="162" x2="348" y2="162" stroke="#bbb" stroke-width="1.5"/>
-    <text x="12" y="184" class="t">Halim, Competitive Programming 4</text>
-    <text x="12" y="200" class="ts">31 tópicos</text>
-    <line x1="12" y1="212" x2="348" y2="212" stroke="#bbb" stroke-width="1.5"/>
-    <text x="12" y="234" class="t">Sedgewick, Algorithms</text>
-    <text x="12" y="250" class="ts">18 tópicos</text>
-    <line x1="12" y1="262" x2="348" y2="262" stroke="#bbb" stroke-width="1.5"/>
-    <text x="12" y="282" class="ts">Toque num livro para ver seus tópicos.</text>
+    <rect x="496" y="5" width="72" height="22" rx="3" fill="#d6d6d6" stroke="#444" stroke-width="2"/>
+    <text x="532" y="21" class="t" text-anchor="middle">Fontes</text>
+    <text x="12" y="58" class="lbl">P07: Grafo completo</text>
+    <text x="12" y="78" class="ts">60 tópicos. Fonte: Cormen et al., Introduction to Algorithms</text>
+    <rect class="chipHi" x="12" y="90" width="50" height="24" rx="12"/>
+    <text x="37.0" y="106" class="t" text-anchor="middle">Todas</text>
+    <rect class="chip" x="68" y="90" width="92" height="24" rx="12"/>
+    <text x="114.0" y="106" class="t" text-anchor="middle">Fundamentos</text>
+    <rect class="chip" x="166" y="90" width="60" height="24" rx="12"/>
+    <text x="196.0" y="106" class="t" text-anchor="middle">Grafos</text>
+    <rect class="chip" x="232" y="90" width="82" height="24" rx="12"/>
+    <text x="273.0" y="106" class="t" text-anchor="middle">Estruturas</text>
+    <rect class="chip" x="320" y="90" width="84" height="24" rx="12"/>
+    <text x="362.0" y="106" class="t" text-anchor="middle">Matemática</text>
+    <rect class="chip" x="410" y="90" width="62" height="24" rx="12"/>
+    <text x="441.0" y="106" class="t" text-anchor="middle">Strings</text>
+    <text x="482" y="106" class="tg">...</text>
+    <rect class="box" x="12" y="124" width="556" height="198" rx="3"/>
+    <rect class="btn" x="430" y="132" width="26" height="22" rx="3"/>
+    <text x="443" y="148" class="t" text-anchor="middle">-</text>
+    <rect class="btn" x="460" y="132" width="26" height="22" rx="3"/>
+    <text x="473" y="148" class="t" text-anchor="middle">+</text>
+    <rect class="btn" x="490" y="132" width="70" height="22" rx="3"/>
+    <text x="525" y="148" class="ts" text-anchor="middle">Ajustar</text>
+    <line x1="39" y1="238" x2="100" y2="189" class="edge"/>
+    <line x1="39" y1="238" x2="95" y2="244" class="edge"/>
+    <line x1="39" y1="238" x2="95" y2="244" class="edge"/>
+    <line x1="39" y1="238" x2="95" y2="288" class="edge"/>
+    <line x1="39" y1="238" x2="160" y2="270" class="edge"/>
+    <line x1="39" y1="238" x2="163" y2="180" class="edge"/>
+    <line x1="95" y1="288" x2="163" y2="180" class="edge"/>
+    <line x1="95" y1="244" x2="163" y2="180" class="edge"/>
+    <line x1="95" y1="288" x2="162" y2="211" class="edge"/>
+    <line x1="95" y1="288" x2="162" y2="211" class="edge"/>
+    <line x1="95" y1="244" x2="154" y2="237" class="edge"/>
+    <line x1="95" y1="244" x2="160" y2="270" class="edge"/>
+    <line x1="95" y1="288" x2="160" y2="270" class="edge"/>
+    <line x1="100" y1="189" x2="155" y2="295" class="edge"/>
+    <line x1="95" y1="244" x2="223" y2="217" class="edge"/>
+    <line x1="100" y1="189" x2="223" y2="262" class="edge"/>
+    <line x1="160" y1="270" x2="215" y2="184" class="edge"/>
+    <line x1="162" y1="211" x2="220" y2="196" class="edge"/>
+    <line x1="162" y1="211" x2="223" y2="217" class="edge"/>
+    <line x1="162" y1="211" x2="217" y2="236" class="edge"/>
+    <line x1="160" y1="270" x2="217" y2="236" class="edge"/>
+    <line x1="160" y1="270" x2="223" y2="262" class="edge"/>
+    <line x1="162" y1="211" x2="214" y2="279" class="edge"/>
+    <line x1="160" y1="270" x2="214" y2="304" class="edge"/>
+    <line x1="155" y1="295" x2="282" y2="247" class="edge"/>
+    <line x1="162" y1="211" x2="279" y2="281" class="edge"/>
+    <line x1="223" y1="217" x2="276" y2="179" class="edge"/>
+    <line x1="214" y1="279" x2="276" y2="179" class="edge"/>
+    <line x1="223" y1="217" x2="280" y2="194" class="edge"/>
+    <line x1="217" y1="236" x2="282" y2="211" class="edge"/>
+    <line x1="220" y1="196" x2="282" y2="211" class="edge"/>
+    <line x1="215" y1="184" x2="283" y2="231" class="edge"/>
+    <line x1="220" y1="196" x2="282" y2="247" class="edge"/>
+    <line x1="214" y1="279" x2="275" y2="265" class="edge"/>
+    <line x1="215" y1="184" x2="279" y2="281" class="edge"/>
+    <line x1="214" y1="304" x2="282" y2="298" class="edge"/>
+    <line x1="223" y1="262" x2="341" y2="213" class="edge"/>
+    <line x1="223" y1="217" x2="341" y2="243" class="edge"/>
+    <line x1="282" y1="211" x2="343" y2="174" class="edge"/>
+    <line x1="275" y1="265" x2="343" y2="192" class="edge"/>
+    <line x1="275" y1="265" x2="341" y2="213" class="edge"/>
+    <line x1="282" y1="211" x2="341" y2="213" class="edge"/>
+    <line x1="276" y1="179" x2="340" y2="225" class="edge"/>
+    <line x1="282" y1="298" x2="340" y2="225" class="edge"/>
+    <line x1="279" y1="281" x2="341" y2="243" class="edge"/>
+    <line x1="279" y1="281" x2="341" y2="243" class="edge"/>
+    <line x1="279" y1="281" x2="339" y2="256" class="edge"/>
+    <line x1="282" y1="298" x2="337" y2="269" class="edge"/>
+    <line x1="279" y1="281" x2="345" y2="286" class="edge"/>
+    <line x1="276" y1="179" x2="345" y2="286" class="edge"/>
+    <line x1="280" y1="194" x2="335" y2="302" class="edge"/>
+    <line x1="283" y1="231" x2="395" y2="244" class="edge"/>
+    <line x1="282" y1="211" x2="402" y2="183" class="edge"/>
+    <line x1="343" y1="174" x2="402" y2="183" class="edge"/>
+    <line x1="343" y1="174" x2="399" y2="203" class="edge"/>
+    <line x1="341" y1="213" x2="398" y2="217" class="edge"/>
+    <line x1="335" y1="302" x2="398" y2="217" class="edge"/>
+    <line x1="339" y1="256" x2="395" y2="244" class="edge"/>
+    <line x1="343" y1="174" x2="400" y2="258" class="edge"/>
+    <line x1="343" y1="192" x2="400" y2="258" class="edge"/>
+    <line x1="337" y1="269" x2="406" y2="281" class="edge"/>
+    <line x1="341" y1="243" x2="396" y2="303" class="edge"/>
+    <line x1="339" y1="256" x2="466" y2="262" class="edge"/>
+    <line x1="345" y1="286" x2="460" y2="184" class="edge"/>
+    <line x1="396" y1="303" x2="460" y2="184" class="edge"/>
+    <line x1="395" y1="244" x2="464" y2="220" class="edge"/>
+    <line x1="395" y1="244" x2="466" y2="262" class="edge"/>
+    <line x1="402" y1="183" x2="463" y2="294" class="edge"/>
+    <circle class="node" cx="39" cy="238" r="7"/>
+    <circle class="node" cx="100" cy="189" r="7"/>
+    <circle class="node" cx="95" cy="244" r="7"/>
+    <circle class="node" cx="95" cy="288" r="7"/>
+    <circle class="node" cx="163" cy="180" r="7"/>
+    <circle class="node" cx="162" cy="211" r="7"/>
+    <circle class="node" cx="154" cy="237" r="7"/>
+    <circle class="node" cx="160" cy="270" r="7"/>
+    <circle class="node" cx="155" cy="295" r="7"/>
+    <circle class="node" cx="215" cy="184" r="7"/>
+    <circle class="node" cx="220" cy="196" r="7"/>
+    <circle class="node" cx="223" cy="217" r="7"/>
+    <circle class="node" cx="217" cy="236" r="7"/>
+    <circle class="node" cx="223" cy="262" r="7"/>
+    <circle class="node" cx="214" cy="279" r="7"/>
+    <circle class="node" cx="214" cy="304" r="7"/>
+    <circle class="node" cx="276" cy="179" r="7"/>
+    <circle class="node" cx="280" cy="194" r="7"/>
+    <circle class="node" cx="282" cy="211" r="7"/>
+    <circle class="node" cx="283" cy="231" r="7"/>
+    <circle class="node" cx="282" cy="247" r="7"/>
+    <circle class="node" cx="275" cy="265" r="7"/>
+    <circle class="node" cx="279" cy="281" r="7"/>
+    <circle class="node" cx="282" cy="298" r="7"/>
+    <circle class="node" cx="343" cy="174" r="7"/>
+    <circle class="node" cx="343" cy="192" r="7"/>
+    <circle class="node" cx="341" cy="213" r="7"/>
+    <circle class="node" cx="340" cy="225" r="7"/>
+    <circle class="node" cx="341" cy="243" r="7"/>
+    <circle class="node" cx="339" cy="256" r="7"/>
+    <circle class="node" cx="337" cy="269" r="7"/>
+    <circle class="node" cx="345" cy="286" r="7"/>
+    <circle class="node" cx="335" cy="302" r="7"/>
+    <circle class="node" cx="402" cy="183" r="7"/>
+    <circle class="node" cx="399" cy="203" r="7"/>
+    <circle class="node" cx="398" cy="217" r="7"/>
+    <circle class="node" cx="395" cy="244" r="7"/>
+    <circle class="node" cx="400" cy="258" r="7"/>
+    <circle class="node" cx="406" cy="281" r="7"/>
+    <circle class="node" cx="396" cy="303" r="7"/>
+    <circle class="node" cx="460" cy="184" r="7"/>
+    <circle class="node" cx="464" cy="220" r="7"/>
+    <circle class="node" cx="466" cy="262" r="7"/>
+    <circle class="node" cx="463" cy="294" r="7"/>
+    <text x="12" y="344" class="ts">Toque num filtro para ver só uma área. Toque num tópico para ver fonte e explicação.</text>
   </g>
-  <text x="20" y="378" class="acap">Busca e ordenação resolvem a lista longa apontada na Entrega 5.</text>
+  <text x="20" y="452" class="acap">Visão geral da fonte. Zoom e ajustar à tela (HTA T02). Atende T02 e A02.</text>
 
-  <!-- P08 -->
-  <g transform="translate(440,70)">
-    <rect class="scr" width="360" height="290" rx="4"/>
-    <rect class="bar" x="0" y="0" width="360" height="32"/>
+  <!-- ============ P08 ============ -->
+  <g transform="translate(640,70)">
+    <rect class="scr" width="580" height="360" rx="4"/>
+    <rect class="bar" x="0" y="0" width="580" height="32"/>
     <text x="12" y="21" class="t">Trilha de Estudo</text>
-    <text x="268" y="21" class="t" font-weight="bold">Fontes</text>
-    <text x="12" y="58" class="lbl">P08: Grafo completo</text>
-    <rect class="box" x="12" y="72" width="230" height="26" rx="3"/>
-    <text x="22" y="90" class="tg">filtrar por tópico</text>
-    <rect class="btn" x="250" y="72" width="98" height="26" rx="3"/>
-    <text x="264" y="90" class="t">Ver lista</text>
-
-    <circle class="node" cx="70" cy="150" r="22"/>
-    <text x="52" y="154" class="ts">Arrays</text>
-    <circle class="node" cx="170" cy="130" r="22"/>
-    <text x="150" y="134" class="ts">Ordena.</text>
-    <circle class="node" cx="272" cy="150" r="22"/>
-    <text x="254" y="154" class="ts">Grafos</text>
-    <circle class="node" cx="120" cy="226" r="22"/>
-    <text x="102" y="230" class="ts">Prefixo</text>
-    <circle class="node" cx="226" cy="226" r="22"/>
-    <text x="214" y="230" class="ts">DP</text>
-    <line x1="92" y1="146" x2="148" y2="134" class="arrow"/>
-    <line x1="192" y1="134" x2="250" y2="146" class="arrow"/>
-    <line x1="84" y1="168" x2="108" y2="204" class="arrow"/>
-    <line x1="142" y1="226" x2="204" y2="226" class="arrow"/>
-    <text x="12" y="276" class="ts">Tópicos sem capítulo aparecem em cinza.</text>
+    <rect x="496" y="5" width="72" height="22" rx="3" fill="#d6d6d6" stroke="#444" stroke-width="2"/>
+    <text x="532" y="21" class="t" text-anchor="middle">Fontes</text>
+    <text x="12" y="58" class="lbl">P08: Grafo filtrado</text>
+    <text x="12" y="78" class="ts">Área: Grafos. 6 tópicos</text>
+    <rect class="chip" x="12" y="90" width="50" height="24" rx="12"/>
+    <text x="37.0" y="106" class="t" text-anchor="middle">Todas</text>
+    <rect class="chip" x="68" y="90" width="92" height="24" rx="12"/>
+    <text x="114.0" y="106" class="t" text-anchor="middle">Fundamentos</text>
+    <rect class="chipHi" x="166" y="90" width="60" height="24" rx="12"/>
+    <text x="196.0" y="106" class="t" text-anchor="middle">Grafos</text>
+    <rect class="chip" x="232" y="90" width="82" height="24" rx="12"/>
+    <text x="273.0" y="106" class="t" text-anchor="middle">Estruturas</text>
+    <rect class="chip" x="320" y="90" width="84" height="24" rx="12"/>
+    <text x="362.0" y="106" class="t" text-anchor="middle">Matemática</text>
+    <rect class="chip" x="410" y="90" width="62" height="24" rx="12"/>
+    <text x="441.0" y="106" class="t" text-anchor="middle">Strings</text>
+    <text x="482" y="106" class="tg">...</text>
+    <rect class="box" x="12" y="124" width="556" height="198" rx="3"/>
+    <rect class="btn" x="430" y="132" width="26" height="22" rx="3"/>
+    <text x="443" y="148" class="t" text-anchor="middle">-</text>
+    <rect class="btn" x="460" y="132" width="26" height="22" rx="3"/>
+    <text x="473" y="148" class="t" text-anchor="middle">+</text>
+    <rect class="btn" x="490" y="132" width="70" height="22" rx="3"/>
+    <text x="525" y="148" class="ts" text-anchor="middle">Ajustar</text>
+    <rect class="node" x="24" y="214" width="120" height="32" rx="4"/><text x="84.0" y="234" class="ts" text-anchor="middle">Repr. de grafos</text>
+    <rect class="node" x="200" y="170" width="100" height="32" rx="4"/><text x="250.0" y="190" class="ts" text-anchor="middle">BFS</text>
+    <rect class="node" x="200" y="250" width="100" height="32" rx="4"/><text x="250.0" y="270" class="ts" text-anchor="middle">DFS</text>
+    <rect class="node" x="390" y="166" width="160" height="32" rx="4"/><text x="470.0" y="186" class="ts" text-anchor="middle">Caminhos mínimos</text>
+    <rect class="node" x="390" y="222" width="160" height="32" rx="4"/><text x="470.0" y="242" class="ts" text-anchor="middle">Ordenação topológica</text>
+    <rect class="node" x="390" y="278" width="160" height="32" rx="4"/><text x="470.0" y="298" class="ts" text-anchor="middle">Componentes conexos</text>
+    <line x1="144" y1="226" x2="196" y2="190" class="arrow"/>
+    <line x1="144" y1="234" x2="196" y2="264" class="arrow"/>
+    <line x1="300" y1="186" x2="386" y2="182" class="arrow"/>
+    <line x1="300" y1="260" x2="386" y2="240" class="arrow"/>
+    <line x1="300" y1="270" x2="386" y2="292" class="arrow"/>
+    <text x="12" y="344" class="ts">Menos nós, nomes legíveis. "Todas" volta ao grafo completo.</text>
   </g>
-  <text x="440" y="378" class="acap">O professor confere o conjunto de tópicos. Não há acesso às consultas dos alunos.</text>
+  <text x="640" y="452" class="acap">Recorte por área para grafos grandes (HTA T02, nó 1).</text>
 
-  <line x1="384" y1="200" x2="434" y2="200" class="arrow"/>
-  <text x="378" y="192" class="ts">ver grafo</text>
-  <path d="M414,236 L414,250 L390,250" stroke="#333" stroke-width="2.5" fill="none" marker-end="url(#b)"/>
-  <text x="392" y="268" class="ts">ver lista</text>
+  <!-- ============ setas entre telas ============ -->
+  <line x1="603" y1="200" x2="634" y2="200" class="arrow"/>
+  <text x="603" y="192" class="ts">filtro</text>
+  <line x1="637" y1="270" x2="606" y2="270" class="arrow"/>
+  <text x="603" y="290" class="ts">Todas</text>
 </svg>

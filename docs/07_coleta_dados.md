@@ -40,10 +40,10 @@ Antes de decidir “que dados coletar”, retome os itens `[H]` e `[?]` da Entre
 | H05 | A linguagem precisa ser compreensível para quem tem pouco domínio; os termos chegam em inglês | Entrega 2: Codeforces e ChatGPT usam estratégias opostas; nada sobre o aluno | Rótulos, idioma e glossário | alta |
 | Q02 | O que significa concretamente "aluno iniciante"? | Nenhuma (P01 é proto-persona) | Persona P01 e nível de explicação | alta |
 | H08, Q04 | Travar e buscar ajuda é frequente | Nenhuma | Prioridade do fluxo T01 | alta |
-| H22, Q09 | O aluno treina e consulta em notebook/desktop | Nenhuma | Viabilidade do resultado em grafo (H15) | alta |
+| H21, Q09 | O aluno treina e consulta em notebook/desktop | Nenhuma | Viabilidade do resultado em grafo (H15) e adaptação de telas para uso em dispositivo móvel | alta |
 | Q12 | O aluno precisa recuperar o que consultou antes? | Nenhuma | Histórico entra ou não no escopo | alta |
 | Q03 | Existe necessidade de acessibilidade nesse público? | Nenhuma | Requisitos de acessibilidade (Entrega 8) | alta |
-| H21, Q05 | O erro mais relevante é estudar tópico sem relação com a questão; qual a consequência | [F] o modelo erra (F1 Macro 0,5820); consequência sem dado | Severidade (Entrega 13) | média |
+| H20, Q05 | O erro mais relevante é estudar tópico sem relação com a questão; qual a consequência | [F] o modelo erra (F1 do núcleo de 0,82); consequência sem dado | Severidade (Entrega 13) | média |
 | Q17 | Como o aluno decide que estudou o suficiente para voltar à questão? | Nenhuma | O que o resultado comunica sobre suficiência | média |
 
 ## Parte A — necessidades e requisitos de IHC
@@ -60,7 +60,7 @@ Antes de decidir “que dados coletar”, retome os itens `[H]` e `[?]` da Entre
 |---|---|---|---|
 | Tempo de prática, faixa de rating no Codeforces e semestre | Q02 | Definir concretamente quem é o "iniciante" | Nível de explicação e linguagem da interface |
 | Familiaridade com os termos das tags (`dp`, `greedy`...) e idioma preferido para estudar | H05 | O modelo devolve tópicos em inglês | Rótulos, idioma e glossário |
-| Dispositivo em que resolve as questões e onde consulta ajuda | H22, Q09 | Um grafo legível em notebook pode ser impraticável em celular | Formato do resultado (H15) |
+| Dispositivo em que resolve as questões e onde consulta ajuda | H21, Q09 | Um grafo legível em notebook pode ser impraticável em celular | Formato do resultado (H15) |
 | Com que frequência trava a ponto de buscar ajuda | H08, Q04 | A prioridade de T01 pressupõe que isso é frequente | Prioridade de protótipo e teste |
 | O que faz ao travar e o que faz primeiro | H17, H18, H19 | Definir o concorrente real | Cenário C01 |
 | Que tipo de ajuda prefere receber | H07 | Se o aluno quiser a solução, o recorte muda | Delimitação do recorte |
@@ -102,7 +102,7 @@ Analise voluntariedade, consentimento, minimização de dados, privacidade, risc
 | Fontes consultadas, na ordem em que o aluno as abre | H17, H18, H19 | Comparar o que o aluno faz com o que declara no questionário | Cenário C01 |
 | Como avalia se o que recebeu está certo | H06 | Sondar H06 sem mostrar a ferramenta | F05 |
 | Vocabulário que usa para dizer o que não sabe | H05 | O questionário mede reconhecimento de termos, não uso | Rótulos e linguagem do resultado |
-| Organização da tela e interrupções durante o treino | H22, H24 | Ver onde a consulta "cabe" no espaço de trabalho | Layout e retomada |
+| Organização da tela e interrupções durante o treino | H21, H23 | Ver onde a consulta "cabe" no espaço de trabalho | Layout e retomada |
 | Como decide que estudou o suficiente para voltar à questão | Q17 | Critério de sucesso do objetivo A01 | O que o resultado comunica |
 
 #### De quem coletar?
