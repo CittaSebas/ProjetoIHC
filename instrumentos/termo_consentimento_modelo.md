@@ -1,40 +1,41 @@
-# Modelo acadêmico — Termo/registro de consentimento
+# Termo de consentimento
 
-**Projeto:** {{...}}  
-**Atividade:** {{entrevista/questionário/teste de usabilidade}}  
-**Responsáveis:** {{...}}  
-**Contato institucional:** {{...}}
+**Projeto:** Cittação, trilhas de estudo para programação competitiva  
+**Atividade:** Teste de usabilidade da interface  
+**Disciplina:** Interação Humano-Computador (CC8122), Centro Universitário FEI  
+**Responsáveis:** Sebastian Citta (24.123.068-9) e Juan Manuel Citta (24.123.022-6)  
+**Contato:** citta_manu@hotmail.com
 
 ## Convite e objetivo
 
-Você está sendo convidado(a) a participar de {{atividade}}. O objetivo é {{avaliar/compreender...}}. **Estamos avaliando o produto/processo, não a sua capacidade.**
+Você está sendo convidado(a) a participar de um teste de usabilidade da Cittação, uma ferramenta que indica quais tópicos estudar, e em que ordem, para resolver um problema de programação competitiva. O objetivo é avaliar se a interface é fácil de entender e de usar. **Estamos avaliando a interface, não a sua capacidade ou o seu conhecimento.**
 
 ## O que será solicitado
 
-{{descrever tarefas, duração aproximada e ambiente}}
+Você vai realizar 4 tarefas curtas na ferramenta, falando em voz alta o que está pensando, e responder a algumas perguntas no início e no fim. A sessão é presencial, individual e dura cerca de 10 minutos.
 
 ## Registros
 
-- [ ] Não haverá gravação.
-- [ ] Haverá gravação de tela.
-- [ ] Haverá gravação de áudio.
-- [ ] Haverá gravação de vídeo.
-
-Explique finalidade, quem terá acesso e prazo/critério de descarte: {{...}}
+- Um integrante da equipe vai anotar tempo, ações e comentários em uma planilha.
+- Não haverá gravação de áudio, vídeo ou tela.
+- Os dados serão usados apenas na disciplina de IHC e descartados ao final do semestre.
 
 ## Privacidade
 
-Os resultados publicados utilizarão identificador anônimo, salvo autorização explícita em contrário. Dados não necessários à atividade não serão coletados.
+Você será identificado(a) apenas por um código (U01, U02 ou U03). A ferramenta será usada pela entrada como convidado, sem e-mail ou senha. Nenhum dado pessoal além do perfil de estudo (semestre e tempo de prática) será coletado.
+
+## Benefícios e custos
+
+Não há custo nem pagamento pela participação. Sua participação ajuda a melhorar uma ferramenta de apoio ao estudo de programação competitiva.
 
 ## Voluntariedade
 
-A participação é voluntária e pode ser interrompida a qualquer momento, sem necessidade de justificativa.
+A participação é voluntária e pode ser interrompida a qualquer momento, sem justificativa e sem nenhum prejuízo.
 
 ## Consentimento
 
-Declaro que recebi informações suficientes sobre a atividade e concordo em participar nos termos acima.
+Declaro ter mais de 18 anos, que recebi explicações claras sobre o teste e que concordo em participar nos termos acima.
 
-**Participante:** {{nome/assinatura ou mecanismo institucional de aceite}}  
-**Data:** {{...}}
-
-> Ajuste este modelo às exigências do docente/instituição antes de aplicar.
+**Participante (nome ou código):** ________________________________________  
+**Assinatura:** ________________________________________  
+**Data:** ____ /____ /2026

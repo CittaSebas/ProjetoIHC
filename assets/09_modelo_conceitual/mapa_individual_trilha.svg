@@ -1,0 +1,30 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="510" height="310" viewBox="0 0 510 310" font-family="Verdana, Geneva, sans-serif">
+  <style>
+    .t { font-size:12px; fill:#111; }
+    .p { font-size:12px; fill:#111; }
+    .h { font-size:15px; font-weight:bold; fill:#111; }
+    .s { font-size:11px; fill:#555; }
+    .ar { stroke:#111; stroke-width:1.5; fill:none; marker-end:url(#m); }
+  </style>
+  <defs><marker id="m" markerWidth="10" markerHeight="8" refX="9" refY="4" orient="auto"><path d="M0,0 L10,4 L0,8 z" fill="#111"/></marker></defs>
+  <rect width="510" height="310" fill="#fff"/>
+  <text x="16" y="26" class="h">Mapa individual: trilha</text>
+  <text x="16" y="44" class="s">Sebastian Citta. Cenário CI01.</text>
+  <rect x="20" y="80" width="195" height="64" rx="8" fill="#fff" stroke="#222" stroke-width="1.5" stroke-dasharray="5 4"/>
+  <line x1="50" y1="80" x2="50" y2="144" stroke="#222" stroke-width="1.5" stroke-dasharray="5 4"/>
+  <text x="35.0" y="116.0" class="p" text-anchor="middle">A</text>
+  <text x="58" y="108.0" class="t"><tspan font-weight="bold">O02</tspan> Informar</text>
+  <text x="58" y="124.0" class="t">questão</text>
+  <rect x="290" y="80" width="195" height="64" rx="8" fill="#fff" stroke="#222" stroke-width="1.5"/>
+  <line x1="320" y1="80" x2="320" y2="144" stroke="#222" stroke-width="1.5"/>
+  <text x="305.0" y="116.0" class="p" text-anchor="middle">A</text>
+  <text x="328" y="108.0" class="t"><tspan font-weight="bold">O01</tspan> Obter a trilha</text>
+  <text x="328" y="124.0" class="t">de estudo</text>
+  <rect x="290" y="200" width="195" height="64" rx="8" fill="#fff" stroke="#222" stroke-width="1.5"/>
+  <line x1="320" y1="200" x2="320" y2="264" stroke="#222" stroke-width="1.5"/>
+  <text x="305.0" y="236.0" class="p" text-anchor="middle">A</text>
+  <text x="328" y="236.0" class="t"><tspan font-weight="bold">O03</tspan> Avaliar trilha</text>
+  <path d="M215,112.0 L286,112.0" class="ar"/>
+  <path d="M402.5,144 L402.5,196" class="ar"/>
+  <text x="16" y="298" class="s">A = aluno (P01); P = professor (P02).</text>
+</svg>

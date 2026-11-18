@@ -1,7 +1,7 @@
 # Entrega 9: Modelo conceitual e design centrado na comunicação
 
 **Data:** 31/10/2026  
-**Status:** 🟨 em andamento: faltam os mapas de objetivos individuais  
+**Status:** 🟩 concluída  
 **Responsabilidade:** soluções individuais, com consolidação da equipe para mapa de objetivos e esquema de signos.
 
 ## Objetivo da atividade
@@ -42,6 +42,8 @@ No meio disso, uma mensagem a interrompe, e ao voltar **[ALTERADO] a trilha cont
 
 Alfreda não quer a solução pronta, porque o objetivo é evoluir no treino. **[ALTERADO] A ferramenta não mostra a solução nem o código: mostra só o que estudar e onde. Alfreda abre o capítulo indicado, estuda o tópico por onde a trilha começa e, quando consegue dizer com as próprias palavras por que a questão pede programação dinâmica, volta a ela e tenta de novo por conta própria.**
 
+**[NOVO] Durante o estudo, surge uma dúvida sobre recursão, e Alfreda pergunta sobre o tópico na própria ferramenta. A resposta explica o tópico com trechos do Cormen, sem resolver a questão. Ao terminar, ela marca o tópico como estudado, para saber onde parou, e indica pelo botão que a trilha ajudou.**
+
 ### Diferenças relevantes
 
 | Alteração | Por que foi necessária | Evidência/artefato que justifica |
@@ -54,20 +56,23 @@ Alfreda não quer a solução pronta, porque o objetivo é evoluir no treino. **
 | A trilha vem com o aviso padrão de que a IA pode cometer erros | O modelo pode errar na atribuição de tópicos e não devolve grau de confiança por tópico | Entrega 8, restrições da plataforma |
 | A trilha continua aberta depois da interrupção | No C01 ela precisava reler enunciado e código após cada interrupção | H23 |
 | A ferramenta não entrega a solução | Alfreda quer evoluir no treino, não receber a resposta | H07; C01 `[Q5]` |
+| Alfreda pergunta sobre um tópico | A explicação curta pode não bastar, e no C01 a alternativa era um LLM que entrega a solução | O06; H07 |
+| Alfreda marca o tópico como estudado | Ela retoma a trilha depois de interrupções e precisa saber onde parou | O05; H23 |
+| Alfreda indica se a trilha ajudou | O modelo pode errar, e esse retorno mostra à equipe quais trilhas não serviram | O03; Entrega 8, restrições da plataforma |
 
 ### CI02: Conferir as fontes do material antes de recomendá-lo
 
 **Autor(a):** Juan Manuel Citta, 24.123.022-6  
 **Origem:** cenário problema C02
 
-> **CI02 é exploratório, como o C02 que lhe dá origem.** Ele parte da proto-persona secundária P02 e depende de H11, que continua aberta. Os objetivos O06 e O07 e as metas MU04 e MU05 ficam provisórios e não orientam decisões de interface até H11 ser investigada.
+> **CI02 é exploratório, como o C02 que lhe dá origem.** Ele parte da proto-persona secundária P02 e depende de H11, que continua aberta. O uso de O04, O06 e O07 por P02 e as metas MU04 e MU05 ficam provisórios e não orientam decisões de interface até H11 ser investigada.
 
 
 José Carlos leciona em turmas grandes e, nos períodos de preparação para a competição, também treina o time de maratona da faculdade. Ele é especialista: lê o enunciado de uma questão e reconhece na hora a técnica que ela exige. O que lhe falta é tempo. Com poucas horas de aula e muitos alunos, não consegue atender individualmente quem trava, e o plano de treino da maratona acaba sendo montado às pressas.
 
 Quando um aluno trava durante o treino, José Carlos costuma sugerir que ele consulte um dos modelos de IA disponíveis no mercado. Ele sabe que o aluno precisa de alguma ajuda, mas não tem como saber em quais fontes o modelo se baseia, nem se a explicação segue a mesma linha do material que ele já entregou à turma. **[ALTERADO] Antes de recomendar a ferramenta de trilhas ao time, José Carlos decide conferir de onde vem o conteúdo. Ele abre o grafo de conhecimento da ferramenta, que mostra todos os tópicos que podem aparecer nas trilhas e as dependências entre eles, e vê que a fonte usada é o Cormen, livro-texto que ele já conhece e considera confiável.**
 
-**[NOVO] Ele procura no grafo os tópicos que vai trabalhar no próximo treino, como grafos e programação dinâmica. Para cada um, vê o capítulo do Cormen e a explicação curta em português, e confere se a ordem entre os tópicos é a mesma que ele usa em aula. Nos tópicos básicos, que não têm capítulo específico, a ferramenta deixa claro que não há capítulo, e ele entende que não se trata de uma falha.**
+**[NOVO] Ele procura no grafo os tópicos que vai trabalhar no próximo treino, como grafos e programação dinâmica. Para cada um, vê o capítulo do Cormen e a explicação curta em português, e confere se a ordem entre os tópicos é a mesma que ele usa em aula. Nos tópicos básicos, que não têm capítulo específico, a ferramenta deixa claro que não há capítulo, e ele entende que não se trata de uma falha. Quando uma explicação curta lhe parece incompleta, ele faz uma pergunta sobre o tópico e confere se a resposta segue o livro.**
 
 José Carlos não quer proibir os alunos de buscar apoio. O incômodo dele não é a IA em si, e sim a falta de controle sobre as fontes. **[ALTERADO] Como confirmou que os tópicos e capítulos seguem um livro que ele aprova, passa a indicar a ferramenta ao time. Ele continua sem ver o que cada aluno consultou, porque a ferramenta não mostra as perguntas dos alunos, mas sabe que as trilhas que eles recebem são montadas a partir dos mesmos tópicos e capítulos que ele conferiu.**
 
@@ -80,6 +85,7 @@ José Carlos não quer proibir os alunos de buscar apoio. O incômodo dele não 
 | A fonte usada é identificada como o Cormen | Ele confia em livros-texto reconhecidos | C02 `[Q7]`; Entrega 8, delimitação |
 | Ele vê capítulo e explicação de cada tópico e a ordem entre eles | Ele precisa comparar com o material que já entregou à turma | Entrega 8, meta qualitativa de P02 e MU04, ambas provisórias (H11) |
 | Tópicos sem capítulo são sinalizados | Sem isso, a ausência de capítulo pareceria erro da ferramenta | Comportamento atual do sistema (alguns tópicos não têm capítulo) |
+| Ele pergunta sobre um tópico | Precisa conferir se a explicação segue o livro que ele aprova | O06, provisório para P02 (H11) |
 | A ferramenta não mostra as perguntas dos alunos | Decisão de escopo: o professor tem acesso apenas ao grafo geral. É essa decisão que mantém P02 como persona secundária, pois ela dispensa interface própria. Incluir histórico por aluno exigiria identificação e controle de acesso, e tornaria P02 primária | Entrega 8, papéis/permissões; Entrega 3, classificação de P02 |
 
 ## 2. Design centrado na comunicação
@@ -95,9 +101,12 @@ José Carlos não quer proibir os alunos de buscar apoio. O incômodo dele não 
 | > acompanhar geração da trilha (falha) | `D: Não consegui montar a trilha agora. Verifique sua conexão e tente novamente em instantes.` | O aluno entende que o problema não é a questão dele |
 | > examinar trilha | `D: Para esta questão, estude estes tópicos, nesta ordem: [tópico] → [tópico] → ...` / `U: Por onde começo?` / `D: Comece por [tópico inicial], que não depende de nenhum outro.` | Saber em que ordem estudar (N02) |
 | > aviso de erro da IA | `D: Esta trilha foi gerada por IA e pode conter erros.` | Não apresentar a trilha como certa, já que o modelo não devolve confiança por tópico |
+| > avaliar trilha | `D: Esta trilha ajudou?` / `U: [sim ou não]` | Dar retorno sobre a trilha com um clique (O03) |
 | entender um tópico | `U: O que é [tópico]?` / `D: [explicação curta em português]` | Ligar o termo em inglês a um conteúdo que o aluno sabe estudar (N05) |
 | > localizar fonte do tópico | `U: Onde estudo isso?` / `D: No Cormen, capítulo [n]: [título do capítulo].` | Chegar ao material sem saber o nome do assunto (N03) |
 | > tópico sem capítulo | `U: Onde estudo [tópico básico]?` / `D: Este é um conceito básico e não tem capítulo específico no livro.` | Evitar que a ausência de capítulo pareça erro |
+| > perguntar sobre o tópico | `U: [pergunta sobre o tópico]` / `D: [resposta curta, com os trechos do Cormen usados]` | Tirar a dúvida sobre o tópico sem receber a solução da questão (O06) |
+| > marcar tópico estudado | `U: Já estudei este tópico.` / `D: [tópico] marcado como estudado.` | Saber onde parou ao voltar à trilha (O05) |
 
 **Convenção:** `U` = usuário; `D` = preposto do designer/sistema, conforme a abordagem de Engenharia Semiótica adotada na disciplina.
 
@@ -112,6 +121,7 @@ José Carlos não quer proibir os alunos de buscar apoio. O incômodo dele não 
 | > localizar tópico (não encontrado) | `U: [termo que não existe no grafo]` / `D: Não encontrei esse tópico. Os tópicos estão em inglês; tente, por exemplo, "graphs".` | Recuperar a busca sem que o professor conclua que o tópico falta |
 | > examinar fonte do tópico | `U: De onde vem este tópico?` / `D: Cormen, capítulo [n]: [título do capítulo]. [explicação curta em português]` | Comparar com o material já entregue à turma (MU04, provisória) |
 | > tópico sem capítulo | `D: Este é um conceito básico e não tem capítulo específico no livro.` | Evitar que a ausência de capítulo pareça falha da fonte |
+| > perguntar sobre o tópico | `U: [pergunta sobre o tópico]` / `D: [resposta curta, com os trechos do Cormen usados]` | Conferir se a explicação segue o livro (O06, provisório para P02) |
 
 **Convenção:** `U` = usuário; `D` = preposto do designer/sistema, conforme a abordagem de Engenharia Semiótica adotada na disciplina.
 
@@ -119,24 +129,38 @@ José Carlos não quer proibir os alunos de buscar apoio. O incômodo dele não 
 
 Cada integrante apresenta seu mapa e a equipe cria um **mapa consolidado**, eliminando duplicidades e resolvendo conflitos de nomenclatura.
 
-![Mapa consolidado](../assets/09_modelo_conceitual/mapa_objetivos_ihc.svg)
+### Mapas individuais
+
+**Sebastian Citta (CI01):** objetivos relacioandos a trilha.
+
+![Mapa individual: trilha](../assets/09_modelo_conceitual/mapa_individual_trilha.svg)
+
+**Juan Manuel Citta (CI02):** objetivos relacionados ao grafo de conhecimento e ao tópico.
+
+![Mapa individual: grafo e tópico](../assets/09_modelo_conceitual/mapa_individual_grafo_topico.svg)
+
+### Mapa consolidado
+
+Os dois mapas se ligam em O04: o detalhe do tópico aberto a partir da trilha (O01) é o mesmo aberto a partir do grafo (O07).
+
+![Mapa consolidado](../assets/09_modelo_conceitual/mapa_objetivos_consolidado.svg)
+
+O mapa está dividido em três áreas: trilha (O01 a O03), tópico (O04 a O06) e grafo de conhecimento (O07). Papéis: **A** = aluno (P01); **P** = professor (P02).
 
 ### Dicionário de objetivos
 
 | ID | Objetivo | Persona(s) | Cenário(s) | Prioridade |
 |---|---|---|---|---|
-| O01 | Obter a trilha de estudo de uma questão | P01 | CI01 | alta |
+| O01 | Obter a trilha de estudo | P01 | CI01 | alta |
 | O02 | Informar a questão (enunciado ou identificador) | P01 | CI01 | alta |
-| O03 | Saber em que ordem estudar os tópicos | P01 | CI01 | alta |
-| O04 | Entender o que é cada tópico | P01, P02 | CI01, CI02 | alta |
-| O05 | Saber em que capítulo do livro está cada tópico | P01, P02 | CI01, CI02 | alta |
-| O06 | Conferir as fontes dos tópicos | P02 | CI02 | média |
-| O07 | Explorar o grafo de conhecimento | P02 | CI02 | média |
-| O08 | Conhecer a fonte usada pelo sistema | P01, P02 | CI01, CI02 | média |
+| O03 | Avaliar a trilha (dizer, pelo botão, se ela ajudou) | P01 | CI01 | média |
+| O04 | Visualizar detalhes do tópico (capítulo do livro e explicação curta) | P01, P02 | CI01, CI02 | alta |
+| O05 | Marcar tópico como estudado | P01 | CI01 | média |
+| O06 | Perguntar sobre um tópico | P01, P02 | CI01, CI02 | média |
+| O07 | Consultar o grafo de conhecimento | P01, P02 | CI02 | média |
 
-Os objetivos usados só por P02 (O06 e O07) são provisórios, porque dependem de H11.
+O uso de O04, O06 e O07 por P02 é provisório, porque depende de H11.
 
-Consolidação: "saber onde estudar cada tópico" (CI01) e "ver o capítulo de cada tópico" (CI02) eram o mesmo objetivo com nomes diferentes e viraram O05; "ler a explicação do tópico" virou O04 nos dois cenários.
 
 ## 4. Esquema conceitual de signos
 
@@ -144,18 +168,22 @@ Consolide as informações em **uma tabela única**.
 
 | Grupo | Signo | Origem | Observações/semântica | Tipo de conteúdo | Restrição | Valor padrão | Prevenção | Recuperação |
 |---|---|---|---|---|---|---|---|---|
-| Questão | enunciado | domínio | Texto da questão copiado do juiz online pelo aluno | texto longo | não nulo; deve ser o enunciado de uma questão | - | PP: indicar que o enunciado pode ser colado inteiro | RA: explicar que o texto não parece um enunciado, mantendo o texto para correção |
-| Questão | identificador da questão | domínio | Código da questão no Codeforces, alternativo ao enunciado | texto curto | formato do Codeforces (número + letra, ex.: 1352A) | - | PP: exemplo do formato; PA: impedir envio vazio | RA: avisar que o formato é inválido; CE: se a questão não existir, sugerir colar o enunciado |
+| Questão | enunciado | domínio | Texto da questão copiado do juiz online pelo aluno | texto longo | não nulo; deve ser o enunciado de uma questão | - | PP: indicar que o enunciado pode ser colado inteiro | - |
+| Questão | identificador da questão | domínio | Código da questão no Codeforces, alternativo ao enunciado | texto curto | formato do Codeforces (número + letra, ex.: 1352A) | - | PP: exemplo do formato; PA: impedir envio vazio | CE: se a questão não existir, sugerir colar o enunciado |
 | Consulta | estado da consulta | aplicação | Indica se a trilha está sendo montada, pronta ou se houve falha | estado (montando / pronta / falha) | - | montando, logo após o envio | PA: impedir novo envio enquanto monta | CE: falha de conexão ou serviço indisponível; orientar a tentar novamente em instantes |
-| Trilha | trilha de estudo | aplicação | Tópicos necessários para uma questão e a ordem entre eles; não contém a solução | conjunto ordenado de tópicos | ao menos um tópico | - | - | CE: se não houver trilha, informar e sugerir revisar o enunciado |
-| Trilha | tópico | domínio | Conceito algorítmico com o nome usado no Codeforces, em inglês (ex.: `dp`, `greedy`) | texto curto | - | - | PP: explicação em português junto ao nome | - |
-| Trilha | dependência entre tópicos | domínio | Relação "estude A antes de B" | relação entre dois tópicos | sem ciclos | - | PP: deixar claro o sentido da dependência | - |
+| Trilha | trilha de estudo | aplicação | Tópicos necessários para uma questão e a ordem entre eles | conjunto ordenado de tópicos | ao menos um tópico | - | - | CE: se não houver trilha, informar e sugerir revisar o enunciado |
+| Trilha | tópico | domínio | Conceito algorítmico com o nome usado no Codeforces, em inglês (ex.: `dp`, `greedy`) | texto curto | - | - | PP: explicação junto ao nome | - |
+| Trilha | dependência entre tópicos | domínio | Relação "estude A antes de B" | seta entre nós de um grafo | sem ciclos | - | PP: deixar claro o sentido da dependência | - |
 | Trilha | tópico inicial | aplicação | Tópico da trilha que não depende de nenhum outro: por onde começar | derivado da trilha | - | destacado na trilha | - | - |
-| Trilha | aviso de erro da IA | aplicação | Aviso padrão e fixo de que a IA pode cometer erros; não é calculado por tópico nem por consulta | texto fixo | - | sempre visível junto à trilha | PP: lembrar que a trilha pode conter erros | - |
+| Trilha | aviso de erro da IA | aplicação | Aviso padrão e fixo de que a IA pode cometer erros| texto fixo | - | sempre visível junto à trilha | PP: lembrar que a trilha pode conter erros | - |
+| Trilha | avaliação da trilha | usuário | Retorno do aluno sobre se a trilha ajudou | útil / não útil | - | sem avaliação | - | - |
 | Tópico | explicação do tópico | aplicação | Explicação curta em português do que é o tópico | texto curto | - | - | - | - |
+| Tópico | marca de estudado | usuário | Indica que o aluno já estudou o tópico | caixa de seleção | - | não selecionado | - | RA: permitir desmarcar |
+| Tópico | pergunta sobre o tópico | usuário | Dúvida do usuário sobre um tópico | texto livre | não nulo | vazio | PP: a caixa de texto avisa que aceita perguntas sobre tópicos | - |
+| Tópico | resposta sobre o tópico | aplicação | Explicação gerada para a pergunta, com os trechos do Cormen usados | texto curto + trechos do livro | - | - | PP: aviso de que a IA pode errar | - |
 | Fonte | livro-fonte | domínio | *Introduction to Algorithms* (Cormen et al.), único livro usado para montar as trilhas | texto | - | Cormen | - | - |
 | Fonte | capítulo | domínio | Capítulo do Cormen que trata do tópico | número + título | opcional: tópicos básicos não têm capítulo | "sem capítulo específico" | PP: informar que o tópico é básico e não tem capítulo | - |
-| Grafo | grafo de conhecimento | aplicação | Todos os tópicos e dependências de onde as trilhas saem; não mostra perguntas de alunos | conjunto de tópicos e dependências | - | visão geral do grafo | - | - |
+| Grafo | grafo de conhecimento | aplicação | Todos os tópicos e dependências de onde as trilhas saem | conjunto de tópicos e dependências | - | visão geral do grafo | - | - |
 | Grafo | busca de tópico | aplicação | Termo usado pelo professor para localizar um tópico no grafo | texto curto | - | vazio | PP: exemplo de termo em inglês | RA: informar que o tópico não foi encontrado e sugerir outro termo |
 
 Siglas: **PP** = prevenção passiva; **PA** = prevenção ativa; **RA** = recuperação apoiada; **CE** = captura de erro (Barbosa e Silva, 2010).
@@ -171,9 +199,9 @@ Siglas: **PP** = prevenção passiva; **PA** = prevenção ativa; **RA** = recup
 
 Quais objetivos/tópicos/signos deverão necessariamente aparecer nos diagramas MoLIC?
 
-- **Objetivos:** O01 a O08, com os mesmos nomes do dicionário. O fluxo do aluno parte de O01 (CI01); o do professor, de O06 (CI02). O04, O05 e O08 são comuns aos dois.
-- **Tópicos de conversa:** informar questão, acompanhar geração da trilha, examinar trilha, entender um tópico, localizar fonte do tópico, conhecer a fonte usada, explorar o grafo de conhecimento, localizar tópico e examinar fonte do tópico.
-- **Signos:** enunciado, identificador da questão, estado da consulta, trilha de estudo, aviso de erro da IA, tópico, dependência entre tópicos, tópico inicial, explicação do tópico, livro-fonte, capítulo, grafo de conhecimento e busca de tópico.
+- **Objetivos:** O01 a O07, com os mesmos nomes do dicionário. O fluxo do aluno parte de O02 e chega a O01 (CI01); o do professor parte de O07 (CI02). Os dois fluxos se encontram em O04, de onde saem O05 e O06.
+- **Tópicos de conversa:** informar questão, acompanhar geração da trilha, examinar trilha, avaliar trilha, entender um tópico, localizar fonte do tópico, perguntar sobre o tópico, marcar tópico estudado, conhecer a fonte usada, explorar o grafo de conhecimento, localizar tópico e examinar fonte do tópico.
+- **Signos:** enunciado, identificador da questão, estado da consulta, trilha de estudo, aviso de erro da IA, avaliação da trilha, tópico, dependência entre tópicos, tópico inicial, explicação do tópico, marca de estudado, pergunta sobre o tópico, resposta sobre o tópico, livro-fonte, capítulo, grafo de conhecimento e busca de tópico.
 - **Rupturas a modelar:** entrada inválida (RA), questão inexistente (CE), falha ao montar a trilha (CE), tópico sem capítulo (PP) e tópico não encontrado na busca (RA).
 
 ## Checklist
@@ -181,7 +209,7 @@ Quais objetivos/tópicos/signos deverão necessariamente aparecer nos diagramas 
 - [x] Cenários de interação mostram alterações em relação aos cenários de problema.
 - [x] Cada solução individual identifica autor e cenário de origem.
 - [x] Tópicos/falas/signos são coerentes com objetivos do usuário.
-- [ ] Mapas individuais foram consolidados. *(pendente: só existe o mapa consolidado; faltam os mapas de cada integrante)*
+- [x] Mapas individuais foram consolidados. *(mapas de trilha e de grafo e tópico, ligados em O04)*
 - [x] O esquema de signos está em uma tabela única e sem duplicações conceituais.
 - [x] Nomes de objetivos/signos serão reutilizados na Entrega 10.
 - [x] Em TCC técnico, signos representam conceitos do domínio compreensíveis ao usuário, não apenas variáveis/estruturas internas.

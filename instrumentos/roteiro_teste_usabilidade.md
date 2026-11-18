@@ -1,68 +1,60 @@
 # Roteiro de teste de usabilidade
 
+**Ferramenta:** Cittação  
+**Plano:** [Entrega 12](../docs/12_planejamento_avaliacao.md)  
+**Duração:** cerca de 10 minutos por participante
+
 ## 1. Antes da sessão
 
-- verificar protótipo/versão;
-- testar gravação e áudio;
-- abrir formulários/planilhas;
-- limpar dados de sessão/conta de teste;
-- separar instruções das tarefas;
-- confirmar consentimento e duração;
-- quando o protótipo usar resultados/processamentos simulados, preparar dados realistas e manter a simulação consistente entre participantes.
+- conferir se a aplicação e o modelo estão no ar, gerando a trilha do problema CSES 1068;
+- entrar como convidado e abrir uma conversa nova, sem histórico;
+- fechar o painel do tópico e voltar o grafo para o filtro "Todas";
+- separar o enunciado do problema em texto, pronto para copiar;
+- imprimir o termo, a planilha de observação e o questionário pós-teste;
+- deixar o cronômetro à mão.
 
-## 2. Abertura padronizada
+## 2. Abertura
 
-- agradecer participação;
-- explicar objetivo geral sem revelar hipóteses específicas;
-- reforçar que o produto, não a pessoa, está sendo avaliado;
-- explicar possibilidade de interrupção;
-- obter consentimento;
-- explicar *think aloud* apenas se essa técnica for usada.
+Ler para o participante:
 
-### Quando a interface é um protótipo de aplicação do tema do TCC
+> "Obrigado por participar. Vamos testar a Cittação, uma ferramenta que indica o que estudar para resolver um problema de programação competitiva. Estamos avaliando a ferramenta, não você: se algo for difícil, é um problema dela. As respostas dos tópicos vêm de um modelo de IA, mas hoje não estamos avaliando se ele acerta, e sim se a interface é clara. Peço que você fale em voz alta o que está pensando enquanto usa. Eu não posso te ajudar durante as tarefas, mas você pode parar a qualquer momento."
 
-Explique de forma simples que a sessão avalia **como a pessoa interage com o protótipo**, e não a precisão/desempenho científico do algoritmo, modelo ou estudo do TCC.
-
-Se algum resultado técnico estiver simulado, não engane o participante sobre o nível de implementação. Use uma explicação compatível com o objetivo do teste, sem antecipar o caminho da tarefa.
+Entregar o termo de consentimento e esperar a assinatura.
 
 ## 3. Perfil pré-teste
 
-Colete somente informações relevantes à interpretação dos resultados: experiência com domínio, frequência de uso de soluções similares, familiaridade com ferramentas profissionais, necessidades de acessibilidade pertinentes etc.
+Perguntar e anotar na planilha:
 
-Para perfis especializados (DBA, analista, pesquisador, administrador, técnico), registre os critérios usados para considerar o participante representativo. Se for participante proxy, registre essa condição e a limitação.
+1. Qual o seu semestre?
+2. Há quanto tempo você pratica programação competitiva? Já participou de alguma competição?
+3. Quando trava em um problema, o que você usa hoje para descobrir o que estudar?
 
 ## 4. Tarefas
 
+Entregar uma tarefa por vez, por escrito. O enunciado do CSES 1068 é entregue junto com a UT01.
+
 | ID | Instrução ao participante | O moderador pode esclarecer | O moderador não deve dizer |
 |---|---|---|---|
-| UT01 | {{...}} | {{termos do cenário}} | {{nome/local do botão}} |
-
-Tarefas podem envolver, conforme o escopo: localizar informação em dashboard; filtrar histórico; configurar análise; comparar resultados; gerar relatório; revisar alerta; editar permissão; recuperar-se de falha.
-
-A tarefa deve expressar **objetivo do usuário**, e não “clique no filtro”, “abra o CRUD” ou “vá ao dashboard”.
+| UT01 | "Você está treinando para uma competição e travou neste problema. Use a ferramenta para descobrir por qual assunto começar a estudar e explique por quê." | que o enunciado pode ser copiado | "colar no chat", "gerar trilha", "trilha" |
+| UT02 | "Você decidiu estudar laços de repetição. Descubra em que parte do livro de referência esse assunto é tratado." | que o livro de referência é o CLRS (Cormen) | "clicar no tópico", "painel" |
+| UT03 | "Você ainda não entendeu quando usar um laço que repete sem saber quantas vezes. Tire essa dúvida usando a ferramenta." | que a dúvida é sobre laços de repetição | "perguntar sobre este tópico", "modo Perguntar" |
+| UT04 | "Um colega comentou sobre caminhos mínimos de origem única. Descubra o que você precisa estudar antes desse assunto." | o que é "estudar antes" (pré-requisito) | "grafo", "ver grafo completo", "filtro" |
 
 ## 5. Durante a tarefa
 
-Registrar início/fim, sucesso, erros, hesitações, comentários, pedidos de ajuda e intervenções do moderador. Não transformar silêncio do participante em “problema” sem evidência adicional.
-
-Observe também, quando pertinente:
-
-- compreensão de métricas/termos técnicos;
-- percepção de status de processamento;
-- escolha e remoção de filtros;
-- interpretação de estados vazios/erro;
-- prevenção de ações destrutivas;
-- entendimento de papéis/permissões;
-- confiança ao interpretar resultados/recomendações.
+- marcar o início quando o participante termina de ler a instrução e o fim quando ele diz a resposta;
+- não ajudar; se o participante pedir, responder "o que você faria se estivesse sozinho?";
+- se ele pedir ajuda de novo, dar uma dica curta e anotar como ajuda;
+- encerrar a tarefa ao passar do tempo-limite (UT01: 5 min; UT02: 2 min; UT03 e UT04: 3 min);
+- anotar também se o participante reenvia a questão ou desiste durante o processamento e se menciona o aviso de que a IA pode errar.
 
 ## 6. Pós-tarefa
 
-Aplicar a escala definida no plano (por exemplo 1–7) e registrar comentário curto: “O que tornou essa tarefa fácil ou difícil?”
+Depois de cada tarefa, aplicar o SEQ do [questionário pós-teste](questionario_pos_teste.md) e perguntar: "O que tornou essa tarefa fácil ou difícil?"
 
 ## 7. Encerramento
 
-- perguntas gerais;
+- fazer as perguntas finais do questionário pós-teste;
 - agradecer;
-- confirmar como os dados serão usados;
-- salvar registros com ID anônimo;
-- registrar limitações de perfil, ambiente ou simulação que afetem a interpretação.
+- lembrar que os dados são anônimos e serão descartados ao final do semestre;
+- registrar qualquer problema técnico, como queda do modelo ou trilha diferente da esperada.
