@@ -1,7 +1,7 @@
 # Entrega 7 — Coleta de dados, necessidades e aspectos éticos
 
 **Data:** 28/10/2026  
-**Status:** 🟨 em andamento
+**Status:** 🟩 concluída
 
 ## Objetivo da atividade
 
@@ -243,17 +243,31 @@ Explique quais lacunas de conhecimento sobre usuários o conjunto de técnicas p
 
 O questionário (I01) reduz as lacunas sobre quem é o aluno e com que frequência as situações ocorrem: perfil do iniciante, frequência de travar, ferramentas, dispositivo, tipo de ajuda desejada e hábito de retomar materiais. A investigação contextual (I02) reduz a lacuna sobre o que o aluno faz no momento em que trava, que o questionário não alcança, e permite comparar o que é declarado com o que é feito.
 
+Depois da análise, cada hipótese fica sustentada, refutada ou refinada conforme a tabela abaixo.
+
+| Hipótese | Onde é verificada | Fica sustentada se | Fica refutada ou refinada se |
+|---|---|---|---|
+| H07: destravar sem a solução | I01 p. 16; I02 p. 12 | a maioria escolhe dica, técnica ou o que estudar | a maioria pede a ideia ou o código da solução (refutada; o recorte muda) |
+| H06: não julga a orientação recebida | I01 p. 17 e 18; I02 p. 8 | mediana da p. 17 até 3 ou "não costumo verificar" frequente | mediana a partir de 4 e verificação frequente (refutada) |
+| H05: linguagem e termos em inglês | I01 p. 6 a 8; vocabulário no I02 | iniciantes não sabem o que é a maioria dos termos | iniciantes conhecem os termos (refinada: glossário só para alguns) |
+| H08, Q04: travar é frequente | I01 p. 11 | a maioria trava 3 vezes ou mais em 4 semanas | a maioria trava até 2 vezes (refinada: T01 perde prioridade) |
+| H17, H18, H19: tags, editoriais e chatbot | I01 p. 14 e 15; ordem das fontes no I02 | as três aparecem entre as primeiras fontes | outra fonte domina, como colega ou buscador (refinada: muda o concorrente real) |
+| H21, Q09: notebook ou desktop | I01 p. 9 e 10; I02 | a maioria usa notebook ou desktop | o celular é frequente (refutada: exige adaptar as telas) |
+| H20, Q05: estudar tópico sem relação | I01 p. 19 | "Sim" é frequente | "Não" é a maioria (refinada: severidade menor) |
+
+As lacunas Q02, Q03, Q06, Q12, Q16 e Q17 não são hipóteses: a análise responde cada uma. O resultado de cada linha é registrado em [`../RASTREABILIDADE.md`](../RASTREABILIDADE.md).
+
 
 ## Checklist
 
-- [ ] Hipóteses/lacunas prioritárias da Entrega 1 foram revisitadas.
-- [ ] Se o escopo de IHC foi derivado de TCC técnico, a coleta investiga a plausibilidade do usuário, tarefa e contexto adotados.
-- [ ] Perguntas não pressupõem que dashboard, CRUD, filtros ou relatórios sejam necessários; investigam a necessidade.
-- [ ] Cada dado a coletar responde uma dúvida concreta do projeto ou justifica outra necessidade de informação.
-- [ ] Parte A identifica dados e perfis de coleta de forma específica.
-- [ ] Aspectos éticos são contextualizados para o projeto.
-- [ ] Há uma técnica completa por integrante e técnicas distintas.
-- [ ] Questionário está incluído entre as técnicas.
-- [ ] Cada instrumento possui objetivo, público, procedimento e conteúdo integral.
-- [ ] Perguntas evitam indução e coletam apenas dados necessários.
-- [ ] Está claro como os dados serão analisados e usados no design.
+- [x] Hipóteses/lacunas prioritárias da Entrega 1 foram revisitadas.
+- [x] Se o escopo de IHC foi derivado de TCC técnico, a coleta investiga a plausibilidade do usuário, tarefa e contexto adotados.
+- [x] Perguntas não pressupõem que dashboard, CRUD, filtros ou relatórios sejam necessários; investigam a necessidade.
+- [x] Cada dado a coletar responde uma dúvida concreta do projeto ou justifica outra necessidade de informação.
+- [x] Parte A identifica dados e perfis de coleta de forma específica.
+- [x] Aspectos éticos são contextualizados para o projeto.
+- [x] Há uma técnica completa por integrante e técnicas distintas.
+- [x] Questionário está incluído entre as técnicas.
+- [x] Cada instrumento possui objetivo, público, procedimento e conteúdo integral.
+- [x] Perguntas evitam indução e coletam apenas dados necessários.
+- [x] Está claro como os dados serão analisados e usados no design.

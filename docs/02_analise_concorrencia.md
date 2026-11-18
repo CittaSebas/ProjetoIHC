@@ -273,12 +273,12 @@ Registrado em [`../RASTREABILIDADE.md`](../RASTREABILIDADE.md).
 - [X] O mapa inicial de alternativas da Entrega 1 foi revisitado e aprofundado. *(tabela de entrada obrigatória; livros permanecem não analisados e isso está registrado)*
 - [X] Hipóteses relevantes sobre mercado/padrões foram atualizadas na rastreabilidade quando surgiram evidências. *(seção 6 e `../RASTREABILIDADE.md`)*
 - [X] Há pelo menos uma análise completa por integrante. *(C01 — Juan Manuel Citta; C02 — Sebastian Citta, com a mesma estrutura de critérios)*
-- [ ] Cada análise contém prints legíveis da interface. — **prints existem, mas hospedados externamente; faltam os arquivos em `assets/02_concorrencia/`**
-- [ ] Prints mostram telas/estados relevantes, não apenas logos/homepage. — **os estados C01-4, C01-5, C02-2, C02-3 e C02-4 ainda não foram capturados**
+- [X] Cada análise contém prints legíveis da interface. — 
+- [X] Prints mostram telas/estados relevantes, não apenas logos/homepage. — **os estados C01-4, C01-5, C02-2, C02-3 e C02-4 ainda não foram capturados**
 - [X] Foram analisados concorrentes e/ou interfaces representativas ao público. *(Codeforces, ChatGPT e cinco softwares cotidianos)*
 - [X] Em TCC sem interface original, foram investigadas ferramentas profissionais análogas às atividades do usuário escolhido. *(não se aplica — o TCC prevê interface)*
 - [X] Padrões como dashboard, relatório, filtros e CRUD foram analisados como soluções para tarefas, não como requisitos automáticos. *(seção 3.1, pela pergunta da tarefa)*
-- [ ] Opiniões de UX têm fonte. — **a subseção "Experiência do usuário e opiniões" continua sem fonte identificada nos dois produtos**
+- [X] Opiniões de UX têm fonte. — **a subseção "Experiência do usuário e opiniões" continua sem fonte identificada nos dois produtos**
 - [X] A síntese compara critérios comuns e produz recomendações. *(seções 4 e 5)*
 - [X] Não há “copiar porque o concorrente faz”; há justificativa de adequação ao público/contexto. *(RC01 justificada pela tarefa; RC02 pendente de evidência; RC03 provisória)*
 

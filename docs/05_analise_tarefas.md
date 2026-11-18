@@ -252,5 +252,5 @@ A tarefa 2 só habilita a 3 depois de concluída, e passa a ela a opção escolh
 - [x] CTT usa operadores temporais e tipos de tarefa coerentes.
 - [x] Há texto explicando cada diagrama.
 - [x] Tarefas estão ligadas a cenários/personas na rastreabilidade.
-- [ ] Em TCC técnico, as tarefas descrevem o que a pessoa faz com a contribuição/resultados, não passos internos do código.
-- [ ] CRUDs, relatórios, filtros e atividades administrativas foram escolhidos por relevância ao objetivo do usuário.
+- [ ] Em TCC técnico, as tarefas descrevem o que a pessoa faz com a contribuição/resultados, não passos internos do código. *Não se aplica*
+- [ ] CRUDs, relatórios, filtros e atividades administrativas foram escolhidos por relevância ao objetivo do usuário. *Não se aplica*

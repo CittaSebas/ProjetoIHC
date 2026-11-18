@@ -181,7 +181,7 @@ Para produto Web, considere critérios pertinentes da WCAG vigente (por exemplo,
 
 ## Checklist
 
-- [ ] Link do Figma está acessível. - Não se aplica
+- [ ] Link do Figma está acessível. - *Não se aplica*
 - [x] Há screenshots representativos no repositório.
 - [x] Todos os MoLIC relevantes estão cobertos.
 - [X] Estados de erro, feedback e recuperação foram prototipados.

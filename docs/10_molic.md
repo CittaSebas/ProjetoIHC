@@ -1,7 +1,7 @@
 # Entrega 10: MoLIC
 
 **Data:** 17/11/2026  
-**Status:** 🟨 em andamento  
+**Status:** 🟩 concluída
 **Responsabilidade:** 1 solução completa por integrante
 
 ## Objetivo da atividade
@@ -72,7 +72,7 @@ O detalhe do tópico abre num painel ao lado do chat (P05 da Entrega 6). No MoLI
 - [x] As transições/falas deixam claro o que o usuário ou o sistema comunica.
 - [x] Há **ponto(s) de encerramento** para objetivos concluídos/abandonados quando aplicável.
 - [x] Processamentos do sistema estão representados conforme a notação adotada em aula, sem "inventar" fala do usuário.
-- [ ] Rupturas (breakdowns) relevantes têm feedback e caminho de recuperação, não becos sem saída.
+- [X] Rupturas (breakdowns) relevantes têm feedback e caminho de recuperação, não becos sem saída.
 - [x] Acessos ubíquos/atalhos só aparecem quando semanticamente justificáveis.
 - [x] O diagrama cobre caminhos alternativos importantes, e não apenas o "happy path".
 - [X] Nomes de objetivos, tópicos e signos são coerentes com a Entrega 9.
