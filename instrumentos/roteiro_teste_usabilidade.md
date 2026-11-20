@@ -36,7 +36,7 @@ Entregar uma tarefa por vez, por escrito. O enunciado do CSES 1068 é entregue j
 | ID | Instrução ao participante | O moderador pode esclarecer | O moderador não deve dizer |
 |---|---|---|---|
 | UT01 | "Você está treinando para uma competição e travou neste problema. Use a ferramenta para descobrir por qual assunto começar a estudar e explique por quê." | que o enunciado pode ser copiado | "colar no chat", "gerar trilha", "trilha" |
-| UT02 | "Você decidiu estudar laços de repetição. Descubra em que parte do livro de referência esse assunto é tratado." | que o livro de referência é o CLRS (Cormen) | "clicar no tópico", "painel" |
+| UT02 | "Você decidiu que quer estudar o tópico Pilhas e filas, descubra em que capítulo esse tópico se encontra" | que o livro de referência é o CLRS (Cormen) | "clicar no tópico", "painel" |
 | UT03 | "Você ainda não entendeu quando usar um laço que repete sem saber quantas vezes. Tire essa dúvida usando a ferramenta." | que a dúvida é sobre laços de repetição | "perguntar sobre este tópico", "modo Perguntar" |
 | UT04 | "Um colega comentou sobre caminhos mínimos de origem única. Descubra o que você precisa estudar antes desse assunto." | o que é "estudar antes" (pré-requisito) | "grafo", "ver grafo completo", "filtro" |
 
@@ -45,7 +45,7 @@ Entregar uma tarefa por vez, por escrito. O enunciado do CSES 1068 é entregue j
 - marcar o início quando o participante termina de ler a instrução e o fim quando ele diz a resposta;
 - não ajudar; se o participante pedir, responder "o que você faria se estivesse sozinho?";
 - se ele pedir ajuda de novo, dar uma dica curta e anotar como ajuda;
-- encerrar a tarefa ao passar do tempo-limite (UT01: 5 min; UT02: 2 min; UT03 e UT04: 3 min);
+- encerrar a tarefa ao passar do tempo-limite (UT01: 3 min; UT02: 2 min; UT03: 1 min; UT04: 2 min, valores ajustados após o piloto de 18/11);
 - anotar também se o participante reenvia a questão ou desiste durante o processamento e se menciona o aviso de que a IA pode errar.
 
 ## 6. Pós-tarefa

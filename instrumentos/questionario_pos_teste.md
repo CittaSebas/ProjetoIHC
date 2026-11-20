@@ -21,3 +21,4 @@ No geral, quão fácil ou difícil foi fazer esta tarefa?
 3. Você confiaria nos tópicos indicados? Conferiria em outro lugar antes de estudar?
 4. Comparando com o que você usa hoje quando trava em um problema, você usaria esta ferramenta? Por quê?
 5. O que você mudaria?
+6. Você recomendaria a ferramenta para outra pessoa?

@@ -52,7 +52,7 @@ Durante as tarefas, o moderador também anota duas metas qualitativas da Entrega
 | Ambiente | Presencial, em sala tranquila, uma sessão por vez |
 | Dispositivo | Notebook da equipe, com Chrome, mouse e tela de pelo menos 14 polegadas |
 | Protótipo/versão | Aplicação em funcionamento, a mesma das telas da Entrega 11, acessada pela entrada como convidado |
-| Teste piloto | Interno, em 17/11/2026: um integrante aplica as instruções e as tarefas ao outro, para conferir a clareza das instruções e o tempo da sessão |
+| Teste piloto | Interno, em 18/11/2026: um integrante aplica as instruções e as tarefas ao outro, para conferir a clareza das instruções e o tempo da sessão |
 
 **Fora do teste com usuários:** avaliar a trilha (O03) e marcar tópico como estudado (O05) são ações de um clique e ficam para a avaliação heurística, para a sessão não ficar longa. A tela inicial de login também fica fora, porque não faz parte das tarefas.
 
@@ -68,6 +68,13 @@ O problema usado é o [Weird Algorithm (CSES 1068)](https://cses.fi/problemset/t
 | UT02 | "Você decidiu estudar laços de repetição. Descubra em que parte do livro de referência esse assunto é tratado." | O04; saber onde estudar cada tópico | Diz que o assunto não tem capítulo específico no CLRS, por ser um tema de programação básica | 2 min |
 | UT03 | "Você ainda não entendeu quando usar um laço que repete sem saber quantas vezes. Tire essa dúvida usando a ferramenta." | O06 | Obtém uma resposta sobre o assunto, pelo painel do tópico ou pelo chat | 3 min |
 | UT04 | "Um colega comentou sobre caminhos mínimos de origem única. Descubra o que você precisa estudar antes desse assunto." | O07 e O04 | Cita os dois pré-requisitos: busca em largura (BFS) e heap e heapsort. O caminho usado é registrado | 3 min |
+
+**Mudanças após o piloto (18/11/2026):** os tempos-limite passaram para UT01 3 min, UT02 2 min, UT03 1 min e UT04 2 min, e a UT02 passou a pedir o capítulo de Pilhas e filas, porque Laços de repetição não tem capítulo no CLRS. As tarefas aplicadas estão na [Entrega 14](14_observacao_usuario.md), Passo 5.
+
+**Mudanças na execução:**
+- **Participantes:** foram 2, e não 3, porque o modelo da Entrega 14 pede um participante por integrante. Com 2 participantes, MU01 e QA05 exigem que os 2 concluam, e MU06 continua sem admitir erro.
+- **Perfil:** o U01 é iniciante (P01). Não encontramos outro participante com esse perfil exato, então o U02 tem um pouco mais de prática em programação competitiva, o que contraria o critério de exclusão da seção C. Os resultados dele são lidos à parte, como contraste.
+- **Consentimento:** foi verbal, por chamada, sem gravação, como o professor permitiu em aula. Não houve termo assinado.
 
 ## E. Instrumentos
 

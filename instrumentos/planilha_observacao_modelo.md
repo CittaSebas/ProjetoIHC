@@ -16,10 +16,10 @@
 
 | Tarefa | Tempo-limite | Início | Fim | Sucesso | Erros | Ajudas | Hesitações/comportamentos | Fala relevante | SEQ (1 a 7) |
 |---|---|---|---|---|---:|---:|---|---|---|
-| UT01 | 5 min | | | total/parcial/falha | | | | | |
+| UT01 | 3 min | | | total/parcial/falha | | | | | |
 | UT02 | 2 min | | | total/parcial/falha | | | | | |
-| UT03 | 3 min | | | total/parcial/falha | | | | | |
-| UT04 | 3 min | | | total/parcial/falha | | | | | |
+| UT03 | 1 min | | | total/parcial/falha | | | | | |
+| UT04 | 2 min | | | total/parcial/falha | | | | | |
 
 **UT01:** tópico indicado como ponto de partida: ________________ (esperado: Variáveis e tipos de dados)  
 **UT04:** caminho usado para achar os pré-requisitos: grafo / chat / outro: ________________
